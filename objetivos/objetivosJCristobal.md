@@ -42,17 +42,35 @@ Objetivos adicionales
 * [X]  Entender el concepto de desarrollo basado en pruebas.
 * [X]  Comprender la necesidad del mismo para un ciclo de desarrollo cuyo final es la nube.
 * [X]  Comprender el paper fundamental de la infraestructura virtual en este proceso.
-* []  Entender qué se espera del segundo hito del proyecto y comenzar a trabajar en el mismo.
+* [X]  Entender qué se espera del segundo hito del proyecto y comenzar a trabajar en el mismo.
 
-* []  Elegir herramientas de desarrollo para los lenguajes de programación que se usen de forma habitual.
+* [X]  Elegir herramientas de desarrollo para los lenguajes de programación que se usen de forma habitual.
 * [X]  Comparar las herramientas de integración continua e integrarlas con un repositorio de prueba para que se ejecuten automáticamente cuando se haga el push.
 * [X]  Comprobar que se está dado de alta en los medios de comunicación de esta asignatura: [lista de correo y GitHub]
-* []  Usar de forma correcta GitHub:
+* [X]  Usar de forma correcta GitHub:
 
-	Configurar todas las variables globales para que los commits se hagan correctamente,
+	Configurar todas las variables globales para que los commits se hagan correctamente.
+        Avatar, perfil, ciudad y universidad para fácil identificación.
+        Usar también el modo ssh para conexión subiendo la clave pública a GitHub, no https.
+        Aprender el uso de .gitignore para que no aparezcan los ficheros que no deban en git status.
+        Aprender la utilidad de git status.
+
+
+# Objetivos de la clase de 26 de Octubre
+
+
+* [X]  Entender la necesidad de un desarrollo basado en pruebas en un entorno de desarrollo tipo DevOps.
+* [X]  Comprender la definición de infraestructura virtual que se hace en los ficheros de configuración de los entornos de integración continua y cómo estos describen las dependencias y servicios usados por nuestra aplicación.
+
+* [X]  Escoger herramientas de tests a diferentes niveles adecuadas para la aplicación con la que se está trabajando.
+* [X]  Entender los problemas ocasionados por tests externos en una infraestructura virtual creada ad hoc y aprender a solucionarlos.
+* [X]  Comprobar que se está usando de forma correcta GitHub:
+        Configurar todas las variables globales para que los commits se hagan correctamente,
         Avatar, perfil, ciudad y universidad para fácil identificación.
         Usar también el modo ssh para conexión subiendo la clave pública a GitHub, no https.
         Aprender el uso de .gitignore para que no aparezcan los ficheros que no deban en git status
-        Aprender la utilidad de git status.
+            Aprender la utilidad de git status.
+
+
 
 
