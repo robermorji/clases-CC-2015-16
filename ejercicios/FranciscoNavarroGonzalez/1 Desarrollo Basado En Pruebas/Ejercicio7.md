@@ -4,7 +4,7 @@ Convertir los tests unitarios anteriores con assert a programas de test y ejecut
 
 #Soluciones
 Se han añadido test, arreglado los errores detectados con ellos mediante try-ca$
-Estan en el [repositorio](https://github.com/fnavarrogonzalez/RankingEmpresas/b$
+Estan en el [repositorio](https://github.com/fnavarrogonzalez/RankingEmpresas/blob/master/rankingempresas/tests.py)
 Para ejecutarlos utilizar:
 python manage.py test rankingempresas
 ![test](http://www.francisconavarro.nom.es/cloudcomputing/t1/test.png)
