@@ -10,7 +10,7 @@ Automatizar con _grunt_ y _docco_ (o algún otro sistema) la generación de docu
 
  a. Definir la tarea de documentación, tomando los archivos de código (_.js_) de la carpeta correspondiente (_src_), y generando la documentación asociada a cada archivo en el directorio designado para ello (_docs_)
  
- ´´´
+ ```
  docco: {
 	debug: {
 		src: ['src/*.js'],
@@ -19,27 +19,27 @@ Automatizar con _grunt_ y _docco_ (o algún otro sistema) la generación de docu
 	  	}
 	}
  }
- ´´´
+ ```
  
  b. Cargar el _plugin_ de _grunt_ para la ejecución de tareas
  
- ´grunt.loadNpmTasks('grunt-docco');´
+ `grunt.loadNpmTasks('grunt-docco');`
  
  c. Registrar tarea por defecto: generar la documentación del código
  
- ´grunt.registerTask('default', ['docco']);´
+ `grunt.registerTask('default', ['docco']);`
  
  d. Ejecutar tarea de generación de documentación del código:
  
- ´grunt docco´
+ `grunt docco`
  
- ´´´
+ ```
  Running "docco:debug" (docco) task
  docco: src/libCalificacionEmpresa.js -> docs/libCalificacionEmpresa.html
  docco: src/testCalificacionEmpresa.js -> docs/testCalificacionEmpresa.html
 
 Done, without errors.
- ´´´
+ ```
  
  Los archivos de documentación generados son [_libCalificacionEmpresa.html_](https://github.com/jfrancisco4490/calificacionEmpresa/blob/master/docs/libCalificacionEmpresa.html) y [_testCalificacionEmpresa.html_](https://github.com/jfrancisco4490/calificacionEmpresa/blob/master/docs/testCalificacionEmpresa.html)
  

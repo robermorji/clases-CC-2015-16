@@ -95,11 +95,11 @@ Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas e
  
  `nvm install 0.12.7`
  
- b.- Utilizar versión _0.12.7_ de _node.js_ (en caso de haber instalado múltiples versiones con el entorno virtual)
+ b. Utilizar versión _0.12.7_ de _node.js_ (en caso de haber instalado múltiples versiones con el entorno virtual)
  
  `nvm use 0.12.7`
  
- c.- Instalar el módulo de _sqlite3_
+ c. Instalar el módulo de _sqlite3_
  
  `npm install sqlite3`
  
@@ -188,11 +188,11 @@ Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas e
  
  `nvm install 0.11.16`
  
- b.- Utilizar versión _0.11.16_ de _node.js_ (en caso de haber instalado múltiples versiones con el entorno virtual)
+ b. Utilizar versión _0.11.16_ de _node.js_ (en caso de haber instalado múltiples versiones con el entorno virtual)
  
  `nvm use 0.11.16`
  
- c.- Instalar el módulo de _sqlite3_
+ c. Instalar el módulo de _sqlite3_
  
  `npm install sqlite3`
  

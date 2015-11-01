@@ -8,13 +8,13 @@ Para la aplicación que se está haciendo, escribir una serie de aserciones y pr
 
  Este archivo presenta una (1) para cada uno de los siguientes casos:
  
- a. Prueba de registro de nueva empresa
- b. Prueba de registro de nueva calificación
- c. Prueba de eliminación de valoración
+  -Prueba de registro de nueva empresa
+  -Prueba de registro de nueva calificación
+  -Prueba de eliminación de valoración
  
 2. Para probar que falle una aserción, ejecutamos la aserción de prueba de registro de nueva empresa, cuando el código de dicha función de la librería (_crearEmpresa_) no ha sido finalizado. Al ejecutar la aserción, se tiene
 
-´´´
+``
 assert.js:89
   throw new assert.AssertionError({
   ^
@@ -27,9 +27,9 @@ AssertionError: Creacion correcta de nueva empresa
     at Function.Module.runMain (module.js:475:10)
     at startup (node.js:118:18)
     at node.js:952:3
-´´´
+```
 
 3. Se completa el código de la función _crearEmpresa_, y se vuelven a ejecutar las aserciones, teniendo como salida
 
-´Todas las pruebas con aserciones fueron superadas con exito!!!´
+`Todas las pruebas con aserciones fueron superadas con exito!!!`
 
