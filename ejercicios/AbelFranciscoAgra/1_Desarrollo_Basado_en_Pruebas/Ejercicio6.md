@@ -18,7 +18,7 @@ Para la aplicación que se está haciendo, escribir una serie de aserciones y pr
 assert.js:89
   throw new assert.AssertionError({
   ^
-AssertionError: Creacion correcta de nueva empresa
+AssertionError: Creacion incorrecta de nueva empresa
    at Object.<anonymous> (<...>/assertsCalificacionEmpresa.js:36:8)
    at Module._compile (module.js:434:26)
    at Object.Module._extensions..js (module.js:452:10)

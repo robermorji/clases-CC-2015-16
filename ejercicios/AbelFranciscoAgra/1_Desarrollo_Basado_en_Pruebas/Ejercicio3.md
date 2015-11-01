@@ -12,7 +12,7 @@ Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas e
  
  b. Ejecutar el programa de _test_
  
- `node _testCalificacionEmpresa.js`
+ `node testCalificacionEmpresa.js`
  
  c. Resultado de la ejecución
 
@@ -105,7 +105,7 @@ Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas e
  
  d. Ejecutar el programa de _test_
  
- `node _testCalificacionEmpresa.js`
+ `node testCalificacionEmpresa.js`
  
  e. Resultado de la ejecución
 
