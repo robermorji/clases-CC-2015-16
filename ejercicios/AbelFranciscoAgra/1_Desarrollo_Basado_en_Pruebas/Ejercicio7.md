@@ -6,7 +6,7 @@ Convertir los tests unitarios anteriores con _assert_ a programas de _test_ y ej
 
 1. Instalar _mocha_ e incluirlo como dependencia de la aplicación (en _package.json_)
 
-`npm install mocha --save-dev
+`npm install mocha --save-dev`
 
 2. Incluir tarea de Prueba con _mocha_ (_test_) en el archivo _package.json_
 
@@ -18,11 +18,11 @@ Convertir los tests unitarios anteriores con _assert_ a programas de _test_ y ej
 
 3. Definir el archivo [_test.js_](https://github.com/jfrancisco4490/calificacionEmpresa/blob/master/test/test.js), con las descripciones y grupos de _tests_ correspondientes
 
-  -**_CalificacionEmpresa_Test_**: grupo de _test_ general que incluye a las pruebas de cada funcionalidad de la librería
-  -**_Carga_**: descripción del primer _test_ para validar la carga de la librería a utilizar
-  -**_Crear_Empresa_**: descripción del segundo _test_ para probar el registro de una nueva empresa
-  -**_Registrar_Calificacion_**: descripción de la tercera prueba para validar el registro de una nueva calificación de usuario a empresa
-  -**_Eliminar_Calificacion_**: descripción del último _test_ para probar la eliminación de una valoración
+  - **_CalificacionEmpresa_Test_**: grupo de _test_ general que incluye a las pruebas de cada funcionalidad de la librería
+  - **_Carga_**: descripción del primer _test_ para validar la carga de la librería a utilizar
+  - **_Crear_Empresa_**: descripción del segundo _test_ para probar el registro de una nueva empresa
+  - **_Registrar_Calificacion_**: descripción de la tercera prueba para validar el registro de una nueva calificación de usuario a empresa
+  - **_Eliminar_Calificacion_**: descripción del último _test_ para probar la eliminación de una valoración
 
 4. Ejecutar el programa de _test_ desde _mocha_
 
@@ -30,7 +30,7 @@ Convertir los tests unitarios anteriores con _assert_ a programas de _test_ y ej
 
 5. Resultado de la ejecución
 
-``
+```
 > mocha
 
   CalificacionEmpresa_Test

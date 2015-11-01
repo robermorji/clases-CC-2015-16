@@ -8,13 +8,13 @@ Para la aplicación que se está haciendo, escribir una serie de aserciones y pr
 
  Este archivo presenta una (1) para cada uno de los siguientes casos:
  
-  -Prueba de registro de nueva empresa
-  -Prueba de registro de nueva calificación
-  -Prueba de eliminación de valoración
+  - Prueba de registro de nueva empresa
+  - Prueba de registro de nueva calificación
+  - Prueba de eliminación de valoración
  
 2. Para probar que falle una aserción, ejecutamos la aserción de prueba de registro de nueva empresa, cuando el código de dicha función de la librería (_crearEmpresa_) no ha sido finalizado. Al ejecutar la aserción, se tiene
 
-``
+```
 assert.js:89
   throw new assert.AssertionError({
   ^

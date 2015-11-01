@@ -37,8 +37,8 @@ Automatizar con _grunt_ y _docco_ (o algún otro sistema) la generación de docu
  Running "docco:debug" (docco) task
  docco: src/libCalificacionEmpresa.js -> docs/libCalificacionEmpresa.html
  docco: src/testCalificacionEmpresa.js -> docs/testCalificacionEmpresa.html
-
-Done, without errors.
+ 
+ Done, without errors.
  ```
  
  Los archivos de documentación generados son [_libCalificacionEmpresa.html_](https://github.com/jfrancisco4490/calificacionEmpresa/blob/master/docs/libCalificacionEmpresa.html) y [_testCalificacionEmpresa.html_](https://github.com/jfrancisco4490/calificacionEmpresa/blob/master/docs/testCalificacionEmpresa.html)

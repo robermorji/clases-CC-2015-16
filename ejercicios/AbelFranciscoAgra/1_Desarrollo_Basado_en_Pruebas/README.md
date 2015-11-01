@@ -16,6 +16,6 @@ Abarca la aplicación de conceptos relacionados con el proceso de virtualizació
 * [X] [Ejercicio 5](https://github.com/JJ/clases-CC-2015-16/blob/master/ejercicios/AbelFranciscoAgra/1_Desarrollo_Basado_en_Pruebas/Ejercicio5.md): Generación automática de documentación (_grunt_ y _docco_)
 * [X] [Ejercicio 6](https://github.com/JJ/clases-CC-2015-16/blob/master/ejercicios/AbelFranciscoAgra/1_Desarrollo_Basado_en_Pruebas/Ejercicio6.md): Elaboración de _tests_ y aserciones
 * [X] [Ejercicio 7](https://github.com/JJ/clases-CC-2015-16/blob/master/ejercicios/AbelFranciscoAgra/1_Desarrollo_Basado_en_Pruebas/Ejercicio7.md): Ejecución de programas de _test_ en _mocha_
-* [] Ejercicio 8: Integración Continua
+* Ejercicio 8: Integración Continua
 
 [Enlace](https://github.com/jfrancisco4490/calificacionEmpresa) al repositorio en el que se encuentra la librería de calificación de empresas y otros archivos relevantes en la resolución y elaboración de los ejercicios.
