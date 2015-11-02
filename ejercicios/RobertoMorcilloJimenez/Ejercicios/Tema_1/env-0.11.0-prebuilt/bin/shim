@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-export NODE_PATH=/var/www/universidad/CloudComputing/ejercicios/RobertoMorcilloJimenez/Ejercicios/Tema_1/env-0.11.0-prebuilt/lib/node_modules
-export NPM_CONFIG_PREFIX=/var/www/universidad/CloudComputing/ejercicios/RobertoMorcilloJimenez/Ejercicios/Tema_1/env-0.11.0-prebuilt
-export npm_config_prefix=/var/www/universidad/CloudComputing/ejercicios/RobertoMorcilloJimenez/Ejercicios/Tema_1/env-0.11.0-prebuilt
-exec env-0.11.0-prebuilt/bin/node "$@"

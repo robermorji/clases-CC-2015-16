@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  input(type='button' id="crear_empresa" name='crear_empresa'  value="Crear Empresa")
+  input(type='button' id="listar_empresa" name='Listar_empresa'  value="Listar Empresa")
+  input(type='button' id="crear_calificacion" name='crear_calificacion'  value="Crear Calificacion")
+  input(type='button' id="editar_calificacion" name='editar_calificacion' value="Editar Calificacion")
+  input(type='button' id="borrar_calificacion" name='borrar_calificacion' value="Borrar Calificacion")
+  
+  include ./includes/crear_empresa
+  include ./includes/borrar_puntuacion
+  include ./includes/crear_puntuacion
+  include ./includes/editar_puntuacion
+  include ./includes/listar_empresa
