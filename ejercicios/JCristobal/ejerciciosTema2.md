@@ -19,6 +19,20 @@ Por último comprobamos si está preparado para usar este tipo de tecnología y 
 ##Ejercicio2
 ###Comprobar qué interfaces puente se han creado y explicarlos.
 
+*Ya que en mi sistema operativo Ubuntu 14.04 daba muchos problemas, realizo éstas actividades dentro de un máquina virtual*
+
+[Salida con `lxc-checkconfig`](http://i.imgur.com/IjlFaSl.png)
+
+Dentro del contenedor ejecutamos `ifconfig -a` para ver sus interfaces de red
+
+![interfaces red contenedor](http://i.imgur.com/qmj0aoe.png)
+
+
+Y fuera, con `brctl show` y el contenedor parado (`lxc-stop -n otra-caja`) vemos que se a creado un puente llamado lxcbr0 (con interfaz vethYFA6SS, como dicen los apuntes):
+
+![interfaces puente](http://i.imgur.com/PszNmTQ.png)
+
+Es un puente NAT, entre el contenedor y el "host".
 
 
 ##Ejercicio3
