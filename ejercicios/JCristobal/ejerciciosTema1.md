@@ -1,4 +1,4 @@
-**Ejercicios del [tema 1](http://jj.github.io/CC/documentos/temas/Desarrollo_basado_en_pruebas)**
+**José Cristóbal López Zafra - Ejercicios del [tema 1](http://jj.github.io/CC/documentos/temas/Desarrollo_basado_en_pruebas)**
 
 ##Ejercicio1
 
@@ -77,7 +77,7 @@ unittest.TextTestRunner(verbosity=2).run(suite)
 ##Ejercicio7
 ###Convertir los tests unitarios anteriores con assert a programas de test y ejecutarlos desde mocha, usando descripciones del test y del grupo de test de forma correcta. Si hasta ahora no has subido el código que has venido realizando a GitHub, es el momento de hacerlo, porque lo vamos a necesitar un poco más adelante. 
 
-Si no lo tenemos instalado podemos hacerlo con `npm install mocha --save-dev`. Creamos un archivo básico package.json y especificamos que ejecute mocha:
+Si no lo tenemos instalado podemos hacerlo con `npm install mocha --save-dev`. Además instalamos chai con `npm install chai` y `npm install chai-fs` para un *plugin* que usaremos. Creamos un archivo básico package.json y especificamos que ejecute mocha:
 
 ```
 {
@@ -91,13 +91,40 @@ Si no lo tenemos instalado podemos hacerlo con `npm install mocha --save-dev`. C
 
   "keywords": ["CC, periodico"],
 
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+
   "scripts": {
     "test": "mocha"
   }
 }
 ```
 
-Dentro de [test/test.js](https://github.com/JCristobal/ProjectCC/blob/master/test/test.js) creamos unos test básicos y los [probamos con `npm test`](https://i.gyazo.com/c73072ec292100288d83b91b41c15e28.png).
+Dentro de [test/test.js](https://github.com/JCristobal/ProjectCC/blob/master/test/test.js) creamos unos test básicos y otros para comprobar algunos ficheros:
+
+```
+
+  describe('Comprobamos archivos', function () {
+
+    it('El fichero principal existe', function (done) {
+      expect('script.py').to.be.a.file();
+      done();
+    });
+
+    it('Archivos de documentación "pycco" existen', function (done) {
+      expect('docs/script.html').to.be.a.file();
+      expect('docs/pycco.css').to.be.a.file();
+      done();
+    });
+
+  });
+
+```
+
+
+Y los [probamos con `npm test`](https://i.gyazo.com/afa3ba30dc71abc59a398fe27ddc6c63.png).
 
 
 ##Ejercicio8
@@ -126,7 +153,7 @@ python:
 # command to install dependencies
 install: "pip install -r requirements.txt"
 # command to run tests
-script: nosetests
+script: npm install mocha --save-dev; npm install chai; npm install chai-fs;  npm test
 ```
 
 
@@ -136,7 +163,7 @@ script: nosetests
 
 
 
-Y por último añado el *badge*, que se puede ver en el [README](https://github.com/JCristobal/ProjectCC) del proyecto.
+Y por último añado el *badge*, [![Build Status](https://travis-ci.org/JCristobal/ProjectCC.svg?branch=master)](https://travis-ci.org/JCristobal/ProjectCC) que se puede ver en el [README](https://github.com/JCristobal/ProjectCC) del proyecto.
 
 
 
