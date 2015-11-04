@@ -56,7 +56,7 @@
  - [X] Aprender la utilidad de git status.
 
 
-### Cuarta semana, 26 de octubre 2015-2016
+### Cuarta semana, 26 de octubre 2015
 
 #### Objetivos principales
 
@@ -73,3 +73,17 @@
   - [X] Usar también el modo ssh para conexión subiendo la clave pública a GitHub, no https.
   - [X] Aprender el uso de .gitignore para que no aparezcan los ficheros que no deban en git status
   - [X] Aprender la utilidad de git status.
+
+
+### Quinta semana, 2 de noviembre 2015
+
+#### Objetivos principales
+
+- [ ] Entender el concepto de PaaS y su utilidad
+- [ ] Entender los mecanismos de despliegue de aplicaciones en un PaaS.
+- [ ] Examinar las diferencias entre las diferentes ofertas de PaaS.
+
+#### Objetivos adicionales
+
+- [ ] Trabajar con los *add-ons* de los diferentes PaaS usados.
+- [ ] Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
