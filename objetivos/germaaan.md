@@ -46,7 +46,7 @@
 #### Objetivos adicionales
 
 - [X] Elegir herramientas de desarrollo para los lenguajes de programación que se usen de forma habitual.
-- [ ] Comparar las herramientas de integración continua e integrarlas con un repositorio de prueba para que se ejecuten automáticamente cuando se haga el push.
+- [X] Comparar las herramientas de integración continua e integrarlas con un repositorio de prueba para que se ejecuten automáticamente cuando se haga el push.
 - [X] Comprobar que se está dado de alta en los medios de comunicación de esta asignatura: [lista de correo](https://groups.google.com/d/forum/cc-ugr-2015) y [GitHub](http://github.com/)
 - Usar de forma correcta GitHub:
  - [X] Configurar todas las variables globales para que los commits se hagan correctamente,
@@ -65,8 +65,8 @@
 
 #### Objetivos adicionales
 
-- [ ] Escoger herramientas de tests a diferentes niveles adecuadas para la aplicación con la que se está trabajando.
-- [ ] Entender los problemas ocasionados por tests externos en una infraestructura virtual creada ad hoc y aprender a solucionarlos.
+- [X] Escoger herramientas de tests a diferentes niveles adecuadas para la aplicación con la que se está trabajando.
+- [X] Entender los problemas ocasionados por tests externos en una infraestructura virtual creada ad hoc y aprender a solucionarlos.
 - Comprobar que se está usando de forma correcta GitHub:
   - [X] Configurar todas las variables globales para que los commits se hagan correctamente,
   - [X] Avatar, perfil, ciudad y universidad para fácil identificación.
