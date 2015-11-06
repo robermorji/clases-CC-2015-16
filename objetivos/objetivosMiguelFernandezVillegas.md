@@ -33,6 +33,7 @@ Lista de objetivos
 * [X] Comprender la necesidad del mismo para un ciclo de desarrollo cuyo final es la nube.
 * [X] Comprender el paper fundamental de la infraestructura virtual en este proceso.
 * [X] Entender qué se espera del segundo hito del proyecto y comenzar a trabajar en el mismo.
+
 ###Clase del 19 de octubre de 2015
 
 * [X] Elegir herramientas de desarrollo para los lenguajes de programación que se usen de forma habitual.
@@ -54,4 +55,4 @@ Usar también el modo ssh para conexión subiendo la clave pública a GitHub, no
 
 * [X] Entender la necesidad de un desarrollo basado en pruebas en un entorno de desarrollo tipo DevOps.
 
- * [X] Comprender la definición de infraestructura virtual que se hace en los ficheros de configuración de los entornos de integración continua y cómo estos describen las dependencias y servicios usados por nuestra aplicación.
+* [X] Comprender la definición de infraestructura virtual que se hace en los ficheros de configuración de los entornos de integración continua y cómo estos describen las dependencias y servicios usados por nuestra aplicación.
