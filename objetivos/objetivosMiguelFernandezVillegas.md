@@ -56,3 +56,5 @@ Usar también el modo ssh para conexión subiendo la clave pública a GitHub, no
 * [X] Entender la necesidad de un desarrollo basado en pruebas en un entorno de desarrollo tipo DevOps.
 
 * [X] Comprender la definición de infraestructura virtual que se hace en los ficheros de configuración de los entornos de integración continua y cómo estos describen las dependencias y servicios usados por nuestra aplicación.
+
+###Clase del 2 de Noviembre del 2015
