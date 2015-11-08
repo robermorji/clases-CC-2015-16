@@ -4,4 +4,4 @@
 
 **Se puede hacer un ejercicio equivalente, siempre que tenga operaciones similares: creación, listado, borrado, ciclo CRUD básico. El objetivo de este ejercicio es poner en práctica lo que viene a continuación, NO es un objetivo de la asignatura.**
 
-Para este ejercicio se ha creado un [repositorio propio](https://github.com/enpi/ProjectCC) que corresponde a un submódulo de un proyecto más grande](https://github.com/ProyectCC/PeriodicoInteractivo). Este submódulo en concreto desarrolla todos los componentes relacionados con la gestión de bases de datos e incluye todos los puntos indicados como "ejercicio equivalente".
+Para este ejercicio se ha creado un [repositorio propio](https://github.com/enpi/ProjectCC) que corresponde a un submódulo de un [proyecto más grande](https://github.com/ProyectCC/PeriodicoInteractivo). Este submódulo en concreto desarrolla todos los componentes relacionados con la gestión de bases de datos e incluye todos los puntos indicados como "ejercicio equivalente".

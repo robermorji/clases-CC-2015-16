@@ -9,6 +9,7 @@ Eligimos a continuación el proceso de instalación :
 * Usando la herramienta **easy_install** de Python ```sudo easy_install nodeenv```
 * Mediante el gestor de paquetes de Python **pip* ```sudo pip install nodeenv```
 
-[Imagen 1]
+![Ejercicio1_1](https://i.gyazo.com/7f7ab854c757e244cb604897b589cc42.png)
+> Figura 1. Comprobando la versión de nodeenv instalada
 
 A continuación podemos instalar las diferentes versiones de **node.js**, comprobamos usando ```nodeenv --list``` las versiones disponibles y mediante ```nodeenv --node=[VERSION] [DEST_DIR]``` procedemos a instalar.
