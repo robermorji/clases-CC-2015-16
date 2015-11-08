@@ -26,3 +26,12 @@ Lista de objetivos
 * [X] Entender las herramientas usadas en diferentes lenguajes de programación para desarrollo basado en test.
 * [X] Darse de alta en los servicios usados en desarrollo basado en test.
 
+###Clase del 19 de octubre de 2015
+
+* [X] Entender el concepto de desarrollo basado en pruebas.
+* [X] Comprender la necesidad del mismo para un ciclo de desarrollo cuyo final es la nube.
+* [X] Comprender el paper fundamental de la infraestructura virtual en este proceso.
+* [X] Entender qué se espera del segundo hito del proyecto y comenzar a trabajar en el mismo.
+* [X] Elegir herramientas de desarrollo para los lenguajes de programación que se usen de forma habitual.
+* [X] Comparar las herramientas de integración continua e integrarlas con un repositorio de prueba para que se ejecuten automáticamente cuando se haga el push.
+* [X] Comprobar que se está dado de alta en los medios de comunicación de esta asignatura: lista de correo y GitHub
