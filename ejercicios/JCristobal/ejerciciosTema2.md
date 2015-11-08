@@ -31,3 +31,27 @@ Y ya está instalado, configurado y disponible para publicar entradas:
 ![entrada0](http://i.imgur.com/6vm3VUi.png)
 
 
+
+##Ejercicio4
+###Instalar y echar a andar tu primera aplicación en Heroku.
+
+Instalamos el cinturon de heroku con `wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh ` y `heroku login`
+
+Nos logueamos y clonamos una [aplicación de ejemplo](https://github.com/heroku/node-js-getting-started): `git clone git@github.com:heroku/node-js-getting-started.git`.
+
+La instalamos y arrancamos con `npm install` y `npm start`. Podemos ver que se está ejecutando en http://localhost:5000/
+
+Y para desplegar en Heroku:
+
+`heroku create`
+`git push heroku master`
+`heroku open`
+
+Accedemos al [dashboard de Heroku](https://dashboard.heroku.com/apps) y comprobamos que [la hemos creado](https://i.gyazo.com/2b43b50d4da76fb9a65008b883217770.png).
+
+En mi caso puedo ver la aplicación desplegada en: https://dry-meadow-8186.herokuapp.com/ 
+
+
+
+
+
