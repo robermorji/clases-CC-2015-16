@@ -4,4 +4,4 @@
 	nodejs => 0.11.0
 	nodejs => 0.12.0
 	
-	![aserciones](https://dl.dropboxusercontent.com/s/aszus5r2rltowyu/aserciones.png?dl=0)
+![aserciones](https://dl.dropboxusercontent.com/s/aszus5r2rltowyu/aserciones.png?dl=0)

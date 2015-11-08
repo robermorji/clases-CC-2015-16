@@ -47,7 +47,7 @@ En este ejercicio hemos creado distintas aserciones y hemos comprobado que pasan
 
 	console.log("Enhorabuena: Todas las aserciones han sido pasadas con éxito");
 	
-	![aserciones](https://dl.dropboxusercontent.com/s/aszus5r2rltowyu/aserciones.png?dl=0)
+![aserciones](https://dl.dropboxusercontent.com/s/aszus5r2rltowyu/aserciones.png?dl=0)
 	
 	Ahora vamos hacer que falle uno y vamos a implementarlo implementado:
 	
@@ -56,7 +56,7 @@ En este ejercicio hemos creado distintas aserciones y hemos comprobado que pasan
 	}
 	assert.equal(ExisteObjeto,true,"El objeto debe ser creado");
 	
-	![assert_fail](https://dl.dropboxusercontent.com/s/jhayrswzkpc88dj/assert_fail.png?dl=0)
+![assert_fail](https://dl.dropboxusercontent.com/s/jhayrswzkpc88dj/assert_fail.png?dl=0)
 	
 	Después de implementarlo volvemos al estado inicial:
 	
@@ -67,7 +67,7 @@ En este ejercicio hemos creado distintas aserciones y hemos comprobado que pasan
 	},
 	assert.equal(ExisteObjeto,true,"El objeto debe ser creado");
 	
-	![aserciones](https://dl.dropboxusercontent.com/s/aszus5r2rltowyu/aserciones.png?dl=0)
+![aserciones](https://dl.dropboxusercontent.com/s/aszus5r2rltowyu/aserciones.png?dl=0)
 	
 	
 	
