@@ -28,5 +28,3 @@ Lista de objetivos
 * [X] Entender las herramientas usadas en diferentes lenguajes de programación para desarrollo basado en test.
   
 * [X] Darse de alta en los servicios usados en desarrollo basado en test.
-
-
