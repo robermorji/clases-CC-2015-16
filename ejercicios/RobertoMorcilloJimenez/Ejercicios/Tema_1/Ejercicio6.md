@@ -1,6 +1,6 @@
 ##Ejercicio 6
-### En este ejercicio hemos creado distintas aserciones y hemos comprobado que pasan los test:
-	
+En este ejercicio hemos creado distintas aserciones y hemos comprobado que pasan los test:
+### 
 	var obj_Empresa = {
 	CreacionEmpresa: function(name){
 		var objeto_new;
@@ -47,7 +47,7 @@
 
 	console.log("Enhorabuena: Todas las aserciones han sido pasadas con éxito");
 	
-	[! assert](https://dl.dropboxusercontent.com/s/aszus5r2rltowyu/aserciones.png)
+	![assert](https://dl.dropboxusercontent.com/s/aszus5r2rltowyu/aserciones.png)
 	
 	Ahora vamos hacer que falle uno y vamos a implementarlo implementado:
 	
@@ -56,7 +56,7 @@
 	}
 	assert.equal(ExisteObjeto,true,"El objeto debe ser creado");
 	
-	[! assert_fail](https://dl.dropboxusercontent.com/s/jhayrswzkpc88dj/assert_fail.png)
+	![assert_fail](https://dl.dropboxusercontent.com/s/jhayrswzkpc88dj/assert_fail.png)
 	
 	Después de implementarlo volvemos al estado inicial:
 	
@@ -67,7 +67,7 @@
 	},
 	assert.equal(ExisteObjeto,true,"El objeto debe ser creado");
 	
-	[! assert_last](https://dl.dropboxusercontent.com/s/aszus5r2rltowyu/aserciones.png)
+	![assert_last](https://dl.dropboxusercontent.com/s/aszus5r2rltowyu/aserciones.png)
 	
 	
 	

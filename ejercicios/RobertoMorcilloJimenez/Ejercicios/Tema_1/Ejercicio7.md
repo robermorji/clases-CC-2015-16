@@ -1,6 +1,6 @@
 ##Ejercicio 7
-### Creación de los distintos TDD con mocha:
-
+Creación de los distintos TDD con mocha:
+###
 	var assert = require('assert');
 	var empresa = require('../model/empresa.js');
 	var should = require('should');
@@ -25,5 +25,5 @@
 	  });
 	});
 	
-	[! tdd](https://dl.dropboxusercontent.com/s/q6tzq808l25zomk/tdd.png?dl=0)
+![tdd](https://dl.dropboxusercontent.com/s/q6tzq808l25zomk/tdd.png?dl=0)
 	
