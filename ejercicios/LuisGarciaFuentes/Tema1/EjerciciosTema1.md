@@ -192,4 +192,4 @@ node_js:
 
 En la foto que se muestra se puede ver que se han pasado todos los test en todas las versiones indicadas:
 
-![img](https://www.dropbox.com/s/5vd9cskdesu08jr/Captura6.png?dl=0)
+![img](https://dl.dropboxusercontent.com/s/5vd9cskdesu08jr/Captura6.png?dl=0)
