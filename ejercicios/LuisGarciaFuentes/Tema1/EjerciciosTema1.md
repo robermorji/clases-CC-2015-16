@@ -22,7 +22,7 @@ sudo n 0.12.7
 
 En [Submodulo-Red-social-Analytics](https://github.com/luishexen/Submodulo-Red-social-Analytics.git) se encuentran todos los ficheros necesarios para ejecutar este submodulo. Se encuentra el servidor de nodeJS junto a todos los recursos y los ficheros html. Se encuentra implementada la página de inicio para realizar el login de los usuarios. Además se encuentra un vídeo de presentación del juego. El cliente realiza las solicitudes de enviar al servidor los datos del usuario este los almacena. Con lo que hay una creación, listado y borrado de usuarios en el servidor.    
 
-![img](https://www.dropbox.com/s/c2gbfegdks9tuob/Captura.png?dl=0)
+![img](https://dl.dropboxusercontent.com/s/c2gbfegdks9tuob/Captura.png?dl=0)
 
 ##Ejercicio 3
 ###Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas ellas?
@@ -35,11 +35,11 @@ sudo n
 
 Ejecutamos con la versión **0.11.16**:
 
-![img](https://www.dropbox.com/s/bdxqn4yq8pm5rzu/Captura2.png?dl=0)
+![img](https://dl.dropboxusercontent.com/s/bdxqn4yq8pm5rzu/Captura2.png?dl=0)
 
 Ejecutamos con la versión **0.12.7**:
 
-![img](https://www.dropbox.com/s/zvpt433hw0uns0t/Captura3.png?dl=0)
+![img](https://dl.dropboxusercontent.com/s/zvpt433hw0uns0t/Captura3.png?dl=0)
 
 ##Ejercicio 4
 ###Crear una descripción del módulo usando package.json. En caso de que se trate de otro lenguaje, usar el método correspondiente.
@@ -164,7 +164,7 @@ En el archivo **package.json** creamos un script para ejecutar `mocha`:
 
 Ahora ejecutaremos los test con mocha:
 
-![img](https://www.dropbox.com/s/2vl0bsjjqlii91a/Captura4.png?dl=0)
+![img](https://dl.dropboxusercontent.com/s/2vl0bsjjqlii91a/Captura4.png?dl=0)
 
 ##Ejercicio 8
 ###En mi caso para Travis:
@@ -172,7 +172,7 @@ Ahora ejecutaremos los test con mocha:
 
 Como se puede ver en la imagen se ha sincronizado mi cuenta travis a github:
 
-![img](https://www.dropbox.com/s/hv51x01hb5y2sm2/Captura5.png?dl=0)
+![img](https://dl.dropboxusercontent.com/s/hv51x01hb5y2sm2/Captura5.png?dl=0)
 
 
 ###2- Activar el repositorio en el que se vaya a aplicar la integración continua. Travis permite hacerlo directamente desde tu configuración; en otros se dan de alta desde la web de GitHub.
