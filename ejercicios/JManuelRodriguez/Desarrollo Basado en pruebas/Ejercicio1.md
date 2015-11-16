@@ -1,0 +1,13 @@
+*Instalar alguno de los entornos virtuales de node.js y, con ellos, instalar la última versión existente, la versión minor más actual de la 0.12 y lo mismo para la 0.11 o alguna impar. Si no se usa habitualmente este lenguaje, hacer lo mismo con cualquier otro lenguaje de scripting*
+=====================================================================
+
+##Para la instalación de node.js, antes debe instalarse nvm.
+curl ~o~ https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+source ~/.bashrc
+
+###Teniendo esto preparado, se procede con la instalación de nodejs en su versión 0.11 y 0.12.
+nvm install 0.11
+nvm install 0.12
+*Para verificar la instalación se puede revisar la versión de node y nvm con:*
+node -v
+npm -v
