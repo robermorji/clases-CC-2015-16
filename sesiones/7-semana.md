@@ -1,10 +1,7 @@
-#Quinta semana, 2 de noviembre de 2015
+#Séptima semana, 16 de noviembre de 2015
 
-Si todavía no os habéis inscrito, recordad
-también la
-[inscripción en el certamen de proyectos](http://osl.ugr.es/2015/10/01/certamen-de-proyectos-libres-de-la-universidad-de-granada-2015-2016/). Si ya os habéis inscrito, animad a compañeros y amigos a que se inscriban.
-
-El miércoles me sustituirá en clase Pedro Castillo, otro de los profesores de la asignatura.
+Recordatorio: Sin los ejercicios del tema 1 entregados no se corrigirá
+el segundo hito de la práctica. 
 
 ##Objetivos a cubrir en esta semana
 
@@ -15,15 +12,15 @@ El miércoles me sustituirá en clase Pedro Castillo, otro de los profesores de 
 ## Otros objetivos
 * Trabajar con los *add-ons* de los diferentes PaaS usados.
 * Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
-
+* Comentar cuestiones relacionadas con la segunda práctica.
+* Ponerse al día de los ejercicios del segundo tema. 
 
 ##Material para la clase
 
 * *Teoría*:
   [Material de este  tema](http://jj.github.io/CC/documentos/temas/PaaS)
-* *Proyecto*: [segundo hito del proyecto](http://jj.github.io/CC/documentos/practicas/2.CI),
-  a entregar el 9 de noviembre de 2015. 
+
 
 ##Siguiente semana
 
-[Sexta semana 9 de noviembre](6-semana.md) Las clases serán impartidas por Maribel García Arenas (lunes) y Pedro Castillo (miércoles)
+[Octava semana 23 de noviembre](8-semana.md) 
