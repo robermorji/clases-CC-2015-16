@@ -20,6 +20,8 @@ el segundo hito de la práctica.
 * *Teoría*:
   [Material de este  tema](http://jj.github.io/CC/documentos/temas/PaaS)
 
+* *Práctica*: [Tercer hito](http://jj.github.io/CC/documentos/practicas/3.PaaS)
+
 
 ##Siguiente semana
 
