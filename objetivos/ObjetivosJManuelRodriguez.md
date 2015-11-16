@@ -1,6 +1,6 @@
 # **Objetivos semanales.**
 ======================================================================
-(*José Manuel Rodríguez Estrada.*)[https://github.com/jmrodriguez90/]
+[*José Manuel Rodríguez Estrada.*](https://github.com/jmrodriguez90/)
 
 ### Primera semana, 5 de octubre 2015
 
