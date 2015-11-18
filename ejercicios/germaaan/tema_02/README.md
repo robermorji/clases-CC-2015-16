@@ -1,4 +1,4 @@
-## Tema 1. Desplegando aplicaciones en la nube: Uso de PaaS
+## Tema 2. Desplegando aplicaciones en la nube: Uso de PaaS
 
 * [Ejercicio 1](ejercicio_01.md)
 * [Ejercicio 2](ejercicio_02.md)
