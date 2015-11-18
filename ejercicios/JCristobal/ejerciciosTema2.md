@@ -30,6 +30,8 @@ Y ya está instalado, configurado y disponible para publicar entradas:
 
 ![entrada0](http://i.imgur.com/6vm3VUi.png)
 
+##Ejercicio3
+###Crear pruebas para las diferentes rutas de la aplicación
 
 
 ##Ejercicio4
@@ -51,6 +53,24 @@ Accedemos al [dashboard de Heroku](https://dashboard.heroku.com/apps) y comproba
 
 En mi caso puedo ver la aplicación desplegada en: https://dry-meadow-8186.herokuapp.com/ 
 
+##Ejercicio5
+###Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicación en node que se ha creado anteriormente. Probarla de forma local con foreman. Al final de cada modificación, los tests tendrán que funcionar correctamente; cuando se pasen los tests, se puede volver a desplegar en heroku.
+####Como en todos los ejemplos anteriores, se puede cambiar “node” y “heroku” por la herramienta que se haya elegido.
+
+Para probarla en local ejecutamos `foreman start web` (con `web: python script.py` dentro del archivo *Procfile*)
+
+![preba con foreman](https://i.gyazo.com/76fc316245f393826a4522a19376d927.png)
+
+
+Cremos la aplicación (especificando el buildpack python) en Heroku con `heroku apps:create --region eu --buildpack heroku/python periodicointeractivo-heroku1-1`.
+
+![app creada](https://i.gyazo.com/cd7c6d39b1d23fb19f604b195379771d.png)
+
+Después tendremos que modificar el *Procfile* para ajustar la ejecución de la aplicación. Primero nos lo descargamos `heroku git:clone -a periodicointeractivo-heroku1-1` y añadimos un archivo *Procfile* con `web: python script.py`. 
+
+Guardamos cambios ( `git add Procfile` `git commit` y `git push heroku master`)
+
+[Aplicación con cambios guardados](https://i.gyazo.com/44e75f6ee25b60a90b25415b12ae22c5.png)
 
 
 
