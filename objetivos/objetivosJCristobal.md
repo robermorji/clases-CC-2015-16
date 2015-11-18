@@ -85,7 +85,7 @@ Objetivos adicionales
 # Objetivos de la semana de 9 de Noviembre
 
 * []  Entender el concepto de Base de datos como servicio
-* []  Estudiar los diferentes tipos de bases de datos existentes y cómo se pueden usar desde nuestras aplicaciones.
+* [X]  Estudiar los diferentes tipos de bases de datos existentes y cómo se pueden usar desde nuestras aplicaciones.
 * []  Examinar las diferencias entre las diferentes ofertas de DBaaS
 
 * []  Probar diferentes bases de datos NoSQL como Redis y ver la utilidad en una aplicación en la nube.
@@ -99,8 +99,7 @@ Objetivos adicionales
 * [X]  Entender los mecanismos de despliegue de aplicaciones en un PaaS.
 * [X]  Examinar las diferencias entre las diferentes ofertas de PaaS.
 
-* []  Trabajar con los add-ons de los diferentes PaaS usados.
-* []  Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
+* [X]  Trabajar con los add-ons de los diferentes PaaS usados.
 * [X]  Comentar cuestiones relacionadas con la segunda práctica.
 * []  Ponerse al día de los ejercicios del segundo tema.
 

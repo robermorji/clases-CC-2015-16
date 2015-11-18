@@ -72,6 +72,29 @@ Guardamos cambios ( `git add Procfile` `git commit` y `git push heroku master`)
 
 [Aplicación con cambios guardados](https://i.gyazo.com/44e75f6ee25b60a90b25415b12ae22c5.png)
 
+##Ejercicio6
+###Haz alguna modificación a tu aplicación en node.js para Heroku, sin olvidar añadir los tests para la nueva funcionalidad, y configura el despliegue automático a Heroku usando Snap CI o alguno de los otros servicios, como Codeship, mencionados en StackOverflow
+
+Para trabajar con la aplicación de [ejemplo](https://github.com/heroku/node-js-getting-started) que hemos usado tenemos que borrar el origen inicial `git remote rm origin` y ajustar el de un repositorio propio con `git remote add origin git@github.com/JCristobal/node-js-getting-started.git`.
+
+(O trabajar con [nuestro propio fork](https://github.com/JCristobal/node-js-getting-started))
+
+Primero probaremos la [integración con GitHub](https://devcenter.heroku.com/articles/github-integration#enabling-github-integration): Nos vamos al panel de control y en Deploy seleccionamos "GitHub Connect to GitHub".
+
+Seleccionamos el repositorio y continuamos, y nos queda:
+
+![integracion github](https://i.gyazo.com/b00664dce5a814fb818830d0fa260727.png)
+
+Debajo activamos los despliegues automáticos a la rama del respositorio que queramos.
+
+Y dentro de GitHub (respositorio asociado) > Settings > Webhooks & Services, buscamos y añadimos el servicio de *HerokuBeta* y rellenamos los datos que piden.
+
+[Aplicación con el despliegue automático después de algunos cambios](https://i.gyazo.com/30dfed21186ee73ef0bb152c9a60a338.png): https://dry-meadow-8186.herokuapp.com/
+
+
+
+
+
 
 
 
