@@ -1,4 +1,4 @@
-#Quinta semana, 9 de noviembre de 2015
+#Sexta semana, 9 de noviembre de 2015
 
 Si todavía no os habéis inscrito, recordad
 también la
@@ -32,4 +32,4 @@ Pedro Castillo Valdivieso.
 
 ##Siguiente semana
 
-[Séptima semana 9 de noviembre](7-semana.md)
+[Séptima semana 16 de noviembre](7-semana.md)
