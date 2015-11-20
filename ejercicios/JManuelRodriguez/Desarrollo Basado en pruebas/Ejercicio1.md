@@ -3,14 +3,13 @@ Instalar alguno de los entornos virtuales de node.js y, con ellos, instalar la �
 ________________
 
 ##Para la instalaci처n de node.js, antes debe instalarse nvm.
-[ok] curl ~o~ https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
 
-[ok] source ~/.bashrc
+- [X]. curl ~o~ https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+- [X]. source ~/.bashrc
 
-###Teniendo esto preparado, se procede con la instalaci처n de nodejs en su versi처n 0.11 y 0.12.
-[ok] nvm install 0.11
-
-[ok] nvm install 0.12
+##Teniendo esto preparado, se procede con la instalaci처n de nodejs en su versi처n 0.11 y 0.12.
+- [X]. nvm install 0.11
+- [X]. nvm install 0.12
 *Para verificar la instalaci처n se puede revisar la versi처n de node y nvm con:*
 * node -v
 * npm -v
