@@ -87,3 +87,21 @@
 
 - [ ] Trabajar con los *add-ons* de los diferentes PaaS usados.
 - [ ] Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
+
+
+### Sexta semana, 9 de noviembre 2015
+
+#### Objetivos principales
+
+- [ ] Entender el concepto de [Base de datos como servicio](http://jj.github.io/dbaas/).
+- [ ] Estudiar los diferentes tipos de bases de datos existentes y cómo
+   se pueden usar desde nuestras aplicaciones.
+- [ ] Examinar las diferencias entre las diferentes ofertas de DBaaS.
+
+#### Objetivos adicionales
+
+- [ ] Probar diferentes bases de datos NoSQL como Redis y ver la utilidad
+  en una aplicación en la nube.
+- [ ] Entender las tags de Git y su uso para despliegues y lanzamientos.
+- [ ] Darse de alta en diferentes bases de datos en la nube que se puedan
+  usar de forma experimental.
