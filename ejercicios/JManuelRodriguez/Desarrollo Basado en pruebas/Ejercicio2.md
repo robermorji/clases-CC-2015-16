@@ -3,8 +3,7 @@ Como ejercicio, algo ligeramente diferente: una web para calificar las empresas 
 Se puede hacer un ejercicio equivalente, siempre que tenga operaciones similares: creación, listado, borrado, ciclo CRUD básico. El objetivo de este ejercicio es poner en práctica lo que viene a continuación, NO es un objetivo de la asignatura.
 _________________________
 
-### Ejercicio 2
-_______________
+
 1. Creado el repositorio para la aplicación. [*Enlace*](https://github.com/jmrodriguez90/CalificarEmpresas)
 2. Copia de web para la calificación de empresas con las operaciones CRUD (Create, Read, Update and Delete). [*Enlace*](https://github.com/jmrodriguez90/CalificarEmpresas/blob/master/src/lib/CalificarEmpresas.js)
 3. Copia de programa para prueba de funcionalidades
