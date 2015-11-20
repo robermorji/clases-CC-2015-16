@@ -92,6 +92,17 @@ Y dentro de GitHub (respositorio asociado) > Settings > Webhooks & Services, bus
 [Aplicación con el despliegue automático después de algunos cambios](https://i.gyazo.com/30dfed21186ee73ef0bb152c9a60a338.png): https://dry-meadow-8186.herokuapp.com/
 
 
+También pruebo con Snap CI. Para ello me registro con mi perfil de GitHub y escojo el repositorio en que estamos trabajando:
+
+![snap test](https://i.gyazo.com/717a84beda6e5b3e25787403883753cf.png)
+
+Podemos cambiar la [configuración](https://i.gyazo.com/242f28a9320467bae25916df52823c62.png), y para asociarlo con Heroku creamos un nuevo "Stage".
+
+![snap heroku](https://i.gyazo.com/b17d0c5bb1fa5b2abb3cc098ef0ad2be.png)
+
+![snap heroku passed](https://i.gyazo.com/9800997f2c13e1cfea4cbb986b38440c.png)
+
+
 
 
 
