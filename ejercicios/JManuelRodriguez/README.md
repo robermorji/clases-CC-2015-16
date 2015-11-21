@@ -8,17 +8,17 @@ Puesta en marcha de la carpeta para ejercicios.
 
 - [X] [Ejercicio 2](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/Desarrollo%20Basado%20en%20pruebas/Ejercicio2.md)
 
-- [X] [Ejercicio 3]()
+- [ ] [Ejercicio 3]()
 
-- [X] [Ejercicio 4]()
+- [ ] [Ejercicio 4]()
 
-- [X] [Ejercicio 5]()
+- [ ] [Ejercicio 5]()
 
-- [X] [Ejercicio 6]()
+- [ ] [Ejercicio 6]()
 
-- [X] [Ejercicio 7]()
+- [ ] [Ejercicio 7]()
 
-- [X] [Ejercicio 8]()
+- [ ] [Ejercicio 8]()
 
 _________________________
 
