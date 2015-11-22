@@ -9,7 +9,8 @@ _____
  - npm install docco grunt-docco --save-dev
 
 - Creación de archivo ```Gruntfile.js```
-```'use strict';
+```
+'use strict';
 
 module.exports = function(grunt) {
 
@@ -31,7 +32,8 @@ module.exports = function(grunt) {
 
   // Tarea por omisión: generar la documentación
   grunt.registerTask('default', ['docco']);
-};```
+};
+```
 
 - Habiendo creado el archivo, lo siguiente es ejecutar la documetación automática con el comando ```grunt``` desde la terminal.
 
