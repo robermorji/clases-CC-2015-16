@@ -9,20 +9,20 @@ Hacer alguna modificación a la aplicación en _node.js_ para _Heroku_, sin olvi
  - **_crearAlumno_:** permite registrar un nuevo estudiante (usuario) que puede realizar valoraciones de empresas
  - **_modificarCalificacion_:** permite actualizar o editar una valoración ya definida a una empresa
  
-La descripción e implementación de estas funcionalidades pueden observarse en el archivo [libCalificacionempresa.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/lib/libCalificacionempresa.js).
+ La descripción e implementación de estas funcionalidades pueden observarse en el archivo [libCalificacionEmpresa.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/lib/libCalificacionEmpresa.js).
 
 2. Se incluyen dos (2) nuevas rutas en la aplicación, para soportar solicitudes _HTTP_ que utilicen y apliquen las operaciones definidas en el punto anterior.
 
  - `PUT /alumno/<usr>/<nombre>/<apellido>/<extra>` que define una solicitud de registro de nuevo alumno (enviando todos los parámetros asociados al mismo)
  - `POST /calificacion/<empresa>/<alumno>/<valor>` que especifica una operación de actualización del valor de una calificación ya realizada a una empresa 
 
-Las nuevas rutas se ubican en el archivo [index.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/routes/index.js).
+ Las nuevas rutas se ubican en el archivo [index.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/routes/index.js).
 
 3. Se definen dos (2) nuevos _tests_ para las funcionalidades, verificando el registro de un nuevo alumno y la actualización de una calificación de forma exitosa.
 
-Para el registro de un nuevo alumno:
+ Para el registro de un nuevo alumno:
 
-```
+ ```
 	describe("PUT Alumno", function() {
 		it('Debería Crear Nuevo Alumno', function (done) {
 			request(app)
@@ -37,11 +37,11 @@ Para el registro de un nuevo alumno:
       		});
 		});
 	});
-```
+ ```
 
-Para la actualización de una calificación:
+ Para la actualización de una calificación:
 
-```
+ ```
 	describe("POST Calificación", function() {
 		it('Debería Modificar Calificación', function (done) {
 			request(app)
@@ -56,9 +56,9 @@ Para la actualización de una calificación:
       		});
 		});
 	});
-```
+ ```
 
-Los nuevos _tests_ se encuentran especificados en el archivo [test.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/test/test.js).
+ Los nuevos _tests_ se encuentran especificados en el archivo [test.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/test/test.js).
 
 4. Se realiza el registro en el servicio de integración continua de _Snap CI_, asociando una cuenta de _GitHub_.
 
