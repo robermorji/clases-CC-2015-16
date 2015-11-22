@@ -1,28 +1,30 @@
-##Ejercicio2
+##Ejercicio3
 Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas ellas?
 _____
 
 1. Creación del archivo package.json  para permitir que lo necesario para llevar a cabo las pruebas, esté instalado.
-	`{`
-	  `"author": "JManuel Rodríguez <jmrodriguez90@correo.ugr.es> (https://github.com/jmrodriguez90)",`
-	  `"name": "Prueba",`
-	  `"description": "Calificar empresas",`
-	  `"version": "0.0.1",`
-	  `"repository": {`
-	  `"url": "https://github.com/jmrodriguez90/CalificarEmpresas.git"`
-	  `},`
-	  `"main": "./src/testCalificarEmpresas.js",`
-	  `"scripts": {`
-	  `"test": "mocha"`
-	  `},`
-	  `"dependencies": {"sqlite3": "~3.0"},`
-	  `"devDependencies": {},`
-	  `"optionalDependencies": {},`
-	  `"engines": {`
-	  `"node": ">=0.8"`
-	  `}`
-	`}`
+	{
+	  "author": "JManuel Rodríguez <jmrodriguez90@correo.ugr.es> (https://github.com/jmrodriguez90)",
+	  "name": "Prueba",
+	  "description": "Calificar empresas",
+	  "version": "0.0.1",
+	  "repository": {
+	  "url": "https://github.com/jmrodriguez90/CalificarEmpresas.git"
+	  },
+	  "main": "./src/testCalificarEmpresas.js",
+	  "scripts": {
+	  "test": "mocha"
+	  },
+	  "dependencies": {"sqlite3": "~3.0"},
+	  "devDependencies": {},
+	  "optionalDependencies": {},
+	  "engines": {
+	  "node": ">=0.8"
+	  }
+	}
+
 2. Ejecutar `npm install` en la carpeta que contiene el package.json. Con esto se instalará lo estípulado en el package
+
 3. Ejecutar el testeo del CalificarEmpresas
  - `node testCalificarEmpresas.js`
  - Esto da como resultado lo siguiente:
@@ -110,5 +112,5 @@ _____
 	Error: SQLITE_NOTADB: file is encrypted or is not a database
 
  - *Esta prueba se hizo bajo node v0.10.37*
-#Repitiendo estos pasos con la única diferencia de cambiar la versión del node, a la versión 11 y la versión 12, se comprueba que en la versión 12 no hay ningún problema pero en la 11, no deja siquiera instalar el sqlite3
+**Repitiendo estos pasos con la única diferencia de cambiar la versión del node, a la versión 11 y la versión 12, se comprueba que en la versión 12 no hay ningún problema pero en la 11, no deja siquiera instalar el sqlite3**
 	
