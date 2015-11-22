@@ -1,22 +1,22 @@
 #Ejercicio 1
 
-Darse de alta en alg渘 servicio _PaaS_ tal como _Heroku_, _Nodejitsu_, _BlueMix_ u _OpenShift_.
+Darse de alta en alg煤n servicio _PaaS_ tal como _Heroku_, _Nodejitsu_, _BlueMix_ u _OpenShift_.
 
-###Pasos realizados para la resoluci梟 del ejercicio:
+###Pasos realizados para la resoluci贸n del ejercicio:
 
-1. Registro en servicio _PaaS_ de _OpenShift_, el cual puede realizarse desde [aqu抅(https://www.openshift.com):
+1. Registro en servicio _PaaS_ de _OpenShift_, el cual puede realizarse desde [aqu铆](https://www.openshift.com):
 
- - El registro se realiza mediante una direcci梟 de correo electr梟ico v噇ida (y la confirmaci梟 o verificaci梟 de la misma).
+ - El registro se realiza mediante una direcci贸n de correo electr贸nico v谩lida (y la confirmaci贸n o verificaci贸n de la misma).
  
- - La cuenta creada es de tipo gratuita (_free_), que luego puede ser mejorada (_upgrade_) en caso de requerir mayor cantidad de m噏uinas vituales (o potencia/capacidad en las mismas).
+ - La cuenta creada es de tipo gratuita (_free_), que luego puede ser mejorada (_upgrade_) en caso de requerir mayor cantidad de m谩quinas vituales (o potencia/capacidad en las mismas).
  
- - En las cuentas gratuitas se pueden alojar hasta tres (3) aplicaciones _web_, sin l抦ite de expiraci梟 o ning渘 pago requerido.
+ - En las cuentas gratuitas se pueden alojar hasta tres (3) aplicaciones _web_, sin l铆mite de expiraci贸n o ning煤n pago requerido.
  
- - Cada aplicaci梟 cuenta con un m噚imo de 1Gb de almacenamiento disponible.
+ - Cada aplicaci贸n cuenta con un m谩ximo de 1Gb de almacenamiento disponible.
 
-2. Registro de servicio _Paas_ de _Heroku_, el cual puede realizarse desde [aqu抅(https://www.heroku.com):
+2. Registro de servicio _Paas_ de _Heroku_, el cual puede realizarse desde [aqu铆](https://www.heroku.com):
 
- - El registro se realiza utilizando una direcci梟 de correo electr梟ico v噇ida (y la confirmaci梟 o verificaci梟 de la misma).
+ - El registro se realiza utilizando una direcci贸n de correo electr贸nico v谩lida (y la confirmaci贸n o verificaci贸n de la misma).
  
  - La cuenta creada es de tipo gratuita (_free_), que luego puede ser mejorada (_upgrade_) en caso de requerir mayor cantidad de instancias (o potencia/capacidad en las mismas).
  
@@ -24,6 +24,6 @@ Darse de alta en alg渘 servicio _PaaS_ tal como _Heroku_, _Nodejitsu_, _BlueMix_
  
  - En las cuentas gratuitas solo se pueden definir cinco (5) aplicaciones _web_.
  
- - Los _dynos_ en ejecuci梟 deben permanecer en inactividad durante seis (6) horas cada d抋 (para cuentas gratuitas).
+ - Los _dynos_ en ejecuci贸n deben permanecer en inactividad durante seis (6) horas cada d铆a (para cuentas gratuitas).
  
- - La instancia de la aplicaci梟 cuenta con un m噚imo de 512MB de _RAM_.
+ - La instancia de la aplicaci贸n cuenta con un m谩ximo de 512MB de _RAM_.
