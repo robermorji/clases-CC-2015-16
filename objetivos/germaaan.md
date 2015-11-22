@@ -60,34 +60,33 @@
 
 ### Quinta semana, 2 de noviembre 2015
 #### Objetivos principales
-- [ ] Entender el concepto de PaaS y su utilidad
-- [ ] Entender los mecanismos de despliegue de aplicaciones en un PaaS.
-- [ ] Examinar las diferencias entre las diferentes ofertas de PaaS.
+- [X] Entender el concepto de PaaS y su utilidad
+- [X] Entender los mecanismos de despliegue de aplicaciones en un PaaS.
+- [X] Examinar las diferencias entre las diferentes ofertas de PaaS.
 
 #### Objetivos adicionales
-- [ ] Trabajar con los _add-ons_ de los diferentes PaaS usados.
-- [ ] Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
+- [X] Trabajar con los _add-ons_ de los diferentes PaaS usados.
+- [X] Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
 
 ### Sexta semana, 9 de noviembre 2015
 #### Objetivos principales
-- [ ] Entender el concepto de [Base de datos como servicio](http://jj.github.io/dbaas/).
-- [ ] Estudiar los diferentes tipos de bases de datos existentes y cómo se pueden usar desde nuestras aplicaciones.
-- [ ] Examinar las diferencias entre las diferentes ofertas de DBaaS.
+- [X] Entender el concepto de [Base de datos como servicio](http://jj.github.io/dbaas/).
+- [X] Estudiar los diferentes tipos de bases de datos existentes y cómo se pueden usar desde nuestras aplicaciones.
+- [X] Examinar las diferencias entre las diferentes ofertas de DBaaS.
 
 #### Objetivos adicionales
-- [ ] Probar diferentes bases de datos NoSQL como Redis y ver la utilidad en una aplicación en la nube.
-- [ ] Entender las tags de Git y su uso para despliegues y lanzamientos.
-- [ ] Darse de alta en diferentes bases de datos en la nube que se puedan
-- usar de forma experimental.
+- [X] Probar diferentes bases de datos NoSQL como Redis y ver la utilidad en una aplicación en la nube.
+- [X] Entender las tags de Git y su uso para despliegues y lanzamientos.
+- [X] Darse de alta en diferentes bases de datos en la nube que se puedan usar de forma experimental.
 
 ### Séptima semana, 16 de noviembre 2015
 #### Objetivos principales
-- [ ] Entender el concepto de PaaS y su utilidad.
-- [ ] Entender los mecanismos de despliegue de aplicaciones en un PaaS.
-- [ ] Examinar las diferencias entre las diferentes ofertas de PaaS.
+- [X] Entender el concepto de PaaS y su utilidad.
+- [X] Entender los mecanismos de despliegue de aplicaciones en un PaaS.
+- [X] Examinar las diferencias entre las diferentes ofertas de PaaS.
 
 #### Objetivos adicionales
-- [ ] Trabajar con los _add-ons_ de los diferentes PaaS usados.
-- [ ] Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
-- [ ] Comentar cuestiones relacionadas con la segunda práctica.
-- [ ] Ponerse al día de los ejercicios del segundo tema.
+- [X] Trabajar con los _add-ons_ de los diferentes PaaS usados.
+- [X] Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
+- [X] Comentar cuestiones relacionadas con la segunda práctica.
+- [X] Ponerse al día de los ejercicios del segundo tema.
