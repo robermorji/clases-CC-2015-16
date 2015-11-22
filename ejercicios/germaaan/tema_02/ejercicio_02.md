@@ -1,12 +1,10 @@
-## Ejercicio 2
-
-#### Crear una aplicación en OpenShift y dentro de ella instalar WordPress.
-
-Una vez accedemos a OpenShift la creación de una aplicación es algo realmente sencillo, básicamente se resume en la típica instalación de *"Siguiente-Siguiente"* que comenzaremos haciendo click en **"Create you first aplication now"**.
+# Ejercicio 2
+## Crear una aplicación en OpenShift y dentro de ella instalar WordPress.
+Una vez accedemos a OpenShift la creación de una aplicación es algo realmente sencillo, básicamente se resume en la típica instalación de _"Siguiente-Siguiente"_ que comenzaremos haciendo click en **"Create you first aplication now"**.
 
 ![eje02_img01.png](https://dl.dropboxusercontent.com/s/hruurjchhg7b5h6/eje02_img01.png)
 
-OpenShift sigue el modelo de instalación de aplicaciones mediante *"cartuchos"*, selecionamos el que contenga la aplicación que queremos y esta se instala automáticamente. Para este ejercicicio vamos a elegir **"WordPress 4"**.
+OpenShift sigue el modelo de instalación de aplicaciones mediante _"cartuchos"_, selecionamos el que contenga la aplicación que queremos y esta se instala automáticamente. Para este ejercicicio vamos a elegir **"WordPress 4"**.
 
 ![eje02_img02.png](https://dl.dropboxusercontent.com/s/ku5drqqjzc6vapg/eje02_img02.png)
 
