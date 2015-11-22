@@ -4,24 +4,24 @@ _____
 
 1. Creación del archivo package.json  para permitir que lo necesario para llevar a cabo las pruebas, esté instalado.
 >{
-  "author": "JManuel Rodríguez <jmrodriguez90@correo.ugr.es> (https://github.com/jmrodriguez90)",
-  "name": "Prueba",
-  "description": "Calificar empresas",
-  "version": "0.0.1",
-  "repository": {
-  "url": "https://github.com/jmrodriguez90/CalificarEmpresas.git"
-  },
-  "main": "./src/testCalificarEmpresas.js",
-  "scripts": {
-  "test": "mocha"
-  },
-  "dependencies": {"sqlite3": "~3.0"},
-  "devDependencies": {},
-  "optionalDependencies": {},
-  "engines": {
-  "node": ">=0.8"
-  }
-}
+>  "author": "JManuel Rodríguez <jmrodriguez90@correo.ugr.es> (https://github.com/jmrodriguez90)",
+>  "name": "Prueba",
+>  "description": "Calificar empresas",
+>  "version": "0.0.1",
+>  "repository": {
+>  "url": "https://github.com/jmrodriguez90/CalificarEmpresas.git"
+>  },
+>  "main": "./src/testCalificarEmpresas.js",
+>  "scripts": {
+>  "test": "mocha"
+>  },
+>  "dependencies": {"sqlite3": "~3.0"},
+>  "devDependencies": {},
+>  "optionalDependencies": {},
+>  "engines": {
+>  "node": ">=0.8"
+>  }
+>}
 
 
 
