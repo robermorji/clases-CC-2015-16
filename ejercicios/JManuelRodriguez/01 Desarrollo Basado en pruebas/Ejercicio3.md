@@ -3,7 +3,7 @@ Ejecutar el programa en diferentes versiones del lenguaje. ¿Funciona en todas e
 _____
 
 1. Creación del archivo package.json  para permitir que lo necesario para llevar a cabo las pruebas, esté instalado.
-{
+>{
   "author": "JManuel Rodríguez <jmrodriguez90@correo.ugr.es> (https://github.com/jmrodriguez90)",
   "name": "Prueba",
   "description": "Calificar empresas",
