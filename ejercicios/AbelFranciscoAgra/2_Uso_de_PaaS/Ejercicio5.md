@@ -1,11 +1,11 @@
 #Ejercicio 5
 
-Usar como base la aplicaci梟 de ejemplo de _Heroku_ y combinarla con la aplicaci梟 en _node.js_ que se ha creado anteriormente.
+Usar como base la aplicaci贸n de ejemplo de _Heroku_ y combinarla con la aplicaci贸n en _node.js_ que se ha creado anteriormente.
  
-###Pasos realizados para la resoluci梟 del ejercicio:
+###Pasos realizados para la resoluci贸n del ejercicio:
 
-1. Actualizar las dependencias y complementos definidos en el _package.json_ de la aplicaci梟 base de _Heroku_, para incluirlos en el archivos de configuraci梟 correspondiente del programa de calificaci梟 de empresas.
+1. Actualizar las dependencias y complementos definidos en el _package.json_ de la aplicaci贸n base de _Heroku_, para incluirlos en el archivos de configuraci贸n correspondiente del programa de calificaci贸n de empresas.
 
-2. Definir un archivo [_Procfile_](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/Procfile), para la configuraci梟 de la aplicaci梟 en _Heroku_. En este caso, el _Procfile_ simplemente indica lo que se debe hacer para ejecutar la aplicaci梟 _web_:
+2. Definir un archivo [_Procfile_](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/Procfile), para la configuraci贸n de la aplicaci贸n en _Heroku_. En este caso, el _Procfile_ simplemente indica lo que se debe hacer para ejecutar la aplicaci贸n _web_:
 
  `web: node routes/index.js`

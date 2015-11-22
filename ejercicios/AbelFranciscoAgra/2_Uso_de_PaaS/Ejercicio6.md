@@ -1,30 +1,30 @@
 #Ejercicio 6
 
-Hacer alguna modificaci梟 a la aplicaci梟 en _node.js_ para _Heroku_, sin olvidar a朼dir los tests para la nueva funcionalidad, y configurar el despliegue autom噒ico a _Heroku_ usando _Snap CI_.
+Hacer alguna modificaci贸n a la aplicaci贸n en _node.js_ para _Heroku_, sin olvidar a帽adir los tests para la nueva funcionalidad, y configurar el despliegue autom谩tico a _Heroku_ usando _Snap CI_.
  
-###Pasos realizados para la resoluci梟 del ejercicio:
+###Pasos realizados para la resoluci贸n del ejercicio:
 
-1. Se incluyen en la librer抋 de calificaci梟 de empresas, dos (2) nuevas funcionalidades:
+1. Se incluyen en la librer铆a de calificaci贸n de empresas, dos (2) nuevas funcionalidades:
 
  - **_crearAlumno_:** permite registrar un nuevo estudiante (usuario) que puede realizar valoraciones de empresas
- - **_modificarCalificacion_:** permite actualizar o editar una valoraci梟 ya definida a una empresa
+ - **_modificarCalificacion_:** permite actualizar o editar una valoraci贸n ya definida a una empresa
  
-La descripci梟 e implementaci梟 de estas funcionalidades pueden observarse en el archivo [libCalificacionempresa.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/lib/libCalificacionempresa.js).
+La descripci贸n e implementaci贸n de estas funcionalidades pueden observarse en el archivo [libCalificacionempresa.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/lib/libCalificacionempresa.js).
 
-2. Se incluyen dos (2) nuevas rutas en la aplicaci梟, para soportar solicitudes _HTTP_ que utilicen y apliquen las operaciones definidas en el punto anterior.
+2. Se incluyen dos (2) nuevas rutas en la aplicaci贸n, para soportar solicitudes _HTTP_ que utilicen y apliquen las operaciones definidas en el punto anterior.
 
- - `PUT /alumno/<usr>/<nombre>/<apellido>/<extra>` que define una solicitud de registro de nuevo alumno (enviando todos los par噈etros asociados al mismo)
- - `POST /calificacion/<empresa>/<alumno>/<valor>` que especifica una operaci梟 de actualizaci梟 del valor de una calificaci梟 ya realizada a una empresa 
+ - `PUT /alumno/<usr>/<nombre>/<apellido>/<extra>` que define una solicitud de registro de nuevo alumno (enviando todos los par谩metros asociados al mismo)
+ - `POST /calificacion/<empresa>/<alumno>/<valor>` que especifica una operaci贸n de actualizaci贸n del valor de una calificaci贸n ya realizada a una empresa 
 
 Las nuevas rutas se ubican en el archivo [index.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/routes/index.js).
 
-3. Se definen dos (2) nuevos _tests_ para las funcionalidades, verificando el registro de un nuevo alumno y la actualizaci梟 de una calificaci梟 de forma exitosa.
+3. Se definen dos (2) nuevos _tests_ para las funcionalidades, verificando el registro de un nuevo alumno y la actualizaci贸n de una calificaci贸n de forma exitosa.
 
 Para el registro de un nuevo alumno:
 
 ```
 	describe("PUT Alumno", function() {
-		it('Deber抋 Crear Nuevo Alumno', function (done) {
+		it('Deber铆a Crear Nuevo Alumno', function (done) {
 			request(app)
 			.put('/alumno/Usr4/Nombre4/Apellidos4/Extra4')
 			.expect(200,done)
@@ -39,11 +39,11 @@ Para el registro de un nuevo alumno:
 	});
 ```
 
-Para la actualizaci梟 de una calificaci梟:
+Para la actualizaci贸n de una calificaci贸n:
 
 ```
-	describe("POST Calificaci梟", function() {
-		it('Deber抋 Modificar Calificaci梟', function (done) {
+	describe("POST Calificaci贸n", function() {
+		it('Deber铆a Modificar Calificaci贸n', function (done) {
 			request(app)
 			.post('/calificacion/Emp4/Usr1/1')
 			.expect(200,done)
@@ -60,20 +60,20 @@ Para la actualizaci梟 de una calificaci梟:
 
 Los nuevos _tests_ se encuentran especificados en el archivo [test.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/test/test.js).
 
-4. Se realiza el registro en el servicio de integraci梟 continua de _Snap CI_, asociando una cuenta de _GitHub_.
+4. Se realiza el registro en el servicio de integraci贸n continua de _Snap CI_, asociando una cuenta de _GitHub_.
 
-5. Se incluye el repositorio correspondiente con la aplicaci梟 de calificaci梟 de empresas en _Snap CI_, lo cual ejecuta autom噒icamente el primer proceso de integraci梟 continua (_build_).
+5. Se incluye el repositorio correspondiente con la aplicaci贸n de calificaci贸n de empresas en _Snap CI_, lo cual ejecuta autom谩ticamente el primer proceso de integraci贸n continua (_build_).
 
-6. Se configura la integraci梟 continua en _Snap CI_ para que ejecute los _tests_ (_mocha_) en cada nueva actualizaci梟 del c梔igo en el repositorio.
+6. Se configura la integraci贸n continua en _Snap CI_ para que ejecute los _tests_ (_mocha_) en cada nueva actualizaci贸n del c贸digo en el repositorio.
 
-7. Para integrar _Snap CI_ con _Heroku_ de forma autom噒ica, se define un nuevo paso (_stage_) en la secuencia de la integraci梟 continua:
+7. Para integrar _Snap CI_ con _Heroku_ de forma autom谩tica, se define un nuevo paso (_stage_) en la secuencia de la integraci贸n continua:
 
- - En la configuraci梟 del nuevo _stage_ en _Snap CI_, se indica que se va a realizar un despliegue b噑ico en _Heroku_
+ - En la configuraci贸n del nuevo _stage_ en _Snap CI_, se indica que se va a realizar un despliegue b谩sico en _Heroku_
  - Se indica la cuenta de _Heroku_ con la que se van a realizar los despliegues
- - Se puede utilizar en una aplicaci梟 ya creada en _Heroku_, o definir una nueva. En este caso, se define una nueva aplicaci梟.
+ - Se puede utilizar en una aplicaci贸n ya creada en _Heroku_, o definir una nueva. En este caso, se define una nueva aplicaci贸n.
 
-8. Al guardar la configuraci梟 del nuevo paso, _Snap CI_ inicia de forma autom噒ica una nueva ejecuci梟 de la integraci梟 continua, que ahora incluye el despliegue de la aplicaci梟 en _Heroku_.
+8. Al guardar la configuraci贸n del nuevo paso, _Snap CI_ inicia de forma autom谩tica una nueva ejecuci贸n de la integraci贸n continua, que ahora incluye el despliegue de la aplicaci贸n en _Heroku_.
 
-Ahora, cada vez que se ejecute una actualizaci梟 del c梔igo en _GitHub_ (_push_), se activa la integraci梟 continua en _Snap CI_, que culmina en el despliegue autom噒ico de la aplicaci梟 en _Heroku_.
+Ahora, cada vez que se ejecute una actualizaci贸n del c贸digo en _GitHub_ (_push_), se activa la integraci贸n continua en _Snap CI_, que culmina en el despliegue autom谩tico de la aplicaci贸n en _Heroku_.
 
-El estado actual de la ejecuci梟 de la integraci梟 continua sobre la aplicaci梟 puede observarse en la medalla (_badge_) de _Snap CI_, ubicado en la p噂ina principal del repositorio.
+El estado actual de la ejecuci贸n de la integraci贸n continua sobre la aplicaci贸n puede observarse en la medalla (_badge_) de _Snap CI_, ubicado en la p谩gina principal del repositorio.

@@ -1,23 +1,23 @@
 #Ejercicio 3
 
-Crear pruebas para las diferentes rutas de la aplicaci梟 (Programa de Calificaci梟 de Empresas).
+Crear pruebas para las diferentes rutas de la aplicaci贸n (Programa de Calificaci贸n de Empresas).
  
-###Pasos realizados para la resoluci梟 del ejercicio:
+###Pasos realizados para la resoluci贸n del ejercicio:
 
-1. Se define una estructura de aplicaci梟 _web_ utilizando _Express_
+1. Se define una estructura de aplicaci贸n _web_ utilizando _Express_
 
  `express calificacionEmpresas_2`
  
-2. Se actualiza el archivo [index.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/routes/index.js) con la definici梟 de las posibles operaciones soportadas en la aplicaci梟. Estas operaciones son:
+2. Se actualiza el archivo [index.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/routes/index.js) con la definici贸n de las posibles operaciones soportadas en la aplicaci贸n. Estas operaciones son:
 
- - `PUT /empresa/<id>/<nombre>/<direccion>/<area>` que define una solicitud de creaci梟 de nueva empresa (enviando todos los par噈etros asociados a la misma)
- - `PUT /calificacion/<empresa>/<alumno>/<valor>` que especifica la creaci梟 de una nueva calificaci梟 de alumno a empresa
- - `DELETE /calificacion/<empresa>/<alumno>` que indica la eliminaci梟 de una calificaci梟 ya registrada en la base de datos
- - `GET /ranking` que define el listado de las empresas mejor valoradas seg渘 las calificaciones de los alumnos
+ - `PUT /empresa/<id>/<nombre>/<direccion>/<area>` que define una solicitud de creaci贸n de nueva empresa (enviando todos los par谩metros asociados a la misma)
+ - `PUT /calificacion/<empresa>/<alumno>/<valor>` que especifica la creaci贸n de una nueva calificaci贸n de alumno a empresa
+ - `DELETE /calificacion/<empresa>/<alumno>` que indica la eliminaci贸n de una calificaci贸n ya registrada en la base de datos
+ - `GET /ranking` que define el listado de las empresas mejor valoradas seg煤n las calificaciones de los alumnos
  - `GET /calificaciones/<empresa>` que especifica el listado de todas las calificaciones de alumnos asociadas a una determinada empresa
  
-3. Se actualiza el archivo [test.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/test/test.js) con la especificaci梟 de las nuevas pruebas unitarias del sistema, utilizando la librer抋 _supertest_. Se incluye una prueba de 巟ito para cada funcionalidad implementada.
+3. Se actualiza el archivo [test.js](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/test/test.js) con la especificaci贸n de las nuevas pruebas unitarias del sistema, utilizando la librer铆a _supertest_. Se incluye una prueba de 茅xito para cada funcionalidad implementada.
 
-4. Se incluyen en el archivo [package.json](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/package.json) las librer抋s de desarrollo correspondientes (especialmente _Express_ y _supertest_).
+4. Se incluyen en el archivo [package.json](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/package.json) las librer铆as de desarrollo correspondientes (especialmente _Express_ y _supertest_).
 
-La estructura general del ejercicio se puede ver en el repositorio correspondiente: [Calificaci梟 Empresas 2](https://github.com/jfrancisco4490/calificacionEmpresa_2)
+La estructura general del ejercicio se puede ver en el repositorio correspondiente: [Calificaci贸n Empresas 2](https://github.com/jfrancisco4490/calificacionEmpresa_2)
