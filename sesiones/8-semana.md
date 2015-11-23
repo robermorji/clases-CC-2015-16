@@ -20,7 +20,14 @@ asistiera todo el mundo.
 * Descargar los *toolbelts* de los diferentes PaaS y usarlos para
   despliegue automático.
 * Altas en otros servicios que se puedan integrar en un PaaS.
-* Experimentar con despliegues automáticos. 
+* Experimentar con despliegues automáticos.
+
+## Material  de clase
+
+* *Teoría*:
+  [Material de este  tema](http://jj.github.io/CC/documentos/temas/PaaS)
+
+* *Práctica*: [Tercer hito](http://jj.github.io/CC/documentos/practicas/3.PaaS)
 
 ##Siguiente semana
 
