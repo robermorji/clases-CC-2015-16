@@ -14,7 +14,7 @@ Puesta en marcha de la carpeta para ejercicios.
 
 - [X] [Ejercicio 5](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/01%20Desarrollo%20Basado%20en%20pruebas/Ejercicio5.md)
 
-- [ ] [Ejercicio 6]()
+- [X] [Ejercicio 6](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/01%20Desarrollo%20Basado%20en%20pruebas/Ejercicio6.md)
 
 - [ ] [Ejercicio 7]()
 
