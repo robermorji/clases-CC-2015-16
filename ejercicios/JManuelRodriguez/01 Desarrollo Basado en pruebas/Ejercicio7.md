@@ -4,6 +4,6 @@ ___
 
 * Se instala Mocha con el comando ```npm install mocha```
 
-* Se crea el directorio test y el archivo [test.js](https://github.com/jmrodriguez90/CalificarEmpresas/test/test.js) para mocha
+* Se crea el directorio test y el archivo [test.js](https://github.com/jmrodriguez90/CalificarEmpresas/blob/master/test/test.js) para mocha
 
 * Se ejecuta el comando ```npm test``` para ejecutar el test con mocha
