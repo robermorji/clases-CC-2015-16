@@ -150,7 +150,7 @@ pg.connect(conString, function(err, client, done) {
     	client.end();
     	
     	console.log("");
-		console.log("[INFO] Terminando Ejecucion de Pruebas!!!");
+    	console.log("[INFO] Terminando Ejecucion de Pruebas!!!");
 		
 	});
     
