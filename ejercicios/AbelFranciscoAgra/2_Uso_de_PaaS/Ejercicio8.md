@@ -14,8 +14,8 @@ Crear una aplicación mínima y usar un _buildpack_ no estándar para desplegarl
 
 3. Definir un archivo _Gruntfile.js_ con una tarea específica llamada _heroku_, de la siguiente manera:
 
- `grunt.registerTask('heroku:development', ['auto_install', 'jshint']);` (para ejecutar si el ambiente de despliegue es de desarrollo)
- `grunt.registerTask('heroku:production', ['auto_install', 'concat', 'uglify', 'jshint']);` (actividades a ejecutar si el ambiente es de producción)
+ - `grunt.registerTask('heroku:development', ['auto_install', 'jshint']);` (para ejecutar si el ambiente de despliegue es de desarrollo)
+ - `grunt.registerTask('heroku:production', ['auto_install', 'concat', 'uglify', 'jshint']);` (actividades a ejecutar si el ambiente es de producción)
  
 4. Añadir dependencias de _Grunt_ en el _package.json_
 

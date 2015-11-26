@@ -49,33 +49,33 @@
   
  e. Para el manejo de listas
  
-  `LPUSH lista1 "elem1"` para colocar un nuevo elemento al principio de la lista
-  `RPUSH lista1 "elem2"` para colocar un elemento al final de la lista
-  `LRANGE lista1 0 4` para tomar un subconjunto de la lista, desde la primera posición hasta la quinta (si se coloca _-1_, se toman todos los elementos hasta el final de la lista)
-  `LLEN lista1` retorna el número de elementos en la lista
-  `LPOP lista1` toma el primer elemento de la lista (lo remueve de la misma)
-  `RPOP lista1` remueve el último elemento de la lista y lo devuelve
+  - `LPUSH lista1 "elem1"` para colocar un nuevo elemento al principio de la lista
+  - `RPUSH lista1 "elem2"` para colocar un elemento al final de la lista
+  - `LRANGE lista1 0 4` para tomar un subconjunto de la lista, desde la primera posición hasta la quinta (si se coloca _-1_, se toman todos los elementos hasta el final de la lista)
+  - `LLEN lista1` retorna el número de elementos en la lista
+  - `LPOP lista1` toma el primer elemento de la lista (lo remueve de la misma)
+  - `RPOP lista1` remueve el último elemento de la lista y lo devuelve
 
  f. Para el manejo de conjuntos
  
-  `SADD conjunto1 "elem1"` para agregar un nuevo elemento al conjunto
-  `SREM conjunto1 "elem1"` para eliminar el elemento identificado como _elem1_ del _conjunto1_
-  `SISMEMBER conjunto1 "elem2"` para determinar si el elemento _elem2_ forma parte del _conjunto1_ (devuelve _1_ si pertenece, _0_ si no)
-  `SMEMBERS conjunto1` devuelve todos los elementos que pertenecen al _conjunto1_
-  `SUNION conjunto1 conjunto2` combina los elementos de los conjuntos y los devuelve como una _lista_
+  - `SADD conjunto1 "elem1"` para agregar un nuevo elemento al conjunto
+  - `SREM conjunto1 "elem1"` para eliminar el elemento identificado como _elem1_ del _conjunto1_
+  - `SISMEMBER conjunto1 "elem2"` para determinar si el elemento _elem2_ forma parte del _conjunto1_ (devuelve _1_ si pertenece, _0_ si no)
+  - `SMEMBERS conjunto1` devuelve todos los elementos que pertenecen al _conjunto1_
+  - `SUNION conjunto1 conjunto2` combina los elementos de los conjuntos y los devuelve como una _lista_
   
  g. Para el manejo de _Hashes_ (tipos complejos)
  
-  `HSET test2:4000 atrib1 "val1"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib1_ con valor _val1_
-  `HSET test2:4000 atrib2 "val2"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val2_
-  `HSET test2:4000 atrib3 "val3"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val3_
+  - `HSET test2:4000 atrib1 "val1"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib1_ con valor _val1_
+  - `HSET test2:4000 atrib2 "val2"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val2_
+  - `HSET test2:4000 atrib3 "val3"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val3_
   
   Las instrucciones anteriores son equivalentes a
   
-  `HSET test2:4000 atrib1 "val1" atrib2 "val2" atrib3 "val3"`
+   `HSET test2:4000 atrib1 "val1" atrib2 "val2" atrib3 "val3"`
   
-  `HGETALL test2:4000` para obtener todos los valores de atributos del "objeto" _test2_ identificado como 4000
-  `HGET test2:4000 atrib2` para obtener unicamente el valor de _atrib2_
+  - `HGETALL test2:4000` para obtener todos los valores de atributos del "objeto" _test2_ identificado como 4000
+  - `HGET test2:4000 atrib2` para obtener unicamente el valor de _atrib2_
 
  5. Se define un archivo de prueba, llamado [_testRedis.js_](https://github.com/JJ/clases-CC-2015-16/blob/master/ejercicios/AbelFranciscoAgra/2_Uso_de_PaaS/testRedis.js), con algunas pruebas de las funcionalidades básicas indicadas en el punto anterior, utilizando _node.js_.
  
