@@ -70,9 +70,9 @@
   - `HSET test2:4000 atrib2 "val2"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val2_
   - `HSET test2:4000 atrib3 "val3"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val3_
   
-  Las instrucciones anteriores son equivalentes a
+   Las instrucciones anteriores son equivalentes a
   
-   `HSET test2:4000 atrib1 "val1" atrib2 "val2" atrib3 "val3"`
+    `HSET test2:4000 atrib1 "val1" atrib2 "val2" atrib3 "val3"`
   
   - `HGETALL test2:4000` para obtener todos los valores de atributos del "objeto" _test2_ identificado como 4000
   - `HGET test2:4000 atrib2` para obtener unicamente el valor de _atrib2_
