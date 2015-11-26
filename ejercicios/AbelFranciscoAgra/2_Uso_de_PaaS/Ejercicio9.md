@@ -69,15 +69,11 @@
   - `HSET test2:4000 atrib1 "val1"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib1_ con valor _val1_
   - `HSET test2:4000 atrib2 "val2"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val2_
   - `HSET test2:4000 atrib3 "val3"` indica que al elemento _test2_ identificado con el "código" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val3_
-  
-   Las instrucciones anteriores son equivalentes a
-  
-    `HSET test2:4000 atrib1 "val1" atrib2 "val2" atrib3 "val3"`
-  
+  - `HSET test2:4000 atrib1 "val1" atrib2 "val2" atrib3 "val3"` es equivalente a las tres (3) instrucciones anteriores
   - `HGETALL test2:4000` para obtener todos los valores de atributos del "objeto" _test2_ identificado como 4000
   - `HGET test2:4000 atrib2` para obtener unicamente el valor de _atrib2_
 
- 5. Se define un archivo de prueba, llamado [_testRedis.js_](https://github.com/JJ/clases-CC-2015-16/blob/master/ejercicios/AbelFranciscoAgra/2_Uso_de_PaaS/testRedis.js), con algunas pruebas de las funcionalidades básicas indicadas en el punto anterior, utilizando _node.js_.
+5. Se define un archivo de prueba, llamado [_testRedis.js_](https://github.com/JJ/clases-CC-2015-16/blob/master/ejercicios/AbelFranciscoAgra/2_Uso_de_PaaS/testRedis.js), con algunas pruebas de las funcionalidades básicas indicadas en el punto anterior, utilizando _node.js_.
  
   Para ejecutar el programa:
   
