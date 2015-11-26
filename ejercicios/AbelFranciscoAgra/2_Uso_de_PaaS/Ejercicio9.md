@@ -1,14 +1,14 @@
 #Ejercicio 9
 
-- Instalar o darse de alta en un servicio _Redis_ en la nube y realizar sobre 巐 las operaciones b噑icas desde el panel de control.
+- Instalar o darse de alta en un servicio _Redis_ en la nube y realizar sobre 茅l las operaciones b谩sicas desde el panel de control.
 
-- Instalar un cliente de l抧ea de 梤denes de _Redis_ o un cliente _REST_ y realizar desde 巐 las operaciones b噑icas de creaci梟 y lectura de informaci梟.
+- Instalar un cliente de l铆nea de 贸rdenes de _Redis_ o un cliente _REST_ y realizar desde 茅l las operaciones b谩sicas de creaci贸n y lectura de informaci贸n.
 
-- Ejecutar ejemplos de cualquier lenguaje de programaci梟 sobre la instalaci梟 realizada.
+- Ejecutar ejemplos de cualquier lenguaje de programaci贸n sobre la instalaci贸n realizada.
  
-###Pasos realizados para la resoluci梟 del ejercicio:
+###Pasos realizados para la resoluci贸n del ejercicio:
 
-**Nota:** instalaci梟 de _Redis_ realizada en _MacOS X_
+**Nota:** instalaci贸n de _Redis_ realizada en _MacOS X_
 
 1. Instalar componentes y dependencias necesarias de _Redis_, utilizando el gestor _Homebrew_:
 
@@ -18,7 +18,7 @@
 
  `redis-server <direccion_config_redis>`
  
-3. Para iniciar un cliente de l抧ea de comandos e interactuar con el servidor
+3. Para iniciar un cliente de l铆nea de comandos e interactuar con el servidor
 
  `redis-cli`
  
@@ -38,7 +38,7 @@
  
   `DEL test1`
   
- d. Para incrementar (de forma at梞ica) el valor num巖ico de una clave
+ d. Para incrementar (de forma at贸mica) el valor num茅rico de una clave
  
   ```
   SET test2 4
@@ -51,10 +51,10 @@
  
   `LPUSH lista1 "elem1"` para colocar un nuevo elemento al principio de la lista
   `RPUSH lista1 "elem2"` para colocar un elemento al final de la lista
-  `LRANGE lista1 0 4` para tomar un subconjunto de la lista, desde la primera posici梟 hasta la quinta (si se coloca _-1_, se toman todos los elementos hasta el final de la lista)
-  `LLEN lista1` retorna el n渕ero de elementos en la lista
+  `LRANGE lista1 0 4` para tomar un subconjunto de la lista, desde la primera posici贸n hasta la quinta (si se coloca _-1_, se toman todos los elementos hasta el final de la lista)
+  `LLEN lista1` retorna el n煤mero de elementos en la lista
   `LPOP lista1` toma el primer elemento de la lista (lo remueve de la misma)
-  `RPOP lista1` remueve el 渓timo elemento de la lista y lo devuelve
+  `RPOP lista1` remueve el 煤ltimo elemento de la lista y lo devuelve
 
  f. Para el manejo de conjuntos
  
@@ -66,9 +66,9 @@
   
  g. Para el manejo de _Hashes_ (tipos complejos)
  
-  `HSET test2:4000 atrib1 "val1"` indica que al elemento _test2_ identificado con el "c梔igo" 4000, se le va a asignar una variable llamada _atrib1_ con valor _val1_
-  `HSET test2:4000 atrib2 "val2"` indica que al elemento _test2_ identificado con el "c梔igo" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val2_
-  `HSET test2:4000 atrib3 "val3"` indica que al elemento _test2_ identificado con el "c梔igo" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val3_
+  `HSET test2:4000 atrib1 "val1"` indica que al elemento _test2_ identificado con el "c贸digo" 4000, se le va a asignar una variable llamada _atrib1_ con valor _val1_
+  `HSET test2:4000 atrib2 "val2"` indica que al elemento _test2_ identificado con el "c贸digo" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val2_
+  `HSET test2:4000 atrib3 "val3"` indica que al elemento _test2_ identificado con el "c贸digo" 4000, se le va a asignar una variable llamada _atrib2_ con valor _val3_
   
   Las instrucciones anteriores son equivalentes a
   
@@ -77,7 +77,7 @@
   `HGETALL test2:4000` para obtener todos los valores de atributos del "objeto" _test2_ identificado como 4000
   `HGET test2:4000 atrib2` para obtener unicamente el valor de _atrib2_
 
- 5. Se define un archivo de prueba, llamado [_testRedis.js_](https://github.com/JJ/clases-CC-2015-16/blob/master/ejercicios/AbelFranciscoAgra/2_Uso_de_PaaS/testRedis.js), con algunas pruebas de las funcionalidades b噑icas indicadas en el punto anterior, utilizando _node.js_.
+ 5. Se define un archivo de prueba, llamado [_testRedis.js_](https://github.com/JJ/clases-CC-2015-16/blob/master/ejercicios/AbelFranciscoAgra/2_Uso_de_PaaS/testRedis.js), con algunas pruebas de las funcionalidades b谩sicas indicadas en el punto anterior, utilizando _node.js_.
  
   Para ejecutar el programa:
   

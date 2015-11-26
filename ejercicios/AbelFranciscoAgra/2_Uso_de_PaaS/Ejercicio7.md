@@ -1,17 +1,17 @@
 #Ejercicio 7
 
-Preparar la aplicaci梟 con la que se ha venido trabajando hasta este momento para ejecutarse en un _PaaS_, el que se haya elegido. 
+Preparar la aplicaci贸n con la que se ha venido trabajando hasta este momento para ejecutarse en un _PaaS_, el que se haya elegido. 
  
-###Pasos realizados para la resoluci梟 del ejercicio:
+###Pasos realizados para la resoluci贸n del ejercicio:
 
-1. Incluir un _script_ para ser ejecutado luego de instalar las dependencias de la aplicaci梟 (_postinstall_ en _package.json_). Este script permite crear el archivo de base de datos de _sqlite3_ e inicializarlo con el esquema correspondiente.
+1. Incluir un _script_ para ser ejecutado luego de instalar las dependencias de la aplicaci贸n (_postinstall_ en _package.json_). Este script permite crear el archivo de base de datos de _sqlite3_ e inicializarlo con el esquema correspondiente.
 
- El archivo de configuraci梟 con los comandos de carga de base de datos se puede acceder desde [aqu抅(https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/config/config_bd.sh).
+ El archivo de configuraci贸n con los comandos de carga de base de datos se puede acceder desde [aqu铆](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/config/config_bd.sh).
  
- El cambio en la configuraci梟 se encuentra especificado en el archivo [_package.json_](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/package.json).
+ El cambio en la configuraci贸n se encuentra especificado en el archivo [_package.json_](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/package.json).
  
-2. Agregar al repositorio del proyecto el directorio _bin_, en el cual se encuentra el archivo que configura la publicaci梟 y accesos al servicio _web_ (puerto, variables de entorno, etc.).
+2. Agregar al repositorio del proyecto el directorio _bin_, en el cual se encuentra el archivo que configura la publicaci贸n y accesos al servicio _web_ (puerto, variables de entorno, etc.).
 
- El archivo anterior puede accederse desde [aqu抅(https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/bin/www).
+ El archivo anterior puede accederse desde [aqu铆](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/bin/www).
 
-3. Actualizar el contenido del repositorio (_push_), lo cual activa la integraci梟 continua en _Snap CI_ y permite desplegar la aplicaci梟 en _Heroku_ de forma autom噒ica.
+3. Actualizar el contenido del repositorio (_push_), lo cual activa la integraci贸n continua en _Snap CI_ y permite desplegar la aplicaci贸n en _Heroku_ de forma autom谩tica.

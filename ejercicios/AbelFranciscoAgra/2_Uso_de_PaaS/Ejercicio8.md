@@ -1,23 +1,23 @@
 #Ejercicio 8
 
-Crear una aplicaci梟 m抧ima y usar un _buildpack_ no est噉dar para desplegarla en _Heroku_.
+Crear una aplicaci贸n m铆nima y usar un _buildpack_ no est谩ndar para desplegarla en _Heroku_.
  
-###Pasos realizados para la resoluci梟 del ejercicio:
+###Pasos realizados para la resoluci贸n del ejercicio:
 
-1. Tras clonar el repositorio con el ejemplo de prueba de _Heroku_ para _node.js_, se crea la aplicacion y se le especifica el _buildpack_ a utilizar. En este caso, es un _buildpack_ que utilizar _Grunt_ para aplicar tareas sobre los procesos de compilaci梟, revisi梟 de c梔igo, etc.
+1. Tras clonar el repositorio con el ejemplo de prueba de _Heroku_ para _node.js_, se crea la aplicacion y se le especifica el _buildpack_ a utilizar. En este caso, es un _buildpack_ que utilizar _Grunt_ para aplicar tareas sobre los procesos de compilaci贸n, revisi贸n de c贸digo, etc.
 
  `heroku apps:create example-nodejs-buildpack --region eu --buildpack https://github.com/mbuchetics/heroku-buildpack-nodejs-grunt.git`
 
-2. Actualizar la variable de entorno _NODE-ENV_, indicando que el ambiente es de producci梟:
+2. Actualizar la variable de entorno _NODE-ENV_, indicando que el ambiente es de producci贸n:
 
  `heroku config:set NODE_ENV=production`
 
-3. Definir un archivo _Gruntfile.js_ con una tarea espec抐ica llamada _heroku_, de la siguiente manera:
+3. Definir un archivo _Gruntfile.js_ con una tarea espec铆fica llamada _heroku_, de la siguiente manera:
 
  `grunt.registerTask('heroku:development', ['auto_install', 'jshint']);` (para ejecutar si el ambiente de despliegue es de desarrollo)
- `grunt.registerTask('heroku:production', ['auto_install', 'concat', 'uglify', 'jshint']);` (actividades a ejecutar si el ambiente es de producci梟)
+ `grunt.registerTask('heroku:production', ['auto_install', 'concat', 'uglify', 'jshint']);` (actividades a ejecutar si el ambiente es de producci贸n)
  
-4. A朼dir dependencias de _Grunt_ en el _package.json_
+4. A帽adir dependencias de _Grunt_ en el _package.json_
 
  ```
    "dependencies": {
@@ -35,5 +35,5 @@ Crear una aplicaci梟 m抧ima y usar un _buildpack_ no est噉dar para desplegarla e
 
  `git push heroku master`
  
-La aplicaci梟 b噑ica de _node.js_ desplegada con el _buildpack_ no est噉dar se puede acceder desde [aqu抅(https://example-nodejs-buildpack.herokuapp.com/).
+La aplicaci贸n b谩sica de _node.js_ desplegada con el _buildpack_ no est谩ndar se puede acceder desde [aqu铆](https://example-nodejs-buildpack.herokuapp.com/).
 

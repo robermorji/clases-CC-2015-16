@@ -1,20 +1,20 @@
 #Ejercicio 10
 
-Realizar un peque杘 programa, en el lenguaje elegido y sobre la base de datos "tradicional" elegida (_PostgreSQL_ o cualquier otro online) que realice el ciclo b噑ico de una base de datos. Puede ser la aplicaci梟 de calificaci梟 de empresas realizada anteriormente.
+Realizar un peque帽o programa, en el lenguaje elegido y sobre la base de datos "tradicional" elegida (_PostgreSQL_ o cualquier otro online) que realice el ciclo b谩sico de una base de datos. Puede ser la aplicaci贸n de calificaci贸n de empresas realizada anteriormente.
 
-###Pasos realizados para la resoluci梟 del ejercicio:
+###Pasos realizados para la resoluci贸n del ejercicio:
 
-1. Se define un archivo de prueba, llamado [_testPostgreSQL.js_](https://github.com/JJ/clases-CC-2015-16/blob/master/ejercicios/AbelFranciscoAgra/2_Uso_de_PaaS/testPostgreSQL.js), con algunas pruebas de las funcionalidades b噑icas de un servicio de base de datos (Consultas, Registros, Actualizaciones y Eliminaciones), utilizando _node.js_.
+1. Se define un archivo de prueba, llamado [_testPostgreSQL.js_](https://github.com/JJ/clases-CC-2015-16/blob/master/ejercicios/AbelFranciscoAgra/2_Uso_de_PaaS/testPostgreSQL.js), con algunas pruebas de las funcionalidades b谩sicas de un servicio de base de datos (Consultas, Registros, Actualizaciones y Eliminaciones), utilizando _node.js_.
 
  Las pruebas que implementa el programa anterior son:
  
- - Creaci梟 de nueva empresa
+ - Creaci贸n de nueva empresa
  - Registro de nuevo alumno
- - Definici梟 de nueva calificaci梟
+ - Definici贸n de nueva calificaci贸n
  - Ranking de empresas
  - Listado de calificaciones de una empresa
- - Actualizaci梟 de calificaci梟 ya registrada
- - Eliminaci梟 de calificaci梟
+ - Actualizaci贸n de calificaci贸n ya registrada
+ - Eliminaci贸n de calificaci贸n
  
 **Nota:** Para ejecutar el programa:
   
@@ -22,18 +22,18 @@ Realizar un peque杘 programa, en el lenguaje elegido y sobre la base de datos "t
   
  `npm install pg --save`
    
-- Actualizar el archivo _testPostgreSQL.js_ con el _string_ de conexi梟 correspondiente a la instalaci梟 de _PostgreSQL_ que se desee utilizar en las pruebas. El _string_ de conexi梟 es de la forma:
+- Actualizar el archivo _testPostgreSQL.js_ con el _string_ de conexi贸n correspondiente a la instalaci贸n de _PostgreSQL_ que se desee utilizar en las pruebas. El _string_ de conexi贸n es de la forma:
 
- `postgres://<usuario>:<contrase朼>@<host>:<puerto>/<nombre_base_datos>`
+ `postgres://<usuario>:<contrase帽a>@<host>:<puerto>/<nombre_base_datos>`
 
 - Iniciar el servidor _PostgreSQL_
   
  `postgres -D <directorio_instalacion_postgreSQL>`
    
-- Ejecutar el esquema para calificaci梟 de empresas. El esquema puede ser consultado [aqu抅(https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/db/creacionTablasBD.sql).
+- Ejecutar el esquema para calificaci贸n de empresas. El esquema puede ser consultado [aqu铆](https://github.com/jfrancisco4490/calificacionEmpresa_2/blob/master/db/creacionTablasBD.sql).
 
  `psql -d <nombre_base_datos> -f <archivo_definicion_esquema>`
  
- En `<nombre_base_datos>` se puede colocar un _string_ de conexi梟 con el formato presentado anteriormente.
+ En `<nombre_base_datos>` se puede colocar un _string_ de conexi贸n con el formato presentado anteriormente.
    
 - Ejecutar `node testPostgreSQL.js` (o `npm start` si se ha configurado en el archivo _package.json_)
