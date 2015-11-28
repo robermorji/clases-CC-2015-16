@@ -113,7 +113,7 @@ Para esta parte usaré el cliente de linea de comandos que incluye la base de da
 
 ![](http://i.imgur.com/gXup0T9.png)
 
-****
+**Ejecutar ejemplos de cualquier lenguaje de programación sobre la instalación realizada**
 
 En lugar de hacer un ejemplo concreto para este ejercicio, podemos usar como ejemplo el cógigo realizado para el proyecto de la asignatura, pues se utiliza Redis.
 Se puede ver como se insertan objetos en la base de datos en el fichero de los [Chats](https://github.com/segura2010/CC-Proyecto-OpenSecureChat/blob/master/lib/Chat.js), y como conectar a la base de datos (preparado por si es en local o una base de datos externa configurada en una variable de entorno) en [el fichero principal](https://github.com/segura2010/CC-Proyecto-OpenSecureChat/blob/master/app.js) de la aplicación.
@@ -121,6 +121,8 @@ En esta aplicación también se puede ver como usar la base de datos Mongo.
 
 
 ### Ejercicio 9
+
+**Realizar un pequeño programa, en el lenguaje elegido y sobre la base de datos "tradicional" elegida (PostgreSQL o cualquier otro online) que realice el ciclo básico de una base de datos. Puede ser la aplicación de calificación de empresas realizada anteriormente.**
 
 La aplicación para este ejercicio se ha subido al [siguiente repositorio de Github](https://github.com/segura2010/CC-CalificacionEmpresas-PG).
 
