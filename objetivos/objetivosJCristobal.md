@@ -84,13 +84,13 @@ Objetivos adicionales
 
 # Objetivos de la semana de 9 de Noviembre
 
-* []  Entender el concepto de Base de datos como servicio
+* [x]  Entender el concepto de Base de datos como servicio
 * [X]  Estudiar los diferentes tipos de bases de datos existentes y cómo se pueden usar desde nuestras aplicaciones.
-* []  Examinar las diferencias entre las diferentes ofertas de DBaaS
+* [x]  Examinar las diferencias entre las diferentes ofertas de DBaaS
 
-* []  Probar diferentes bases de datos NoSQL como Redis y ver la utilidad en una aplicación en la nube.
-* []  Entender las tags de Git y su uso para despliegues y lanzamientos.
-* []  Darse de alta en diferentes bases de datos en la nube que se puedan usar de forma experimental.
+* [x]  Probar diferentes bases de datos NoSQL como Redis y ver la utilidad en una aplicación en la nube.
+* [x]  Entender las tags de Git y su uso para despliegues y lanzamientos.
+* [x]  Darse de alta en diferentes bases de datos en la nube que se puedan usar de forma experimental.
 
 
 # Objetivos de la semana de 16 de Noviembre
@@ -104,6 +104,15 @@ Objetivos adicionales
 * []  Ponerse al día de los ejercicios del segundo tema.
 
 
+# Objetivos de la semana de 23 de Noviembre
+
+* [x]  Entender la definición de la infraestructura virtual en PaaS.
+* []  Examinar los componentes que se pueden usar en una aplicación desplegada en un PaaS.
+
+* []  Alta en diferentes PaaS y examinar sus parecidos y diferencias.
+* []  Descargar los toolbelts de los diferentes PaaS y usarlos para despliegue automático.
+* []  Altas en otros servicios que se puedan integrar en un PaaS.
+* []  Experimentar con despliegues automáticos.
 
 
 

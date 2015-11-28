@@ -30,8 +30,6 @@ Y ya está instalado, configurado y disponible para publicar entradas:
 
 ![entrada0](http://i.imgur.com/6vm3VUi.png)
 
-##Ejercicio3
-###Crear pruebas para las diferentes rutas de la aplicación
 
 
 ##Ejercicio4
@@ -104,6 +102,62 @@ Podemos cambiar la [configuración](https://i.gyazo.com/242f28a9320467bae25916df
 
 
 
+
+
+##Ejercicio9
+###Instalar o darse de alta en un servicio Redis en la nube y realizar sobre él las operaciones básicas desde el panel de control.
+
+Para ellos ejecutamos `sudo apt-get install redis-server`.
+
+###Instalar un cliente de línea de órdenes de Redis o un cliente REST y realizar desde él las operaciones básicas de creación y lectura de información.
+
+Nos conectamos a la base de datos con `redis-cli`. Las operaciones básicas para gestionar la información son:
+
+
+- set 'clave' 'valor': *establece el valor de una variable en un par clave-valor*
+- get 'clave': *recupera el valor de una varible en un par clave-valor*
+- hset 'variable' 'clave' 'valor': *stablece el valor de una varible en un par clave-valor dentro de un conjunto de pares clave-valor indexados*
+- hget 'variable' 'clave': *recupera el valor de una varible en un par clave-valor dentro de un conjunto de pares clave-valor indexados*
+- hkeys 'clave': *recupera un listado con todas las claves de los pares clave-valor en un conjunto*
+
+
+![algunas operaciones](https://i.gyazo.com/7decda74855cbf089441e2ddbd8f948c.png)
+
+###Ejecutar ejemplos de cualquier lenguaje de programación sobre la instalación realizada.
+
+Usaremos el programa de NodeJS "pruebaRedis" (una versión del compañero [Germán Martínez](https://github.com/germaaan/))con el código:
+
+```
+#!/usr/bin/env node
+var redis = require('redis');
+var url = require('url');
+
+var redisURL = url.parse(process.env.REDISCLOUD_URL);
+console.log(redisURL);
+var client = redis.createClient(redisURL.port, redisURL.hostname, {
+  no_ready_check: true
+});
+
+client.set("var", "variable", redis.print);
+client.get("var", function(err, reply) {
+  console.log('Get ');
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(reply.toString());
+  }
+});
+
+console.log("End ");
+client.end();
+```
+
+Exporto la variable de entorno de la dirección de la BD: `export REDISCLOUD_URL=http://127.0.0.1:6379`
+
+Instalo `npm install redis url` y ejecuto el programa: `nodejs pruebaRedis`
+
+Con lo que obtengo:
+![salida](https://i.gyazo.com/3a845f7de1bbcef2ae818b9af30cf36f.png)
 
 
 
