@@ -1,4 +1,4 @@
-# Tema 1
+# Tema 2
 ## Desplegando aplicaciones en la nube
 
 * [Ejercicio 1](Ejercicio1.md)
