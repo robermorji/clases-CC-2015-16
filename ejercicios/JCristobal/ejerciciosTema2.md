@@ -31,6 +31,38 @@ Y ya está instalado, configurado y disponible para publicar entradas:
 ![entrada0](http://i.imgur.com/6vm3VUi.png)
 
 
+##Ejercicio3
+###Realizar una aplicación básica que use express para devolver alguna estructura de datos del modelo que se viene usando en el curso.
+
+Usamos la aplicación de ejemplo, la generamos con `express prueba-rest` y  ejecutamos `cd prueba-rest && npm install`.
+
+[Pantallazo de la salida](https://i.gyazo.com/f2a00ef1eb8e2f406e32560665063d63.png)
+
+###Realizar una app en express que incluya variables como en el caso anterior
+ 
+Tendremos que modificar el fichero index.js o añadir los ficheros que se necesiten, para ajustarlo [al ejemplo](https://github.com/JJ/node-app-cc).
+
+###Crear pruebas para las diferentes rutas de la aplicación
+
+Creamos un test con el código:
+
+```
+#!/usr/bin/env nodejs
+
+var request = require("supertest");
+var app = require('../index.js');
+
+describe('Pruebas de acceso a rutas', function() {
+  it("Porras actuales", function(done) {
+    request(app)
+      .get("/porras")
+      .expect(200, done);
+  });
+});
+```
+
+y lo [ejecutamos](https://i.gyazo.com/cf4b66be04268cfd48bc685e618c7447.png).
+
 
 ##Ejercicio4
 ###Instalar y echar a andar tu primera aplicación en Heroku.
@@ -157,6 +189,7 @@ Exporto la variable de entorno de la dirección de la BD: `export REDISCLOUD_URL
 Instalo `npm install redis url` y ejecuto el programa: `nodejs pruebaRedis`
 
 Con lo que obtengo:
+
 ![salida](https://i.gyazo.com/3a845f7de1bbcef2ae818b9af30cf36f.png)
 
 
