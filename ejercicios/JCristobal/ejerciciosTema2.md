@@ -130,10 +130,22 @@ Podemos cambiar la [configuración](https://i.gyazo.com/242f28a9320467bae25916df
 
 ![snap heroku](https://i.gyazo.com/b17d0c5bb1fa5b2abb3cc098ef0ad2be.png)
 
+Vemos el nuevo "stage":
+
 ![snap heroku passed](https://i.gyazo.com/9800997f2c13e1cfea4cbb986b38440c.png)
 
 
+##Ejercicio8
+###Crear una aplicación mínima y usar un buildpack no estándar para desplegarla en Heroku o un cartridge no estándar en OpenShift.
 
+Los buildpack [estándar de Heroku](https://devcenter.heroku.com/articles/buildpacks) son Ruby, Node.js, Python ... pero para este ejercicio usaremos Erlang, lenguaje que no soporta por defecto.
+
+Usamos una [aplicación básica], y dentro de su directorio especificamos nuestro buildpack con `heroku create --buildpack "https://github.com/heroku/heroku-buildpack-erlang.git"`.
+Para la aplicación especificamos la versión con `echo OTP-17.5.1 > .preferred_otp_version`, `git commit` para guardar los cambios y la creamos con `git push heroku master`
+
+[Información de la aplicación](https://i.gyazo.com/153a1c6512853c005b6e510d3f7c9341.png)
+
+En mi caso se puede ver desplegada en http://intense-ridge-8674.herokuapp.com/ 
 
 
 ##Ejercicio9
@@ -191,8 +203,6 @@ Instalo `npm install redis url` y ejecuto el programa: `nodejs pruebaRedis`
 Con lo que obtengo:
 
 ![salida](https://i.gyazo.com/3a845f7de1bbcef2ae818b9af30cf36f.png)
-
-
 
 
 

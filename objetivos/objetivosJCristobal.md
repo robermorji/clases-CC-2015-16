@@ -109,8 +109,8 @@ Objetivos adicionales
 * [x]  Entender la definición de la infraestructura virtual en PaaS.
 * []  Examinar los componentes que se pueden usar en una aplicación desplegada en un PaaS.
 
-* []  Alta en diferentes PaaS y examinar sus parecidos y diferencias.
-* []  Descargar los toolbelts de los diferentes PaaS y usarlos para despliegue automático.
+* [x]  Alta en diferentes PaaS y examinar sus parecidos y diferencias.
+* [x]  Descargar los toolbelts de los diferentes PaaS y usarlos para despliegue automático.
 * []  Altas en otros servicios que se puedan integrar en un PaaS.
 * []  Experimentar con despliegues automáticos.
 
