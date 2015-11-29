@@ -135,6 +135,9 @@ Vemos el nuevo "stage":
 ![snap heroku passed](https://i.gyazo.com/9800997f2c13e1cfea4cbb986b38440c.png)
 
 
+
+
+
 ##Ejercicio8
 ###Crear una aplicación mínima y usar un buildpack no estándar para desplegarla en Heroku o un cartridge no estándar en OpenShift.
 
