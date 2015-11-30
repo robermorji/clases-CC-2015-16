@@ -1,8 +1,8 @@
-# Ejercico 5
+# Ejercicio 5
 
 ## Automatizar con grunt y docco (o algún otro sistema) la generación de documentación de la librería que se cree. Previamente, por supuesto, habrá que documentar tal librería.
 
-Documentación ya hecha procedo a la instalación de Grunt y Docco
+Documentación de la librería ya hecha procedo a la instalación de Grunt y Docco
 
 ```
 sudo npm install -g grunt-cli
