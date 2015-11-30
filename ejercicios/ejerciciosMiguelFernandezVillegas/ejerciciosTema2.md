@@ -28,6 +28,9 @@ Y ya tenemos nuestro propio WordPress preparado para ser usado a través de Open
 ##Ejercicio 6
 ###Haz alguna modificación a tu aplicación en node.js para Heroku, sin olvidar añadir los tests para la nueva funcionalidad, y configura el despliegue automático a Heroku usando Snap CI o alguno de los otros servicios, como Codeship, mencionados en StackOverflow
 ##Ejercicio 7
+###Preparar la aplicación con la que se ha venido trabajando hasta este momento para ejecutarse en un PaaS, el que se haya elegido.
 ##Ejercicio 8
+###Crear una aplicación mínima y usar un buildpack no estándar para desplegarla en Heroku o un cartridge no estándar en OpenShift.
 ##Ejercicio 9
+###Instalar o darse de alta en un servicio Redis en la nube y realizar sobre él las operaciones básicas desde el panel de control.
 ##Ejercicio 10
