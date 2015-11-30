@@ -21,6 +21,23 @@ Y ya tenemos nuestro propio WordPress preparado para ser usado a través de Open
 ###Crear pruebas para las diferentes rutas de la aplicación.
 ##Ejercicio 4
 ###Instalar y echar a andar tu primera aplicación en Heroku.
+
+Primero instalamos el complemento para heroku con el siguiente comando 
+`wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh`
+y a continuación nos logueamos en heroku con el siguiente comando `heroku login`.
+
+Vamos a clonar una aplicación de [ejemplo](https://github.com/heroku/node-js-getting-started), primero realizando un [fork](https://github.com/miguelfervi/node-js-getting-started) y clonando en mi directorio con el siguiente comando `git clone https://github.com/miguelfervi/node-js-getting-started.git`.
+
+Después instalamos usando `npm install` y arrancamos con `npm start`. Para ver el ejemplo vamos a la siguiente dirección http://localhost:5000/
+
+Por último para desplegar en Heroku:
+`heroku create`, `git push heroku master`y por último para abrir en el navegador `heroku open`
+
+Accedemos a [mi dashboard de Heroku](https://dashboard.heroku.com/apps) y vemos que ha sido creado correctamente.
+
+Para ver la aplicación deplegada accedemos a la siguiente dirección: https://protected-brook-3568.herokuapp.com/
+
+
 ##Ejercicio 5
 ###Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicación en node que se ha creado anteriormente. Probarla de forma local con foreman. Al final de cada modificación, los tests tendrán que funcionar correctamente; cuando se pasen los tests, se puede volver a desplegar en heroku.
 
