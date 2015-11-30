@@ -134,9 +134,20 @@ Vemos el nuevo "stage":
 
 ![snap heroku passed](https://i.gyazo.com/9800997f2c13e1cfea4cbb986b38440c.png)
 
+##Ejercicio7
+###Preparar la aplicación con la que se ha venido trabajando hasta este momento para ejecutarse en un PaaS, el que se haya elegido. 
 
+Continuamos con Heroku. Con la aplicación asociada a su repositorio de GitHub:
 
+![connect to github](https://i.gyazo.com/a5f90d999de240911f180bbb6da855f0.png)
 
+Primero añadimos un archivo *Procfile* con `web: python script.py $PORT` (con PORT declarada en mi caso `heroku config:set PORT=8080`)
+
+Podemos ver como actualizamos la aplicación y desplegamos:
+
+![Actualizamos y desplegamos](https://i.gyazo.com/2919a39da50ca0d8a9944f02e0fcab40.png)
+
+Se puede ver desplegada correctamente en [Heroku](https://periodicointeractivo.herokuapp.com/).
 
 ##Ejercicio8
 ###Crear una aplicación mínima y usar un buildpack no estándar para desplegarla en Heroku o un cartridge no estándar en OpenShift.

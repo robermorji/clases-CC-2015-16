@@ -79,7 +79,7 @@ Objetivos adicionales
 * [X]  Examinar las diferencias entre las diferentes ofertas de PaaS.
 
 * [X]  Trabajar con los add-ons de los diferentes PaaS usados.
-* []  Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
+* [x]  Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
 
 
 # Objetivos de la semana de 9 de Noviembre
@@ -101,18 +101,18 @@ Objetivos adicionales
 
 * [X]  Trabajar con los add-ons de los diferentes PaaS usados.
 * [X]  Comentar cuestiones relacionadas con la segunda práctica.
-* []  Ponerse al día de los ejercicios del segundo tema.
+* [x]  Ponerse al día de los ejercicios del segundo tema.
 
 
 # Objetivos de la semana de 23 de Noviembre
 
 * [x]  Entender la definición de la infraestructura virtual en PaaS.
-* []  Examinar los componentes que se pueden usar en una aplicación desplegada en un PaaS.
+* [x]  Examinar los componentes que se pueden usar en una aplicación desplegada en un PaaS.
 
 * [x]  Alta en diferentes PaaS y examinar sus parecidos y diferencias.
 * [x]  Descargar los toolbelts de los diferentes PaaS y usarlos para despliegue automático.
-* []  Altas en otros servicios que se puedan integrar en un PaaS.
-* []  Experimentar con despliegues automáticos.
+* [x]  Altas en otros servicios que se puedan integrar en un PaaS.
+* [x]  Experimentar con despliegues automáticos.
 
 
 
