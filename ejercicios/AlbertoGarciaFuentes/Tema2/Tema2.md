@@ -14,6 +14,24 @@ Y finalmente ya podemos crear nuestra primera aplicación:
 ##Ejercicio2
 ###Crear una aplicación en OpenShift y dentro de ella instalar WordPress. 
 
+Dentro de Openshift seleccionamos la opción de crear una nueva aplicación. 
+
+A continuación nos saldrán muchas opciones de aplicacaciones, en nuestro caso seleccionamos la de "WordPress":
+
+![img](https://dl.dropboxusercontent.com/s/efx1axwkz7242sg/wordPress.png?dl=0)
+
+Nos aparecerá la pantalla de configuración de la aplicación WordPress y la rellenamos:
+
+![img](https://dl.dropboxusercontent.com/s/6pa0lx6fjmi3jds/wordpress2.png?dl=0)
+
+Finalmente ya tenemos el sitio creado como vemos en esta imagen, además de sus "cartuchos" PHP y MySQL:
+
+![img](https://dl.dropboxusercontent.com/s/vtnrn1ogsnlqld2/wordPress3.png?dl=0)
+
+Para acabar vemos como ha quedado nuestro sitio nuevo y creamos una nueva entrada en el blog:
+
+![img](https://dl.dropboxusercontent.com/s/qvc2lldwzb6xsex/wordPress4.png?dl=0)
+
 
 
 ##Ejercicio3
