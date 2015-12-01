@@ -1,10 +1,10 @@
 # Ejercicio 3
 
-## Crear pruebas para las diferentes rutas de la aplicación.
+## Creando una aplicación con Express para su despliegue en un PaaS. Probar nuestra aplicación en la nube. Crear pruebas para las diferentes rutas de la aplicación.
 
 He creado un programa básico para la ejecución de las pruebas sobre sus diferenctes rutas.
 
-**[Ŕepositorio del programa](https://github.com/alcasla/AppTema2)**
+**[Repositorio del programa](https://github.com/alcasla/AppTema2)**
 
 Para la ejecución de los test necesito resolver la dependencia de "supertest" mediante
 
