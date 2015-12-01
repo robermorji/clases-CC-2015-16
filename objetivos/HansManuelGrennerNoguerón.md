@@ -40,4 +40,12 @@ Lista de objetivos
 
 * [X] Escoger herramientas de tests a diferentes niveles adecuadas para la aplicación con la que se está trabajando.
 * [X] Entender los problemas ocasionados por tests externos en una infraestructura virtual creada ad hoc y aprender a solucionarlos.
-*[X] Comprobar que se está usando de forma correcta GitHub:
+* [X] Comprobar que se está usando de forma correcta GitHub.
+
+###Clase del 2 de noviembre de 2015
+
+* [X] Entender el concepto de PaaS y su utilidad
+* [X] Entender los mecanismos de despliegue de aplicaciones en un PaaS.
+* [X] Examinar las diferencias entre las diferentes ofertas de PaaS.
+* [X] Trabajar con los add-ons de los diferentes PaaS usados.
+* [X] Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
