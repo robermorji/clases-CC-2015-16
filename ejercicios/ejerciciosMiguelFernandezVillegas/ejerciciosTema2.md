@@ -40,8 +40,34 @@ Para ver la aplicación deplegada accedemos a la siguiente dirección: https://p
 
 ##Ejercicio 5
 ###Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicación en node que se ha creado anteriormente. Probarla de forma local con foreman. Al final de cada modificación, los tests tendrán que funcionar correctamente; cuando se pasen los tests, se puede volver a desplegar en heroku.
-
 ###Como en todos los ejemplos anteriores, se puede cambiar “node” y “heroku” por la herramienta que se haya elegido.
+
+Para comenzar descomenté los test del archivo [script.py](https://github.com/miguelfervi/ProjectCC/blob/master/script.py) temporalmente ya que si no Travis no me realiza bien la build.
+A continuación uso `foreman start web` donde `web: python script.py`
+dentro del archivo [Procfile](https://github.com/miguelfervi/ProjectCC/blob/master/Procfile)
+
+![Pruebas](https://gyazo.com/cfd6568c1f3460f2c85b7f4b387b8af9.png)
+
+Ahora creamos nuestra aplicación en heroku añadiendo además información de que es un proyecto python con el siguiente comando `heroku apps:create --region eu --buildpack heroku/python periodicointeractivo-heroku1-6`
+
+![Creacion heroku](https://gyazo.com/873c9f212e19cab8c5048c5f50dc1f3e.png)
+
+
+Por último modificamos Procfile para añadirle el puerto con $PORT. Lo descargamos con `heroku git:clone -a periodicointeractivo-heroku1-6`
+
+Guardamos los cambios con estos comandos
+`git add Procfile`
+`git commit` y 
+`git push heroku master`
+
+
+De nuevo lanzamos desplegamos nuestra [app](https://gyazo.com/d374ff2d425162114a0f7e52edc20031.png) 
+
+
+
+
+
+
 ##Ejercicio 6
 ###Haz alguna modificación a tu aplicación en node.js para Heroku, sin olvidar añadir los tests para la nueva funcionalidad, y configura el despliegue automático a Heroku usando Snap CI o alguno de los otros servicios, como Codeship, mencionados en StackOverflow
 ##Ejercicio 7
