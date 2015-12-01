@@ -64,12 +64,18 @@ Guardamos los cambios con estos comandos
 De nuevo lanzamos desplegamos nuestra [app](https://gyazo.com/d374ff2d425162114a0f7e52edc20031.png) 
 
 
-
-
-
-
 ##Ejercicio 6
 ###Haz alguna modificación a tu aplicación en node.js para Heroku, sin olvidar añadir los tests para la nueva funcionalidad, y configura el despliegue automático a Heroku usando Snap CI o alguno de los otros servicios, como Codeship, mencionados en StackOverflow
+
+En mi caso decidí hacer un [fork](https://github.com/heroku/node-js-getting-started) de la [aplicación](https://github.com/heroku/node-js-getting-started) de ejemplo usada en ejercicios anteriores.
+
+Seleccionamos la aplicación desplegada y conectada a GitHub, activando el despliegue automático.
+![Desplegada](https://gyazo.com/cfba790b8471ce79f3f82ec5426fc7bd.png)
+
+Ahora nos vamos al repositorio del proyecto en GitHub, entramos en Settings, WebHooks & Services, añadimos el servicio HerokuBeta y rellenamos los datos que nos solicitan.
+
+Realizo algunos cambios en el siguiente [enlace](https://protected-brook-3568.herokuapp.com/)
+
 ##Ejercicio 7
 ###Preparar la aplicación con la que se ha venido trabajando hasta este momento para ejecutarse en un PaaS, el que se haya elegido.
 ##Ejercicio 8
