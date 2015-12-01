@@ -38,35 +38,35 @@ Lista de objetivos
 * [X] Avatar, perfil, ciudad y universidad para fácil identificación.
 * [X] Usar también el modo ssh para conexión subiendo la clave pública a GitHub, no https.
 * [X] Aprender el uso de .gitignore para que no aparezcan los ficheros que no deban en git status
-* [] Aprender la utilidad de git status.
+* [X] Aprender la utilidad de git status.
 
 ###Clase del 26 de octubre de 2015
 
 * [X] Entender la necesidad de un desarrollo basado en pruebas en un entorno de desarrollo tipo DevOps.
 * [X] Comprender la definición de infraestructura virtual que se hace en los ficheros de configuración de los entornos de integración continua y cómo estos describen las dependencias y servicios usados por nuestra aplicación.
 * [X] Escoger herramientas de tests a diferentes niveles adecuadas para la aplicación con la que se está trabajando.
-* [] Entender los problemas ocasionados por tests externos en una infraestructura virtual creada ad hoc y aprender a solucionarlos.
+* [X] Entender los problemas ocasionados por tests externos en una infraestructura virtual creada ad hoc y aprender a solucionarlos.
 * [X] Comprobar que se está usando de forma correcta GitHub:
 * [X] Configurar todas las variables globales para que los commits se hagan correctamente,
 * [X] Avatar, perfil, ciudad y universidad para fácil identificación.
 * [X] Usar también el modo ssh para conexión subiendo la clave pública a GitHub, no https.
 * [X] Aprender el uso de .gitignore para que no aparezcan los ficheros que no deban en git status
-* [] Aprender la utilidad de git status.
+* [X] Aprender la utilidad de git status.
 
 ###Clase del 2 de noviembre de 2015
 
 * [X] Entender el concepto de PaaS y su utilidad
 * [X] Entender los mecanismos de despliegue de aplicaciones en un PaaS.
 * [X] Examinar las diferencias entre las diferentes ofertas de PaaS.
-* [] Trabajar con los add-ons de los diferentes PaaS usados.
+* [X] Trabajar con los add-ons de los diferentes PaaS usados.
 * [] Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
 
 ###Clase del 9 de noviembre de 2015
 
 * [X] Entender el concepto de Base de datos como servicio
-* [] Estudiar los diferentes tipos de bases de datos existentes y cómo se pueden usar desde nuestras aplicaciones.
-* [] Examinar las diferencias entre las diferentes ofertas de DBaaS
-* [] Probar diferentes bases de datos NoSQL como Redis y ver la utilidad en una aplicación en la nube.
+* [X] Estudiar los diferentes tipos de bases de datos existentes y cómo se pueden usar desde nuestras aplicaciones.
+* [X] Examinar las diferencias entre las diferentes ofertas de DBaaS
+* [X] Probar diferentes bases de datos NoSQL como Redis y ver la utilidad en una aplicación en la nube.
 * [X] Entender las tags de Git y su uso para despliegues y lanzamientos.
 * [] Darse de alta en diferentes bases de datos en la nube que se puedan usar de forma experimental.
 
@@ -75,10 +75,10 @@ Lista de objetivos
 * [X] Entender el concepto de PaaS y su utilidad
 * [X] Entender los mecanismos de despliegue de aplicaciones en un PaaS.
 * [X] Examinar las diferencias entre las diferentes ofertas de PaaS.
-* [] Trabajar con los add-ons de los diferentes PaaS usados.
+* [X] Trabajar con los add-ons de los diferentes PaaS usados.
 * [] Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
-* [] Comentar cuestiones relacionadas con la segunda práctica.
-* [] Ponerse al día de los ejercicios del segundo tema.
+* [X] Comentar cuestiones relacionadas con la segunda práctica.
+* [X] Ponerse al día de los ejercicios del segundo tema.
 
 ###Tema 1 - Desarrollo Basado en Pruebas
 
