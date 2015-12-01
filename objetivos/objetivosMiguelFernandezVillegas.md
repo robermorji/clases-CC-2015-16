@@ -67,7 +67,7 @@ Lista de objetivos
         Aprender la utilidad de git status.
 
 
-# Objetivos de la semana de 26 de Octubre
+### Objetivos de la semana de 26 de Octubre
 
 
 * [X]  Entender la necesidad de un desarrollo basado en pruebas en un entorno de desarrollo tipo DevOps.
@@ -83,21 +83,21 @@ Lista de objetivos
             Aprender la utilidad de git status.
 
 
-# Objetivos de la semana de 2 de Noviembre
+### Objetivos de la semana de 2 de Noviembre
 
 * [X]  Entender el concepto de PaaS y su utilidad
 * [X]  Entender los mecanismos de despliegue de aplicaciones en un PaaS.
 * [X]  Examinar las diferencias entre las diferentes ofertas de PaaS.
 
 * [X]  Trabajar con los add-ons de los diferentes PaaS usados.
-* [x]  Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
+* [X]  Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
 
 
-# Objetivos de la semana de 9 de Noviembre
+### Objetivos de la semana de 9 de Noviembre
 
-* [x]  Entender el concepto de Base de datos como servicio
+* [X]  Entender el concepto de Base de datos como servicio
 * [X]  Estudiar los diferentes tipos de bases de datos existentes y cómo se pueden usar desde nuestras aplicaciones.
-* [x]  Examinar las diferencias entre las diferentes ofertas de DBaaS
+* [X]  Examinar las diferencias entre las diferentes ofertas de DBaaS
 
 * [x]  Probar diferentes bases de datos NoSQL como Redis y ver la utilidad en una aplicación en la nube.
 * [x]  Entender las tags de Git y su uso para despliegues y lanzamientos.
@@ -112,18 +112,18 @@ Lista de objetivos
 
 * [X]  Trabajar con los add-ons de los diferentes PaaS usados.
 * [X]  Comentar cuestiones relacionadas con la segunda práctica.
-* [x]  Ponerse al día de los ejercicios del segundo tema.
+* [X]  Ponerse al día de los ejercicios del segundo tema.
 
 
 # Objetivos de la semana de 23 de Noviembre
 
-* [x]  Entender la definición de la infraestructura virtual en PaaS.
-* [x]  Examinar los componentes que se pueden usar en una aplicación desplegada en un PaaS.
+* [X]  Entender la definición de la infraestructura virtual en PaaS.
+* [X]  Examinar los componentes que se pueden usar en una aplicación desplegada en un PaaS.
 
-* [x]  Alta en diferentes PaaS y examinar sus parecidos y diferencias.
-* [x]  Descargar los toolbelts de los diferentes PaaS y usarlos para despliegue automático.
-* [x]  Altas en otros servicios que se puedan integrar en un PaaS.
-* [x]  Experimentar con despliegues automáticos.
+* [X]  Alta en diferentes PaaS y examinar sus parecidos y diferencias.
+* [X]  Descargar los toolbelts de los diferentes PaaS y usarlos para despliegue automático.
+* [X]  Altas en otros servicios que se puedan integrar en un PaaS.
+* [X]  Experimentar con despliegues automáticos.
 
 
 
