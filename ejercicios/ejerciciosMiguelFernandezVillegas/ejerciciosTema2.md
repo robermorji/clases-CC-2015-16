@@ -19,6 +19,12 @@ Y ya tenemos nuestro propio WordPress preparado para ser usado a través de Open
 
 ##Ejercicio 3
 ###Crear pruebas para las diferentes rutas de la aplicación.
+
+Seguimos con la aplicación de node de ejemplo, primero instalamos node express con el siguiente comando (si no está instalado ya) `sudo apt-get install node-express` y a continuación generamos los test con el siguiente comando `express prueba-rest`, por último usamos `cd prueba-rest && npm install`
+
+![Salida](https://gyazo.com/d2d35c0c7fdd4ddfa13e5629859c19e1.png)
+
+
 ##Ejercicio 4
 ###Instalar y echar a andar tu primera aplicación en Heroku.
 
@@ -98,5 +104,12 @@ En el siguiente [link](https://periodicointeractivo-heroku1-6.herokuapp.com/) en
 ##Ejercicio 8
 ###Crear una aplicación mínima y usar un buildpack no estándar para desplegarla en Heroku o un cartridge no estándar en OpenShift.
 ##Ejercicio 9
-###Instalar o darse de alta en un servicio Redis en la nube y realizar sobre él las operaciones básicas desde el panel de control.
+###Darse de alta en un servicio Redis en la nube y realizar sobre él las operaciones básicas desde el panel de control.
+
+###Instalar un cliente de línea de órdenes de Redis o una biblioteca cliente REST y realizar desde él las operaciones básicas de creación y lectura de información.
+
+###Ejecutar ejemplos de cualquier lenguaje de programación sobre la instalación realizada.
+
+
+
 ##Ejercicio 10
