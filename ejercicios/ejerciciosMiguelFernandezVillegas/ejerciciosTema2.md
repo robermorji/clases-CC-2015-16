@@ -103,6 +103,14 @@ En el siguiente [link](https://periodicointeractivo-heroku1-6.herokuapp.com/) en
 
 ##Ejercicio 8
 ###Crear una aplicación mínima y usar un buildpack no estándar para desplegarla en Heroku o un cartridge no estándar en OpenShift.
+
+En la siguiente [página](https://devcenter.heroku.com/articles/buildpacks) podemos ver los buildpacks estándares que ofrece heroku (Ruby, Node.js, Python entre otros).
+
+Para este ejercicio voy a usar Erlang, un lenguaje que no soporta en los estándares que tiene Heroku.
+
+Usaremos una [aplicación]
+ donde le especificaremos el buildpack, que en este caso no será posible de detectar y por eso vamos a decirselo explicitamente con el siguiente comando
+
 ##Ejercicio 9
 ###Darse de alta en un servicio Redis en la nube y realizar sobre él las operaciones básicas desde el panel de control.
 
