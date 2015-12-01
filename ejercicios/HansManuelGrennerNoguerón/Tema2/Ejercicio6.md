@@ -8,7 +8,7 @@ Activaremos también la opción de que se espere pasar la integración contínua
 
 Ahora procedemos a darnos de alta en Snap-CI e unir dicho sistema con el mismo repositorio que estamos usando para Heroku.
 
-![despliegue_2](https://gyazo.com/c494df404db56b5b87b64ccc3cbfce97)
+![despliegue_2](https://gyazo.com/c494df404db56b5b87b64ccc3cbfce97.png)
 > Configuración de Snap-CI.
 
 Comprobamos en nuestro repositorio de github que está todo correctamente enlazado con los Webhooks que acabamos de realizar.
