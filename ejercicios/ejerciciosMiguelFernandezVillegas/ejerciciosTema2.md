@@ -76,8 +76,25 @@ Ahora nos vamos al repositorio del proyecto en GitHub, entramos en Settings, Web
 
 Realizo algunos cambios en el siguiente [enlace](https://protected-brook-3568.herokuapp.com/)
 
+Por último, nos registramos en Snap CI a partir de nuestro usuario en GitHub y conectamos nuestro repo, después en configuración, configuramos un stage con Heroku enlazando la aplicación a Snap CI y al final obtenemos los siguientes resultados
+
+![Pipelines](https://gyazo.com/42d0073106ceb31a928d4d75300db93e.png)
+
 ##Ejercicio 7
 ###Preparar la aplicación con la que se ha venido trabajando hasta este momento para ejecutarse en un PaaS, el que se haya elegido.
+
+Vamos a preparar la aplicación en Heroku con la aplicación asociada a GitHub con nuestro ProjectCC
+
+![Proyecto](https://gyazo.com/78114bf807297aa598ea6836db7dfcec.png)
+
+Ya teníamos de ejercicios previos el Procfile con este contenido: `web: python script.py $PORT` y previamente usando el cambio de puerto y asignación con `heroku config:set PORT=8080`
+
+Desplegamos aplicación
+
+![Desplegada](https://gyazo.com/daf66c2272983564e2c4cf300dcb186d.png)
+
+En el siguiente [link](https://periodicointeractivo-heroku1-6.herokuapp.com/) encontraremos la aplicación desplegada en heroku
+
 ##Ejercicio 8
 ###Crear una aplicación mínima y usar un buildpack no estándar para desplegarla en Heroku o un cartridge no estándar en OpenShift.
 ##Ejercicio 9
