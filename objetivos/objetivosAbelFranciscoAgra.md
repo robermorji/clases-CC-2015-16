@@ -38,7 +38,7 @@ Lista de objetivos
 * [X] Avatar, perfil, ciudad y universidad para fácil identificación.
 * [X] Usar también el modo ssh para conexión subiendo la clave pública a GitHub, no https.
 * [X] Aprender el uso de .gitignore para que no aparezcan los ficheros que no deban en git status
-* [] Aprender la utilidad de git status.
+* [X] Aprender la utilidad de git status.
 
 ###Clase del 26 de octubre de 2015
 
@@ -51,7 +51,7 @@ Lista de objetivos
 * [X] Avatar, perfil, ciudad y universidad para fácil identificación.
 * [X] Usar también el modo ssh para conexión subiendo la clave pública a GitHub, no https.
 * [X] Aprender el uso de .gitignore para que no aparezcan los ficheros que no deban en git status
-* [] Aprender la utilidad de git status.
+* [X] Aprender la utilidad de git status.
 
 ###Clase del 2 de noviembre de 2015
 
