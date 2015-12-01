@@ -42,6 +42,45 @@ Para acabar vemos como ha quedado nuestro sitio nuevo y creamos una nueva entrad
 ##Ejercicio4
 ###Instalar y echar a andar tu primera aplicación en Heroku.
 
+Primero debemos de registrarnos en la página oficial de Heroku.
+
+A continuación instalamos ruby en nuestro ordenador
+
+```
+sudo apt-get install ruby
+```
+
+Una vez instalado ruby podemos instalar las herramientas de Heroku con:
+
+```
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+```
+
+![img](https://dl.dropboxusercontent.com/s/z6knsznso75dm33/heroku.png?dl=0)
+
+
+Ahora desde la terminal nos logeamos en Heroku:
+
+```
+heroku login
+```
+
+![img](https://dl.dropboxusercontent.com/s/oxbjhrfu7hd5fa2/heroku2.png?dl=0)
+
+
+Para poner en marcha una aplicación de heroku nos basaremos en una aplicación de prueba ya hecha:
+
+```
+git clone https://github.com/heroku/node-js-getting-started.git
+cd node-js-getting-started
+heroku apps:create --region eu ccpruebaheroku
+```
+
+![img](https://dl.dropboxusercontent.com/s/9sooohbetrn5pni/heroku3.png?dl=0)
+
+Ya está disponible la pagina web:
+
+https://ccpruebaheroku.herokuapp.com/
 
 ##Ejercicio5
 ###Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicación en node que se ha creado anteriormente. Probarla de forma local con foreman. Al final de cada modificación, los tests tendrán que funcionar correctamente; cuando se pasen los tests, se puede volver a desplegar en heroku.
