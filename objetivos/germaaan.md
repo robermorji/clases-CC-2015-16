@@ -90,3 +90,24 @@
 - [X] Usar GitHub de forma más avanzada, usando ramas de desarrollo, por ejemplo.
 - [X] Comentar cuestiones relacionadas con la segunda práctica.
 - [X] Ponerse al día de los ejercicios del segundo tema.
+
+### Octava semana, 23 de noviembre 2015
+#### Objetivos principales
+- [X] Entender la definición de la infraestructura virtual en PaaS.
+- [X] Examinar los componentes que se pueden usar en una aplicación desplegada en un PaaS.
+
+#### Objetivos adicionales
+- [X] Alta en diferentes PaaS y examinar sus parecidos y diferencias.
+- [X] Descargar los toolbelts de los diferentes PaaS y usarlos para despliegue automático.
+- [X] Altas en otros servicios que se puedan integrar en un PaaS.
+- [X] Experimentar con despliegues automáticos.
+
+### Novena semana, 30 de noviembre 2015
+#### Objetivos principales
+- [ ] Entender los procesos y el concepto de virtualización ligera.
+- [ ] Comprender su uso dentro de un proceso de integración y despliegue continuo.
+- [ ] Conocer diferentes herramientas para llevar a cabo la virtualización.
+
+#### Objetivos adicionales
+- [ ] Descargar herramientas para trabajar con `lxc` y `docker`.
+- [ ] Comprender las herramientas que despliegan a infraestructura virtual.
