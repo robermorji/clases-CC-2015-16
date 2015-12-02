@@ -6,7 +6,7 @@ Tras el ejercicio uno, donde me he dado de alta y a continuación pulsamos en *"
 
 ![ejer2_img1](http://googledrive.com/host/0B5Yam2FWqtZPOUY1RGEyY1ZKLXM/Ejercicio2_1.png)
 
-A continuación entramos en el apartado para elejir el tipo de aplicación que queremos hacer, para lo que uso la barra de búsqueda o mediante un filtro por etiquetas.
+A continuación entramos en el apartado para elegir el tipo de aplicación que queremos hacer, para lo que uso la barra de búsqueda o mediante un filtro por etiquetas.
 
 ![ejer2_img2](http://googledrive.com/host/0B5Yam2FWqtZPOUY1RGEyY1ZKLXM/Ejercicio2_2.png)
 

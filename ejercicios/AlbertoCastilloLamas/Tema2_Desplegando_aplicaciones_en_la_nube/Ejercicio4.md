@@ -2,7 +2,7 @@
 
 ## Instalar y echar a andar tu primera aplicación en Heroku.
 
-Como en el primer ejercico no utilizé Heroku para darme de alta, lo hice en OpenShift, poues lo hago ahora siguiendo los mismos pasos que en cualquier plataforma. Datos, email, confirmación, ...
+Como en el primer ejercicio no utilizé Heroku para darme de alta, lo hice en OpenShift, pues lo hago ahora siguiendo los mismos pasos que en cualquier plataforma. Datos, email, confirmación, ...
 
 ![ejer4_img1](http://googledrive.com/host/0B5Yam2FWqtZPOUY1RGEyY1ZKLXM/Ejercicio4_1.png)
 
