@@ -74,6 +74,7 @@ Para poner en marcha una aplicación de heroku nos basaremos en una aplicación 
 git clone https://github.com/heroku/node-js-getting-started.git
 cd node-js-getting-started
 heroku apps:create --region eu ccpruebaheroku
+git push heroku master
 ```
 
 ![img](https://dl.dropboxusercontent.com/s/9sooohbetrn5pni/heroku3.png?dl=0)
@@ -86,6 +87,35 @@ https://ccpruebaheroku.herokuapp.com/
 ###Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicación en node que se ha creado anteriormente. Probarla de forma local con foreman. Al final de cada modificación, los tests tendrán que funcionar correctamente; cuando se pasen los tests, se puede volver a desplegar en heroku.
 ####Como en todos los ejemplos anteriores, se puede cambiar “node” y “heroku” por la herramienta que se haya elegido.
 
+Vamos a usar nuestra aplicación del juego de la ETSIIT para hacer este ejercicio:
+
+```
+heroku apps:create --region eu juegoetsiit
+git push heroku master
+```
+
+![img](https://dl.dropboxusercontent.com/s/ixfbnjo47tdgxaj/despligue.png?dl=0)
+
+
+Para usar 'foreman' primero tenemos que instalarlo. Una vez instalado, podremos ejecutar localmente nuestra aplicación siguiendo lo descrito en el archivo Procfile.
+
+```
+sudo gem install foreman
+foreman start web
+```
+
+![img](https://dl.dropboxusercontent.com/s/f5102ziwnjtmqg1/foreman.png?dl=0)
+
+Para acceder a la aplicación, por defecto foreman usa el puerto 5000, asi que en este caso accedemos desde [localhost:5000](localhost:5000).
+
+Finalmente vamos a volver a subir la aplicacion a heroku pero primero pasamos los test:
+
+```
+npm test
+git push heroku master
+```
+
+La aplicación está disponible [aqui](https://juegoetsiit.herokuapp.com/)
 
 ##Ejercicio6
 ###Haz alguna modificación a tu aplicación en node.js para Heroku, sin olvidar añadir los tests para la nueva funcionalidad, y configura el despliegue automático a Heroku usando Snap CI o alguno de los otros servicios, como Codeship, mencionados en StackOverflow
