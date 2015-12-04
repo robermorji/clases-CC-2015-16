@@ -152,7 +152,87 @@ httpServer.listen(process.env.PORT || 5000, process.env.IP || "0.0.0.0");
 ##Ejercicio9
 ###Instalar o darse de alta en un servicio Redis en la nube y realizar sobre él las operaciones básicas desde el panel de control.
 
+Para instalar Redis usamos el siguiente comando:
+
+```
+sudo apt-get install redis-server
+```
+
 ###Instalar un cliente de línea de órdenes de Redis o un cliente REST y realizar desde él las operaciones básicas de creación y lectura de información.
 
+Para conectarse a la base de datos usamos el siguiente comando:
+
+```
+redis-cli
+```
+
+Las principales operaciones sobre la BD son:
+
+**set:** establece el valor de una variable en un par clave-valor.
+
+**get:** recupera el valor de una variable en un par clave-valor.
+
+**hset:** establece el valor de una variable en un par clave-valor dentro de un conjunto de pares clave-valor indexados.
+
+**hget:** recupera el valor de una variable en un par clave-valor dentro de un conjunto de pares clave-valor indexados.
+
+**hkeys:** recupera un listado con todas las claves de los pares clave-valor en un conjunto.
+
 ###Ejecutar ejemplos de cualquier lenguaje de programación sobre la instalación realizada.
+
+**Código del programa:**
+
+'use strict';
+
+var redis = require('redis'),
+
+    client = redis.createClient();
+
+client.on('error', function (err) {
+
+    console.log('error event - ' + client.host + ':' + client.port + ' - ' + err);
+    
+});
+
+client.set('string key', 'string val', redis.print);
+
+client.hset('hash key', 'hashtest 1', 'some value', redis.print);
+
+client.hset(['hash key', 'hashtest 2', 'some other value'], redis.print);
+
+client.hkeys('hash key', function (err, replies) {
+
+    if (err) {
+    
+        return console.error('error response - ' + err);
+        
+    }
+
+    console.log(replies.length + ' replies:');
+    
+    replies.forEach(function (reply, i) {
+    
+        console.log('    ' + i + ': ' + reply);
+        
+    });
+    
+});
+
+client.quit(function (err, res) {
+
+    console.log('Exiting from quit command.');
+    
+});
+
+**Ejecución del programa:**
+
+```
+export REDISCLOUD_URL=http://127.0.0.1:6379
+npm install redis url
+node pruebaRedis
+```
+
+**Salida de la ejecución:**
+
+![img](https://dl.dropboxusercontent.com/s/lvovemhht2cx6ol/CC-Tema2-Ejercicio5-4.png?dl=0)
 
