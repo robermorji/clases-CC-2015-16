@@ -143,6 +143,55 @@ Para desplegar la aplicación en heroku debemos de tener configurados los siguie
 
 
 
+
 ##Ejercicio9
 ###Instalar o darse de alta en un servicio Redis en la nube y realizar sobre él las operaciones básicas desde el panel de control.
 
+Instalamos Redis con 'sudo apt-get install redis-server'.
+
+### 2. Instalar un cliente de línea de órdenes de Redis o un cliente REST y realizar desde él las operaciones básicas de creación y lectura de información.
+
+Nos conectamos a la base de datos con 'redis-cli'.
+
+Las operaciones de creación y lectura de información son:
+- 'set': establece el valor de una variable en un par clave-valor,
+- 'get': recupera el valor de una varible en un par clave-valor.
+- 'hset': establece el valor de una varible en un par clave-valor dentro de un conjunto de pares clave-valor indexados.
+- 'hget': recupera el valor de una varible en un par clave-valor dentro de un conjunto de pares clave-valor indexados.
+- 'hkeys'`: recupera un listado con todas las claves de los pares clave-valor en un conjunto.
+
+## 3. Ejecutar ejemplos de cualquier lenguaje de programación sobre la instalación realizada.
+
+```
+'use strict';
+
+var redis = require('redis'),
+    client = redis.createClient();
+
+client.sadd('mylist', 1);
+client.sadd('mylist', 2);
+client.sadd('mylist', 3);
+
+client.set('weight_1', 5);
+client.set('weight_2', 500);
+client.set('weight_3', 1);
+
+client.set('object_1', 'foo');
+client.set('object_2', 'bar');
+client.set('object_3', 'qux');
+
+client.sort('mylist', 'by', 'weight_*', 'get', 'object_*', redis.print);
+// Prints Reply: qux,foo,bar
+```
+
+- Ejecución del programa:
+
+```
+export REDISCLOUD_URL=http://127.0.0.1:6379
+npm install redis url
+node sort
+```
+
+- Salida de la ejecución:
+
+![img](https://dl.dropboxusercontent.com/s/dwlg5dhpv3zerb8/redis.png?dl=0)
