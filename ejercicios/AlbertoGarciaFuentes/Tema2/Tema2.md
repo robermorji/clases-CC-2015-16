@@ -145,7 +145,7 @@ Para desplegar la aplicación en heroku debemos de tener configurados los siguie
 
 
 ##Ejercicio9
-###Instalar o darse de alta en un servicio Redis en la nube y realizar sobre él las operaciones básicas desde el panel de control.
+### 1. Instalar o darse de alta en un servicio Redis en la nube y realizar sobre él las operaciones básicas desde el panel de control.
 
 Instalamos Redis con 'sudo apt-get install redis-server'.
 
