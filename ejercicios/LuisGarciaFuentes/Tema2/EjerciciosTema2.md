@@ -65,7 +65,7 @@ wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 Para hacer login desde la terminal tenemos que usar el siguiente comando:
 
-```
+``` 
 sudo heroku login
 ```
 
@@ -77,6 +77,8 @@ Descargamos la aplicación de prueba hecha con Node.js desde su repositorio en G
 git clone https://github.com/heroku/node-js-getting-started.git
 cd node-js-getting-started
 sudo heroku apps:create --region eu luis-cc-heroku
+sudo git push heroku master
+sudo heroku open
 ```
 
 ![img](https://dl.dropboxusercontent.com/s/q4q14vkf6ffr9tv/CC-Tema2-Ejercicio4-4.jpg?dl=0)
@@ -88,6 +90,41 @@ La aplicación ya está accesible siguiendo [este enlace](https://luis-cc-heroku
 ###Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicación en node que se ha creado anteriormente. Probarla de forma local con foreman. Al final de cada modificación, los tests tendrán que funcionar correctamente; cuando se pasen los tests, se puede volver a desplegar en heroku.
 ####Como en todos los ejemplos anteriores, se puede cambiar “node” y “heroku” por la herramienta que se haya elegido.
 
+Lo primero que tenemos que hacer es crear una nueva aplicación Heroku para posteriormente desplegar el código en ella:
+
+```
+sudo heroku apps:create --region eu submodulo-red-social-analytics
+sudo git push heroku master
+sudo heroku open
+```
+
+*Es muy importante mencionar que el push realizado se hace desde el repositorio de GitHub y no desde el repositorio local de nuestro ordenador.
+
+![img](https://dl.dropboxusercontent.com/s/8qnky3rxoozjj4s/CC-Tema2-Ejercicio5-1.png?dl=0)
+
+Ahora vamos a usar foreman para poder ejecutar la aplicación localmente usando el archivo **Procfile**. Para ello necesitamos tener instalado todas las gemas en Ruby.Los comandos son:
+
+```
+sudo gem install foreman
+echo "web: npm start" >> Procfile
+foreman start web
+```
+
+![img](https://dl.dropboxusercontent.com/s/ldwa9tyfj7jcypq/CC-Tema2-Ejercicio5-2.png?dl=0)
+
+Foreman usa el puerto 5000 con lo que tendremos que tenerlo en cuenta en la ejecución.
+
+Para finalizar tendremos que volver a desplegar la aplicación en heroku pero esta vez pasando los test:
+
+```
+npm test
+git push heroku master
+```
+
+![img](https://dl.dropboxusercontent.com/s/4r7p618a01ob0wj/CC-Tema2-Ejercicio5-3.png?dl=0)
+
+La aplicación está accesible desde [aquí](https://submodulo-red-social-analytics.herokuapp.com).
+
 
 ##Ejercicio6
 ###Haz alguna modificación a tu aplicación en node.js para Heroku, sin olvidar añadir los tests para la nueva funcionalidad, y configura el despliegue automático a Heroku usando Snap CI o alguno de los otros servicios, como Codeship, mencionados en StackOverflow
@@ -95,6 +132,10 @@ La aplicación ya está accesible siguiendo [este enlace](https://luis-cc-heroku
 
 ##Ejercicio7
 ###Preparar la aplicación con la que se ha venido trabajando hasta este momento para ejecutarse en un PaaS, el que se haya elegido. 
+
+En este ejercicio vamos a indicar los pasos que hay que seguir para preparar la aplicación que queremos subir en un PaaS, nosotros usaremos Heroku:
+
+**IP y puerto:** httpServer.listen(process.env.PORT || 5000, process.env.IP || "0.0.0.0");
 
 
 ##Ejercicio8
