@@ -124,6 +124,19 @@ La aplicación está disponible [aqui](https://juegoetsiit.herokuapp.com/)
 ##Ejercicio7
 ###Preparar la aplicación con la que se ha venido trabajando hasta este momento para ejecutarse en un PaaS, el que se haya elegido. 
 
+Para desplegar la aplicación en heroku debemos de tener configurados los siguientes archivos:
+
+- package.json: Aquí debemos de tener especificadas en dependences todas las dependencias que la aplicación necesita. Si no están bien especificadas el programa fallará. Al desplegar aplicaciones en la nube normalmente se hace un git clone del directorio y hace npm install para instalar todas las dependencias.
+
+- Procfile: En nuestro caso hará 'node ServidorJuego.js' para ejecutar el programa servidor de la aplicación. Este fichero es importante en la definición de un despligue en la nube ya que es el comando que se hará por defecto.
+
+- IP y puerto: tenemos que especificar la dirección IP y el puerto que nuestra aplicación escuchará para atender peticiones, como en principio no conocemos la dirección IP de nuestra aplicación en Heroku y sabemos que Heroku usa por defecto el puerto 5000, vamos a configurar nuestra aplicación para atienda peticiones de cualquier dirección IP y escuche el puerto 5000, u otros que le pasemos como parámetros desde línea de comandos.
+
+  - _Especificación de dirección IP y puerto_
+
+    ```
+    httpServer.listen(process.env.PORT || 5000, process.env.IP || "0.0.0.0");
+    ```
 
 ##Ejercicio8
 ###Crear una aplicación mínima y usar un buildpack no estándar para desplegarla en Heroku o un cartridge no estándar en OpenShift.
