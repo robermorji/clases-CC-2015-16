@@ -92,11 +92,13 @@ Para probarla en local ejecutamos `foreman start web` (con `web: python script.p
 ![preba con foreman](https://i.gyazo.com/76fc316245f393826a4522a19376d927.png)
 
 
-Cremos la aplicación (especificando el buildpack python) en Heroku con `heroku apps:create --region eu --buildpack heroku/python periodicointeractivo-heroku1-1`.
+Cremos la aplicación (especificando el buildpack python) en Heroku con `heroku apps:create --region eu --buildpack heroku/python periodicointeractivo-heroku1-1` (ejecutando dentro del directorio de la aplicación)
+
+(O si ya la teníamos en Heroku, clonamos con `heroku git:clone -a periodicointeractivo-heroku1-1`)
 
 ![app creada](https://i.gyazo.com/cd7c6d39b1d23fb19f604b195379771d.png)
 
-Después tendremos que modificar el *Procfile* para ajustar la ejecución de la aplicación. Primero nos lo descargamos `heroku git:clone -a periodicointeractivo-heroku1-1` y añadimos un archivo *Procfile* con `web: python script.py`. 
+Después tendremos que modificar el *Procfile* para ajustar la ejecución de la aplicación. Añadimos un archivo *Procfile* con `web: python script.py`. 
 
 Guardamos cambios ( `git add Procfile` `git commit` y `git push heroku master`)
 
@@ -141,9 +143,12 @@ Continuamos con Heroku. Con la aplicación asociada a su repositorio de GitHub:
 
 ![connect to github](https://i.gyazo.com/a5f90d999de240911f180bbb6da855f0.png)
 
-Primero añadimos un archivo *Procfile* con `web: python script.py $PORT` (con PORT declarada en mi caso `heroku config:set PORT=8080`)
 
-Podemos ver como actualizamos la aplicación y desplegamos:
+Creo la aplicación en Heroku (dentro del directorio de nuestra aplicación) con `heroku apps:create --region eu --buildpack heroku/python periodicointeractivo`.
+
+Añadimos un archivo *Procfile* con `web: python script.py $PORT` (con PORT declarada en mi caso `heroku config:set PORT=8080`)
+
+Guardamos los cambios con git y podemos ver como actualizamos la aplicación y desplegamos (también podemos enviar los cambios a Heroku con `git push heroku`):
 
 ![Actualizamos y desplegamos](https://i.gyazo.com/2919a39da50ca0d8a9944f02e0fcab40.png)
 
@@ -165,7 +170,7 @@ En mi caso se puede ver desplegada en http://intense-ridge-8674.herokuapp.com/
 ##Ejercicio9
 ###Instalar o darse de alta en un servicio Redis en la nube y realizar sobre él las operaciones básicas desde el panel de control.
 
-Para ellos ejecutamos `sudo apt-get install redis-server`.
+Para instalarlo ejecutamos `sudo apt-get install redis-server`.
 
 ###Instalar un cliente de línea de órdenes de Redis o un cliente REST y realizar desde él las operaciones básicas de creación y lectura de información.
 
@@ -217,6 +222,12 @@ Instalo `npm install redis url` y ejecuto el programa: `nodejs pruebaRedis`
 Con lo que obtengo:
 
 ![salida](https://i.gyazo.com/3a845f7de1bbcef2ae818b9af30cf36f.png)
+
+
+También pruebo con más profundidad el [tutorial interactivo web](http://try.redis.io/). Además se encuentra disponible para usarlo [en Azure](https://azure.microsoft.com/es-es/services/cache/) y en muchas plataformas, por lo que será una alternativa con mucho peso a la hora de usar o cambiar a una BD en cualquier proyecto.
+
+
+
 
 
 
