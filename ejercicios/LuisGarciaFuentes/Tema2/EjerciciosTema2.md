@@ -135,8 +135,15 @@ La aplicación está accesible desde [aquí](https://submodulo-red-social-analyt
 
 En este ejercicio vamos a indicar los pasos que hay que seguir para preparar la aplicación que queremos subir en un PaaS, nosotros usaremos Heroku:
 
-**IP y puerto:** httpServer.listen(process.env.PORT || 5000, process.env.IP || "0.0.0.0");
+**-Package.json:** En el Package.json hay que especificar bien las dependencias, ya que el comando que utiliza heroku en la nube es **npm install** y no otro. Con lo que tenemos que tenerlas bien definidas. En la parte de devDependencies no las tiene en cuenta, esto es importante saberlo.
 
+**-Procfile:** Este fichero es esencial tenerlo ya que lo que este dentro de este será lo que ejecute una vez que se accede a la web desde la nube, en heroku en nuestro caso.  Nuestro **Procfile** tiene **"web: node ServidorJuego.js"** con lo que será el primer comando que ejecute heroku.
+
+**-IP y puerto:** Para que no ocurra ningún error a la hora de manejar puertos e IPs hay que incluir esta línea de código. En ella estamos especificando con **"0.0.0.0"** que escucha todas las IPs y no descarta ninguna. Con **process.env.PORT** y **process.env.IP** estamos cogiendo la IP y puerto que nos proporciona la app. Y por último cabe decir que el puerto por defecto usado por heroku es el 5000 por lo que lo indicamos también.
+
+```
+httpServer.listen(process.env.PORT || 5000, process.env.IP || "0.0.0.0"); 
+```
 
 ##Ejercicio8
 ###Crear una aplicación mínima y usar un buildpack no estándar para desplegarla en Heroku o un cartridge no estándar en OpenShift.
