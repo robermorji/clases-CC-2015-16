@@ -8,6 +8,3 @@
 * [Ejercicio 5](Ejercicio5.md)
 * [Ejercicio 6](Ejercicio6.md)
 * [Ejercicio 7](Ejercicio7.md)
-* [Ejercicio 8](Ejercicio8.md)
-* [Ejercicio 9](Ejercicio9.md)
-* [Ejercicio 10](Ejercicio10.md)
