@@ -20,10 +20,12 @@ Ya está configurado el despliegue automático.
 
 Finalmente nos damos de alta en SNAP-CI y pasamos a configurarlo junto con un pipeline donde configuramos la instalación y pruebas
 
+```
 nvm install 0.12.7
 npm install
 npm -g install mocha
 mocha
+```
 
 ![ejer6_img4](http://googledrive.com/host/0B5Yam2FWqtZPOUY1RGEyY1ZKLXM/Ejercicio6_4.png)
 
