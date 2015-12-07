@@ -1,4 +1,4 @@
-**José Cristóbal López Zafra - Ejercicios sobre [LXC](http://jj.github.io/CC/documentos/temas/Contenedores)**
+**José Cristóbal López Zafra - Ejercicios del [tema 3](http://jj.github.io/CC/documentos/temas/Contenedores)**
 
 ##Ejercicio1
 ###Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0
@@ -31,14 +31,13 @@ Dentro del contenedor ejecutamos `ifconfig -a` para ver sus interfaces de red
 ![interfaces red contenedor](http://i.imgur.com/f3aK9oN.png)
 
 
-Y fuera, con `brctl show` y el contenedor parado (`lxc-stop -n caja1`) vemos que no tiene ninguna "puente", aunque según los apuntes deberíamos haber encontrado lxcbr0.
+Y fuera, con `brctl show` y el contenedor parado (`lxc-stop -n caja1`) vemos que no tiene ningun "puente", aunque según los apuntes deberíamos haber encontrado lxcbr0.
 
-
-![vacio](http://i.imgur.com/VTUNU2e.png)
+[Mostramos los puentes](http://i.imgur.com/VTUNU2e.png)
 
 Podemos crear (`brctl addbr interfazCable`) y asignar(`brctl addif interfazCable eth0`) una nueva interfaz a la red cableada: 
 
-![nueva int](http://i.imgur.com/z005i6V.png)
+[creando nueva interfaz cableada](http://i.imgur.com/z005i6V.png)
 
 
 ##Ejercicio3
