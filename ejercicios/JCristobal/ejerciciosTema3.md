@@ -67,3 +67,23 @@ Una vez creado accedo a el con `lxc-start -f gentoo1.conf -n gentoo1`
 ![contenedor gentoo](http://i.imgur.com/cCTjZIj.png)
 
 
+##Ejercicio4
+####Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
+
+Para instalarlo ejecutamos `wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash`. Una vez [instalado](http://i.imgur.com/JaNpX1j.png) podemos acceder a lxc-webpanel desde http://localhost:5000
+
+![Inicio de lxc-webpanel](http://i.imgur.com/y3uYqMI.png)
+
+Para [arrancar](http://i.imgur.com/3KlESRO.png) o parar podemos acerlo desde la página de inicio o [dentro del apartado](http://i.imgur.com/7scdoPt.png) de cada máquina virtual.
+
+
+####Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
+
+Para restringuir o cambiar los recursos de cada máquina, accedemos a su propio apartado y modificamos los recursos que queramos, en mi caso la memoria límite:
+
+![memoria límite cambiada](http://i.imgur.com/FR16uyY.png)
+
+
+
+
+
