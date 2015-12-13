@@ -111,3 +111,10 @@
 #### Objetivos adicionales
 - [ ] Descargar herramientas para trabajar con `lxc` y `docker`.
 - [ ] Comprender las herramientas que despliegan a infraestructura virtual.
+
+### Décima semana, 7 de diciembre 2015
+#### Objetivos principales
+- [ ]
+
+#### Objetivos adicionales
+- [ ] 
