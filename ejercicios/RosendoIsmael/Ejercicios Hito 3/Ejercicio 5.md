@@ -38,6 +38,12 @@ Como ultimo paso actualizamos heroku.
 ![](http://googledrive.com/host/0B6Q-phIC3pUpblVzUS1RbEZjb1E/EjercicioHW22.png)
 
 
+Para probar el uso de foreman llevamo a cabo
+
+    foreman start web
+![](http://googledrive.com/host/0B6Q-phIC3pUpblVzUS1RbEZjb1E/EjercicioHW35.png)
+
+
 
 
 
