@@ -1,7 +1,5 @@
-## Ejercicio 4
-
-#### Instalar y echar a andar tu primera aplicación en Heroku.
-
+# Ejercicio 4
+## Instalar y echar a andar tu primera aplicación en Heroku.
 Una vez que nos hemos creado una cuenta desde la página de [Heroku](https://www.heroku.com/), lo primero que tenemos que hacer es instalar el cinturón de herramientas de Heroku (para lo que tenemos que asegurarnos que además tenemos instalado Ruby):
 
 ```
