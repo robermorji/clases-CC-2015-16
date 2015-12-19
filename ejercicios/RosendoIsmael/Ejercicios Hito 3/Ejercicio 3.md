@@ -13,4 +13,4 @@ En el directorio de mi aplicación he instalado mocha y la dependencia de "super
     
 Tras esto implemento los test funcionales para la aplicación y los resuelvo
 
-[](http://googledrive.com/host/0B6Q-phIC3pUpblVzUS1RbEZjb1E/EjercicioWH13.png)
+[](http://googledrive.com/host/0B6Q-phIC3pUpblVzUS1RbEZjb1E/EjercicioHW13.png)
