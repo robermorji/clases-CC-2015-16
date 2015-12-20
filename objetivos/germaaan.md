@@ -114,7 +114,10 @@
 
 ### Décima semana, 7 de diciembre 2015
 #### Objetivos principales
-- [ ]
+- [ ] Realizar un ejemplo de virtualización ligera con chroot
+- [ ] Entender las diferencias de la virtualización de chroot y otras herramientas de virtualización
+- [ ] Entender las ventajas de lxc respecto a otras herramientas de virtualización ligera.
 
 #### Objetivos adicionales
-- [ ] 
+- [ ] Descargar herramientas para trabajar con lxc y docker.
+- [ ] Comprender las herramientas que despliegan la infraestructura virtual.
