@@ -90,3 +90,38 @@ Ya podemos ver la maquina en el panel web de LXC.
 
 
 ### Ejercicio 8
+
+Ya tenía instalado Docker antes de hacer este ejercicio, pero en Mac OSX es muy fácil y viene explicado aquí: https://docs.docker.com/mac/step_one/
+
+Simplemente hay que descargarse el instalador Docker Toolbox y ejecutarlo para instalar. Una vez instalado, cada vez que queramos usar Docker, necesitaremos ejecutarlo usando el ejecutable "Docker Quickstart Terminal". De esta forma se nos abrirá una terminal que ejecuta un script que, básicamente, configura todas las variables de entorno e inicializa docker para poder usarlo con los comandos habituales (es como iniciar el servicio de Docker con `docker -d &`).
+
+### Ejercicio 9
+
+Para instalar una imagen alternativa de Ubuntu podemos usar, por ejemplo `docker pull ubuntu:12.04`, que nos descargará la versión de Ubuntu 12.04.
+
+Para instalar CentOS podemos usar `docker pull centos`, o instalar una versión alternativa que haya. Se pueden consultar las imágenes disponibles en: https://hub.docker.com/_/centos/
+
+Para instalar una con MongoDB podemos usar la imagen oficial con `docker pull mongo`, que se puede consultar en: https://hub.docker.com/_/mongo/
+
+
+### Ejercicio 10
+
+Para crear un usuario propio en el contenedor, podemos usar el comando "useradd" de la siguiente forma: `useradd alberto`. Después podemos instalar nginx de forma normal, como si fuese un ordenar normal con Ubuntu (con `sudo apt-get install nginx`).
+
+Aunque no podremos acceder al servidor a través del navegador de forma tan sencilla. Si hemos iniciado el contenedor con `docker run -i -t ubuntu /bin/bash` no se habrá expuesto ningún puerto para acceder desde la máquina host o desde cualquier otro lugar de internet.
+
+Para que se pueda acceder a ese puerto desde la máquina host a través de la ip de la red simulada para el contenedor, será necesario iniciar con el comando: `docker run -p 8080:80 -i -t ubuntu /bin/bash`. De esta forma exponemos el puerto 80 del contenedor en el puerto 8080 de cara a la máquina host. De esta forma podremos acceder al servicio usando la ip del contenedor y el puerto 8080. Por otro lado, los cambios en el contenedor no son persistentes, así que tendremos que volver a instalar nginx.
+
+![](http://i.imgur.com/3iiMDnF.png)
+
+### Ejercicio 11
+
+
+
+### Ejercicio 12
+
+En el [repositorio del proyecto de la asignatura](https://github.com/segura2010/CC-Proyecto-OpenSecureChat) podemos ver un fichero llamado [Dockerfile](https://github.com/segura2010/CC-Proyecto-OpenSecureChat/blob/master/Dockerfile). Los ficheros Dockerfile permiten especificar los servicios y demás elementos que necesitará nuestro contenedor para funcionar, de forma que simplemente usando el comando `docker build -t nombre_contenedor path/al/ficherodocker/` nos creará el contenedor.
+
+Como se puede ver en el fichero, se indica el sistema operativo (la imagen) sobre el que se sostenta nuestra aplicación. Y después simplemente vamos indicando los recursos que necesitamos instalar en el sistema para que funcione. En este caso, como usamos Ubuntu, usamos `apt-get` para instalar los diferentes servicios. En mi caso necesito MongoDB, Redis, Git, NodeJS y NPM. Además de indicar los comandos para instalar los diferentes servicios que necesitamos, debemos indicar las condiguraciones que necesitemos. En nuestro caso, es necesario crear la carpeta en la que se guardarán los datos de la base de datos MongoDB (/data/db).
+
+También se indica que debe clonar el repositorio de nuestro proyecto (en la rama production que será la que contenga la última versión estable). Y después de clonar se indica que el directorio en el que se ha clonado será el directorio de trabajo. Una vez hecho eso, terminamos de configurar nuestra aplicación instalando los paquetes de NodeJS necesarios con `npm install` y ejecutando las tareas de Grunt. Finalmente se indica con CMD cual es el comando principal que debe ejecutarse al iniciar el contenedor. Esto permite ejecutar el contenedor como un programa normal, simplemente usando `docker run -d -t osc`. Como podemos ver, lo que se ejecuta con CMD es un [script bash](https://github.com/segura2010/CC-Proyecto-OpenSecureChat/blob/master/docker_start.sh). Básicamente este script se encarga de iniciar la base de datos mongo y redis, y actualizar la aplicación en caso de que fuese necesario. Y finalmente, inicia la aplicación NodeJS.
