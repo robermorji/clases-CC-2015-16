@@ -103,6 +103,8 @@ Para instalar CentOS podemos usar `docker pull centos`, o instalar una versión 
 
 Para instalar una con MongoDB podemos usar la imagen oficial con `docker pull mongo`, que se puede consultar en: https://hub.docker.com/_/mongo/
 
+![](http://i.imgur.com/EhydpoA.png)
+
 
 ### Ejercicio 10
 
@@ -116,7 +118,9 @@ Para que se pueda acceder a ese puerto desde la máquina host a través de la ip
 
 ### Ejercicio 11
 
+Como podemos ver en la imagen, para guardar el contenedor tal y como se encuentra en un momento determinado, solamente necesitamos hacer "commit". Para ello, necesitamos saber en identificador completo del contenerdor. Usando la orden `docker ps -a -notrunc` ó `docker ps -a --no-trunc`, podemos obtener el identificador completo del contendor. Una vez tenemos el identificador completo, podemos utilizar el comando `docker commit ID_CONTENEDOR NOMBRE_QUE_QUEREMOS_DAR`. Y ya nos aparecerá el contenedor como una nueva imagen en nuestras imágenes. Podemos ver las imágenes instaladas con `docker images`.
 
+![](http://i.imgur.com/hgglio7.jpg)
 
 ### Ejercicio 12
 
