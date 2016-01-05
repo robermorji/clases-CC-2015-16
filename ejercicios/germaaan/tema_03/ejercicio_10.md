@@ -9,9 +9,13 @@ adduser usudocker sudo
 login usudocker
 ```
 
+![https://dl.dropboxusercontent.com/s/gmxj3k2hw0xu4gn/eje10_img01.png](https://dl.dropboxusercontent.com/s/gmxj3k2hw0xu4gn/eje10_img01.png)
+
 Y ya procedemos a instalar **nginx** como siempre:
 
 ```
 sudo apt-get update
 sudo apt-get install nginx
 ```
+
+![https://dl.dropboxusercontent.com/s/teqfc4ywx7kusge/eje10_img02.png](https://dl.dropboxusercontent.com/s/teqfc4ywx7kusge/eje10_img02.png)

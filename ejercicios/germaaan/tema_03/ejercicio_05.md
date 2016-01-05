@@ -34,11 +34,15 @@ sudo lxc-start -n ubuntucontenedor
 
 Una vez instalado, comprobamos en ambos que **nginx** está funcionando; en el contenedor además es conveniente ejecutar `ìfconfig eth0` para conocer la dirección a la que deberemos acceder, ya que en el caso de la jaula la dirección es el propio host local.
 - Servidor en la jaula:
+![https://dl.dropboxusercontent.com/s/v11d3j81jzsiguk/eje05_img01.png](https://dl.dropboxusercontent.com/s/v11d3j81jzsiguk/eje05_img01.png)
 - Servidor en el contenedor:
+![https://dl.dropboxusercontent.com/s/31l7sksp0fkj4z4/eje05_img02.png](https://dl.dropboxusercontent.com/s/31l7sksp0fkj4z4/eje05_img02.png)
 
 Comprobamos que ciertamente tenemos acceso a ambos servidores y estos funcionan correctamente:
 - Servidor en la jaula:
-- Servdor en el contenedor:
+![https://dl.dropboxusercontent.com/s/vadjozn1zbuk798/eje05_img03.png](https://dl.dropboxusercontent.com/s/vadjozn1zbuk798/eje05_img03.png)
+- Servidor en el contenedor:
+![https://dl.dropboxusercontent.com/s/34fn3b43mqtzk45/eje05_img04.png](https://dl.dropboxusercontent.com/s/34fn3b43mqtzk45/eje05_img04.png)
 
 Con ambos servidores funcionan correctamente, vamos a medir las prestaciones de los mismos. Para realizar la medición vamos a usar la aplicación **ab** (_Apache Benchmark_), una utilidad muy sencilla que nos permite hacer pruebas de carga a cualquier tipo de servidor web.
 
