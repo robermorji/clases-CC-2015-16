@@ -104,20 +104,20 @@
 
 ### Novena semana, 30 de noviembre 2015
 #### Objetivos principales
-- [ ] Entender los procesos y el concepto de virtualización ligera.
-- [ ] Comprender su uso dentro de un proceso de integración y despliegue continuo.
-- [ ] Conocer diferentes herramientas para llevar a cabo la virtualización.
+- [X] Entender los procesos y el concepto de virtualización ligera.
+- [X] Comprender su uso dentro de un proceso de integración y despliegue continuo.
+- [X] Conocer diferentes herramientas para llevar a cabo la virtualización.
 
 #### Objetivos adicionales
-- [ ] Descargar herramientas para trabajar con `lxc` y `docker`.
-- [ ] Comprender las herramientas que despliegan a infraestructura virtual.
+- [X] Descargar herramientas para trabajar con `lxc` y `docker`.
+- [X] Comprender las herramientas que despliegan a infraestructura virtual.
 
 ### Décima semana, 7 de diciembre 2015
 #### Objetivos principales
-- [ ] Realizar un ejemplo de virtualización ligera con chroot
-- [ ] Entender las diferencias de la virtualización de chroot y otras herramientas de virtualización
-- [ ] Entender las ventajas de lxc respecto a otras herramientas de virtualización ligera.
+- [X] Realizar un ejemplo de virtualización ligera con chroot
+- [X] Entender las diferencias de la virtualización de chroot y otras herramientas de virtualización
+- [X] Entender las ventajas de lxc respecto a otras herramientas de virtualización ligera.
 
 #### Objetivos adicionales
-- [ ] Descargar herramientas para trabajar con lxc y docker.
-- [ ] Comprender las herramientas que despliegan la infraestructura virtual.
+- [X] Descargar herramientas para trabajar con lxc y docker.
+- [X] Comprender las herramientas que despliegan la infraestructura virtual.
