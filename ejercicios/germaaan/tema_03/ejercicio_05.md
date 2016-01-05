@@ -1,6 +1,5 @@
 # Ejercicio 5
 ## Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
-
 Para hacer esta comparación vamos a crear tanto una jaula como un contenedor que contengan la misma versión de Ubuntu 15.10 (Wily) 64 bits.
 
 Creamos la jaula, instalando los paquetes necesarios e introduciendo la configuración necesaria:
@@ -34,15 +33,11 @@ sudo lxc-start -n ubuntucontenedor
 ```
 
 Una vez instalado, comprobamos en ambos que **nginx** está funcionando; en el contenedor además es conveniente ejecutar `ìfconfig eth0` para conocer la dirección a la que deberemos acceder, ya que en el caso de la jaula la dirección es el propio host local.
-
 - Servidor en la jaula:
-
 - Servidor en el contenedor:
 
 Comprobamos que ciertamente tenemos acceso a ambos servidores y estos funcionan correctamente:
-
 - Servidor en la jaula:
-
 - Servdor en el contenedor:
 
 Con ambos servidores funcionan correctamente, vamos a medir las prestaciones de los mismos. Para realizar la medición vamos a usar la aplicación **ab** (_Apache Benchmark_), una utilidad muy sencilla que nos permite hacer pruebas de carga a cualquier tipo de servidor web.
@@ -58,27 +53,26 @@ ab -n 1000000 -c 10 http://DIRECCION_IP/
 ```
 
 Una vez tengamos los resultados nos fijaremos en las siguientes variables:
-
 - Tiempo de ejecución
 - Solicitudes por segundo
 - Velocidad de transferencia
 
-|            	|                      	|      nginx (jaula)      	|                                	|                      	|    nginx (contenedor)   	|                                	|
-|:----------:	|:--------------------:	|:-----------------------:	|:------------------------------:	|:--------------------:	|:-----------------------:	|:------------------------------:	|
-|            	| Tiempo ejecución (s) 	| Solicitudes por segundo 	| Velocidad transferencia (KB/s) 	| Tiempo ejecución (s) 	| Solicitudes por segundo 	| Velocidad transferencia (KB/s) 	|
-|  Prueba 1  	|        35,095        	|        28.494,370       	|           23.736,030           	|        42,753        	|        23.390,100       	|           19.484,140           	|
-|  Prueba 2  	|        34,350        	|        29.111,720       	|           24.250,290           	|        42,411        	|        23.578,810       	|           19.641,330           	|
-|  Prueba 3  	|        34,099        	|        29.326,790       	|           24.429,440           	|        43,862        	|        22.799,020       	|           18.991,760           	|
-|  Prueba 4  	|        33,751        	|        29.628,410       	|           24.680,700           	|        43,000        	|        23.255,850       	|           19.372,300           	|
-|  Prueba 5  	|        35,210        	|        28.401,290       	|           23.658,500           	|        42,247        	|        23.670,210       	|           19.717,470           	|
-|  Prueba 6  	|        34,558        	|        28.936,650       	|           24.104,450           	|        45,774        	|        21.846,570       	|           18.198,370           	|
-|  Prueba 7  	|        34,375        	|        29.090,510       	|           24.232,620           	|        49,055        	|        20.385,430       	|           16.981,220           	|
-|  Prueba 8  	|        35,224        	|        28.389,450       	|           23.648,640           	|        46,894        	|        21.324,640       	|           17.763,590           	|
-|  Prueba 9  	|        35,884        	|        27.867,290       	|           23.213,670           	|        44,357        	|        22.544,450       	|           18.779,700           	|
-|  Prueba 10 	|        34,832        	|        28.709,200       	|           23.914,990           	|        44,614        	|        22.414,740       	|           18.671,650           	|
-|            	|                      	|                         	|                                	|                      	|                         	|                                	|
-|    Media   	|        34,738        	|        28.795,568       	|           23.986,933           	|        44,497        	|        22.520,982       	|           18.760,153           	|
-| Desviación 	|         0,633        	|         523,125         	|             435,766            	|         2,193        	|        1.068,276        	|             889,882            	|
+           |                      | nginx (jaula)           |                                |                      | nginx (contenedor)      |
+:--------: | :------------------: | :---------------------: | :----------------------------: | :------------------: | :---------------------: | :----------------------------:
+           | Tiempo ejecución (s) | Solicitudes por segundo | Velocidad transferencia (KB/s) | Tiempo ejecución (s) | Solicitudes por segundo | Velocidad transferencia (KB/s)
+Prueba 1   | 35,095               | 28.494,370              | 23.736,030                     | 42,753               | 23.390,100              | 19.484,140
+Prueba 2   | 34,350               | 29.111,720              | 24.250,290                     | 42,411               | 23.578,810              | 19.641,330
+Prueba 3   | 34,099               | 29.326,790              | 24.429,440                     | 43,862               | 22.799,020              | 18.991,760
+Prueba 4   | 33,751               | 29.628,410              | 24.680,700                     | 43,000               | 23.255,850              | 19.372,300
+Prueba 5   | 35,210               | 28.401,290              | 23.658,500                     | 42,247               | 23.670,210              | 19.717,470
+Prueba 6   | 34,558               | 28.936,650              | 24.104,450                     | 45,774               | 21.846,570              | 18.198,370
+Prueba 7   | 34,375               | 29.090,510              | 24.232,620                     | 49,055               | 20.385,430              | 16.981,220
+Prueba 8   | 35,224               | 28.389,450              | 23.648,640                     | 46,894               | 21.324,640              | 17.763,590
+Prueba 9   | 35,884               | 27.867,290              | 23.213,670                     | 44,357               | 22.544,450              | 18.779,700
+Prueba 10  | 34,832               | 28.709,200              | 23.914,990                     | 44,614               | 22.414,740              | 18.671,650
+           |                      |                         |                                |                      |                         |
+Media      | 34,738               | 28.795,568              | 23.986,933                     | 44,497               | 22.520,982              | 18.760,153
+Desviación | 0,633                | 523,125                 | 435,766                        | 2,193                | 1.068,276               | 889,882
 
 Viendo los resultados, en general el servidor web instalado en la jaula tiene un rendimiento superior; más concretamente, fijándonos en el tiemp de ejecución (que es la variable con una menor desviación) vemos que el tiempo de ejecución promedio del servidor de la jaula es de casi un 22% menor que el mismo tiempo para el contenedor.
 
