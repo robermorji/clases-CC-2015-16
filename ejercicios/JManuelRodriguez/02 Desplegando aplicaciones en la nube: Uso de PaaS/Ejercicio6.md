@@ -25,22 +25,3 @@ Tras configurar esto, presionamos el botón *Save and go to DashBoard*
 Ahora vamos a indicar en qué plataforma está el origen del despliegue, que en nuestro caso, es Heroku.
 
 Añadimos el nombre de nuestra aplicación en Heroku y nuestra clave API en Heroku para poder hacer el despliegue.
-
-
-
-
-1. Accedemos a la [aplicación](https://github.com/jmrodriguez90/Tema3_CalificarEmpresas) que usamos en el ejercicio anterior y la desplegamos en Heroku con los siguientes comandos
- - `heroku apps:create --region eu jmrodriguezherokucalifica`
- - `git push heroku master`
-2. Al tener la aplicación desplegada en Heroku, procedemos a instalar foreman
- - `sudo gem install foreman`
-3. Para que Heroku sepa qué ejecutar, creamos el archivo Procfile
- - `echo "web: npm start" >> Procfile`
-4. Por último, iniciamos la aplicación en foreman, cuyo despliegue lo podremos ver en el puerto 5000 del LocalHost
- - `foreman start web`
-
-*Volvemos a pasar los test y desplegamos la aplicación en Heroku*
- - `npm test`
- - `git push heroku master`
-
-Con este [**enlace**](https://jmrodriguezherokucalifica.herokuapp.com/) se puede visualizar la app
