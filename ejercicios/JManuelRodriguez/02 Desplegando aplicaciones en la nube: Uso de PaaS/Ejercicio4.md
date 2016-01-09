@@ -19,4 +19,4 @@ Git remote heroku added
 
  * Para finalizar, se usa el comando `git push heroku origin master` para poner en marcha la app
 
-La aplicación es accesible desde el siguiente [**enlace**](jmrodriguezherokuapp.herokuapp.com)
+La aplicación es accesible desde el siguiente [**enlace**](https://jmrodriguezherokuapp.herokuapp.com/)
