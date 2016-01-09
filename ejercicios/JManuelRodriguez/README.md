@@ -42,3 +42,5 @@ _________________________
 
 - [X] [Ejercicio 9](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/02%20Desplegando%20aplicaciones%20en%20la%20nube:%20Uso%20de%20PaaS/Ejercicio9.md)
 
+- [] [Ejercicio 10]()
+
