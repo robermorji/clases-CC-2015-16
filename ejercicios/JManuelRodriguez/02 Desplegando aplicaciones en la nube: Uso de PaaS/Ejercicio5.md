@@ -14,4 +14,5 @@ Usar como base la aplicación de ejemplo de heroku y combinarla con la aplicaci�
 *Volvemos a pasar los test y desplegamos la aplicación en Heroku*
  - `npm test`
  - `git push heroku master`
+
 Con este [**enlace**](https://jmrodriguezherokucalifica.herokuapp.com/) se puede visualizar la app
