@@ -18,3 +18,5 @@ Git remote heroku added
 *En caso de que la respuesta de la terminal, luego de la última instrucción sea* `!    Name is already taken`, *esto quiere decir que el nombre escogido ya está siendo usado y por lo tanto, se debe elegir otro nombre para la app*
 
  * Para finalizar, se usa el comando `git push heroku origin master` para poner en marcha la app
+
+La aplicación es accesible desde el siguiente [**enlace**](jmrodriguezherokuapp.herokuapp.com)
