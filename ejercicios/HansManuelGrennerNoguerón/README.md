@@ -6,5 +6,5 @@ Este directorio contiene los ejercicios realizados de la asignatura, organizados
 
 * [Tema 1. Iniciación a DevOps: desarrollo basado en pruebas.](Tema1)
 * [Tema 2. Usando contenedores.](Tema2)
-* Tema 3. Uso de sistemas de virtualización.
+* [Tema 3. Uso de sistemas de virtualización.](Tema3)
 * Tema 4. Gestión de configuraciones.
