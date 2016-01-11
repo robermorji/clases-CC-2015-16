@@ -20,4 +20,4 @@ Crear un usuario propio e instalar _nginx_ en el contenedor creado de esta forma
  
 4. De ser necesario, se puede iniciar el servicio de _nginx_ en la imagen _Docker_
 
- `servcice nginx start`
+ `service nginx start`
