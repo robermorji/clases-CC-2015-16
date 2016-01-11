@@ -12,7 +12,7 @@
  
  Donde `<nombre_unidad_mysql>` puede determinarse al utilizar el comando `juju status`
  
-2. Eliminar la máquina virtual (_táper_) definido en el ejercicio anterior
+2. Eliminar la máquina virtual (_táper_) definida en el ejercicio anterior
 
  `juju destroy-machine <numero_maquina_virtual>`
  
