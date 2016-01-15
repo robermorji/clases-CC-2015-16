@@ -85,5 +85,69 @@ Para restringuir o cambiar los recursos de cada máquina, accedemos a su propio 
 
 
 
+##Ejercicio6
+###Instalar juju.
+
+Lo instalamos ejecutando `sudo apt-get install juju-local`
+
+###Usándolo, instalar MySQL en un táper.
+
+Lo iniciamos con `juju init`. Se crea el fichero "environments.yaml": dentro cambiamos la línea `default: amazon` por `default: local`.
+
+Cambiamos a entorno local con `juju switch local`.
+
+Creamos un contenedor con `juju bootstrap` y para instalar MySQL ejecutamos `juju deploy mysql`.
+
+
+##Ejercicio7
+###Destruir toda la configuración creada anteriormente
+
+Destruimos toda la configuración ejecutando `juju destroy-environment local`
+
+###Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
+
+Creamos con `juju bootstrap` e instalamos MySQL `juju deploy mysql`. Añadimos mediawiki con `juju deploy mediawiki` y la relación con `juju add-relation mediawiki:db mysql`. Para acabar exponemos el servicio `juju expose mediawiki`. 
+
+###Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
+
+```
+#!/bin/bash
+# Script para crear taper con juju y añadirle mediawiki
+
+juju init
+
+sed -i 's/default: amazon/default: local/g' ~/.juju/environments.yaml
+
+juju switch local
+
+juju bootstrap
+
+juju deploy mysql
+
+juju deploy mediawiki
+
+juju add-relation mediawiki:db mysql
+
+juju expose mediawiki
+```
+
+##Ejercicio8
+###Instalar docker.
+
+Instalamos ejecutando `sudo apt-get install docker.io`
+
+Y creamos un enlace a docker.io para poder usar simplemente docker como comando `sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker`
+
+##Ejercicio11
+###Crear a partir del contenedor anterior una imagen persistente con commit.
+
+[commit](https://i.gyazo.com/632055da2613fa0ad79d1b4eea0a8ae3.png)
+
+[push](https://i.gyazo.com/1de41e768524c9bf62a2987eb2b289f8.png)
+
+![imagen descargada](https://i.gyazo.com/bdbc799abe477c99ae3a1d1c4d35dcf6.png)
+
+
+
 
 

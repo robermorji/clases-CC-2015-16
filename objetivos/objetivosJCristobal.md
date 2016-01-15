@@ -118,11 +118,11 @@ Objetivos adicionales
 # Objetivos de la semana de 30 de Noviembre
 
 * [x]  Entender los procesos y el concepto de virtualización ligera.
-* []  Comprender su uso dentro de un proceso de integración y despliegue continuo.
-* []  Conocer diferentes herramientas para llevar a cabo la virtualización.
+* [x]  Comprender su uso dentro de un proceso de integración y despliegue continuo.
+* [x]  Conocer diferentes herramientas para llevar a cabo la virtualización.
 
 * [x]  Descargar herramientas para trabajar con lxc y docker.
-* []  Comprender las herramientas que despliegan a infraestructura virtual.
+* [x]  Comprender las herramientas que despliegan a infraestructura virtual.
 
 
 
