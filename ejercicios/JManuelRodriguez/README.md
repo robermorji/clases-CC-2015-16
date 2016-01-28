@@ -27,3 +27,20 @@ _________________________
 - [X] [Ejercicio 1](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/02%20Desplegando%20aplicaciones%20en%20la%20nube:%20Uso%20de%20PaaS/Ejercicio1.md)
 
 - [X] [Ejercicio 2](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/02%20Desplegando%20aplicaciones%20en%20la%20nube:%20Uso%20de%20PaaS/Ejercicio2.md)
+
+- [X] [Ejercicio 3](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/02%20Desplegando%20aplicaciones%20en%20la%20nube:%20Uso%20de%20PaaS/Ejercicio3.md)
+
+- [X] [Ejercicio 4](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/02%20Desplegando%20aplicaciones%20en%20la%20nube:%20Uso%20de%20PaaS/Ejercicio4.md)
+
+- [X] [Ejercicio 5](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/02%20Desplegando%20aplicaciones%20en%20la%20nube:%20Uso%20de%20PaaS/Ejercicio5.md)
+
+- [X] [Ejercicio 6](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/02%20Desplegando%20aplicaciones%20en%20la%20nube:%20Uso%20de%20PaaS/Ejercicio6.md)
+
+- [X] [Ejercicio 7](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/02%20Desplegando%20aplicaciones%20en%20la%20nube:%20Uso%20de%20PaaS/Ejercicio7.md)
+
+- [X] [Ejercicio 8](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/02%20Desplegando%20aplicaciones%20en%20la%20nube:%20Uso%20de%20PaaS/Ejercicio8.md)
+
+- [X] [Ejercicio 9](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/02%20Desplegando%20aplicaciones%20en%20la%20nube:%20Uso%20de%20PaaS/Ejercicio9.md)
+
+- [ ] [Ejercicio 10]()
+
