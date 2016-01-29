@@ -1,9 +1,12 @@
 
 ##1.- Crear y ejecutar un contenedor basado en Debian.
 
-```sh:
+```
 sudo lxc-create -t ubuntu UbuntuCaja
 ```
+
+![Imagen_Ejercicio_3](https://dl.dropboxusercontent.com/s/pcz2wanrb3wwps1/imagen1_3.png?dl=0)
+
 
 
 
