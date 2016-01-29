@@ -44,3 +44,33 @@ _________________________
 
 - [ ] [Ejercicio 10]()
 
+
+_________________________
+
+###Virtualización ligera usando contenedores
+
+
+- [X] [Ejercicio 1](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio01.md)
+
+- [X] [Ejercicio 2](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio02.md)
+
+- [X] [Ejercicio 3]()
+
+- [X] [Ejercicio 4]()
+
+- [X] [Ejercicio 5]()
+
+- [X] [Ejercicio 6]()
+
+- [X] [Ejercicio 7]()
+
+- [X] [Ejercicio 8]()
+
+- [X] [Ejercicio 9]()
+
+- [X] [Ejercicio 10]()
+
+- [X] [Ejercicio 11]()
+
+- [X] [Ejercicio 12]()
+
