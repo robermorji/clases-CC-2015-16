@@ -9,10 +9,10 @@ Virtualización ligera, usando contenedores: Ejercicio 3
 
 --
 
-1. *Para crear un contenedor con Ubuntu, usamos el siguiente comando:*
+- [ok] *Para crear un contenedor con Ubuntu, usamos el siguiente comando:*
 
 `sudo lxc-create -t ubuntu - n Ubuntu1`
 
-2. *Para instalar cualquier otra versión, solamente es neceario cambiar el nombre de la distribución ya que están en plantillas que se pueden usar en el momento que se desee.*
+- [ok] *Para instalar cualquier otra versión, solamente es neceario cambiar el nombre de la distribución ya que están en plantillas que se pueden usar en el momento que se desee.*
 
 `sudo lxc-create -t debian - n Ubuntu1`
