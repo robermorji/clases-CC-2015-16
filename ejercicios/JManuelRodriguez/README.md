@@ -1,3 +1,5 @@
+Espacio para ejercicios de la clase de Cloud Computing
+=======
 José Manuel Rodríguez.
 Puesta en marcha de la carpeta para ejercicios.
 ------------------------------------------------
@@ -73,4 +75,6 @@ _________________________
 - [X] [Ejercicio 11]()
 
 - [X] [Ejercicio 12]()
+
+
 
