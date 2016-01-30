@@ -54,6 +54,13 @@ La opción :1 hace referencia al puerto 5901. Usaremos ahora vinagre para conect
 
 ```vinagre 192.168.122.1:5901```
 
+**Instalar apache2 o nginx y probar que sirve páginas web (acceder desde el host a la IP del servidor virtualizado, bien con URL o con su navegador)**
+
+Estando conectados con la máquina procedemos a instalar nginx.
+
+```sudo apt-get install nginx```
+
+Nos conectamos a la IP anterior en el sistema anfitrión para comprobar que se puede acceder al servicio web a través del servidor virtualizado.
 
 
 
