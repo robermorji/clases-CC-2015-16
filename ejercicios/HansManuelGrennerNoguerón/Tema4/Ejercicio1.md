@@ -40,6 +40,21 @@ Cargamos la máquina :
 ![imagen](https://i.gyazo.com/1cb655643d0702eff146e2c2e466b36d.png)
 > Figura 1. Interfaz gráfica de SliTaz mediante QEMU.
 
+**Ejecutar la máquina instalada sin interfaz gráfica, y entrar usando un cliente VNC.**
+
+Instalamos el cliente para VNC vinagre.
+
+```sudo apt-get install vinagre```
+
+Lanzamos nuevamente la máquina virtual indicando la etiqueta **vnc** y el puerto a usar. Por defecto se usa el puerto 5900. 
+
+```qemu-system-x86_64 -hda slitaz.qcow2 vnc :1```
+
+La opción :1 hace referencia al puerto 5901. Usaremos ahora vinagre para conectarnos a la máquina virutal de forma remota.
+
+```vinagre 192.168.122.1:5901```
+
+
 
 
 
