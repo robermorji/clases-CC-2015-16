@@ -56,23 +56,23 @@ _________________________
 
 - [X] [Ejercicio 2](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio02.md)
 
-- [X] [Ejercicio 3]()
+- [X] [Ejercicio 3](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio03.md)
 
-- [X] [Ejercicio 4]()
+- [X] [Ejercicio 4](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio04.md)
 
-- [X] [Ejercicio 5]()
+- [X] [Ejercicio 5](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio05.md)
 
-- [X] [Ejercicio 6]()
+- [X] [Ejercicio 6](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio06.md)
 
-- [X] [Ejercicio 7]()
+- [X] [Ejercicio 7](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio07.md)
 
-- [X] [Ejercicio 8]()
+- [X] [Ejercicio 8](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio08.md)
 
-- [X] [Ejercicio 9]()
+- [X] [Ejercicio 9](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio09.md)
 
-- [X] [Ejercicio 10]()
+- [X] [Ejercicio 10](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio10.md)
 
-- [X] [Ejercicio 11]()
+- [X] [Ejercicio 11](https://github.com/jmrodriguez90/clases-CC-2015-16/blob/master/ejercicios/JManuelRodriguez/03%20Virtualizaci%C3%B3n%20ligera%20usando%20contenedores/Ejercicio11.md)
 
 - [X] [Ejercicio 12]()
 
