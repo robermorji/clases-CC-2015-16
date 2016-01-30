@@ -31,6 +31,19 @@ Creado el disco anterior y descargada la imagen iso ( la última versión de [Sl
 
 ```qemu-system-x86_64 -hda slitaz.qcow2 -boot -d -cdrom slitaz-5.0-rc3.iso -m 1G ```
 
+**Ejecutar la máquina instalada para interaccionar con ella con su interfaz gráfica**
+
+Cargamos la máquina :
+
+```qemu-system-x86_64 -hda slitaz.qcow2```
+
+![imagen](https://i.gyazo.com/1cb655643d0702eff146e2c2e466b36d.png)
+> Figura 1. Interfaz gráfica de SliTaz mediante QEMU.
+
+
+
+
+
 
 
 
