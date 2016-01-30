@@ -11,35 +11,35 @@ Virtualización ligera, usando contenedores: Ejercicio 8
 
 **Instalación Docker 1:**
 
-1. Tener instalado curl, si lo tenemos, se instala de esta manera:
+* Tener instalado curl, si lo tenemos, se instala de esta manera:
 `sudo apt-get install curl -y `
-2. Para instalar Docker, este comando:
+* Para instalar Docker, este comando:
 `curl -sSL https://get.docker.io/ubuntu/ | sudo sh`
 
 
 **Instalación Docker 2:**
 
-1. Instalar soporte https para APT
+* Instalar soporte https para APT
 ```
 [ -e /usr/lib/apt/methods/https ] || {
   apt-get update
   apt-get install apt-transport-https
  } 
 ```
-2. Agregamos la llave del repositorio de Docker al llavero local
+* Agregamos la llave del repositorio de Docker al llavero local
 ```
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
 ```
-3. Añadimos el repositorio a la lista de fuentes de APT (quizá salga una advertencia sobre la confiabilidad del paquete, aceptamos)
+* Añadimos el repositorio a la lista de fuentes de APT (quizá salga una advertencia sobre la confiabilidad del paquete, aceptamos)
 ```
 sudo sh -c "echo deb https://get.docker.io/ubuntu docker main\
  > /etc/apt/sources.list.d/docker.list"
 ```
-4. Actualizamos
+* Actualizamos
 ```
 sudo apt-get update
 ```
-5. Instalamos el paquete lxc-docker
+* Instalamos el paquete lxc-docker
 ```
 sudo apt-get install lxc-docker
 ```
@@ -47,19 +47,19 @@ sudo apt-get install lxc-docker
 
 **Instalación Docker 3:**
 
-1. Actualizamos
+* Actualizamos
 ```
 sudo apt-get update
 ```
-2. Instalamos el paquete docker.io
+* Instalamos el paquete docker.io
 ```
 sudo apt-get install docker.io
 ```
-3. Creamos un enlace a docker.io para poder usar simplemente docker como comando
+* Creamos un enlace a docker.io para poder usar simplemente docker como comando
 ```
 sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
 ```
-4. Habilitamos el autocompletado para docker
+* Habilitamos el autocompletado para docker
 ```
 sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
 ```
@@ -69,6 +69,10 @@ sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
 
 podemos ver la version de docker que instalamos ejecutando con: `docker -v`
 
-Y para probar que realmente este funcionando, podemos ejecutar el siguiente comando: `sudo docker run -i -t busybox cat --help` *Hay que esperar unos minutos para que responda.*
+Y para probar que realmente este funcionando, podemos ejecutar el siguiente comando:
+
+`sudo docker run -i -t busybox cat --help`
+
+*Hay que esperar unos minutos para que responda.*
 
 
