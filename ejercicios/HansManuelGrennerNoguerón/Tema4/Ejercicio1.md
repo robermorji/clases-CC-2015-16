@@ -15,6 +15,18 @@ Nos descargamos una imagen iso de cualquier distribución útil. Para hacer prue
 
 Estos sistemas operativos basados en Linux ocupan cerca de 50 MB.
 
+**Crear un disco virtualizado para QEMU**
+
+Para crear los discos dondse se van a instlar los sistemas operativos propuestos usamos el siguiente comando :
+ 
+```qemu-img create -f qcow2 <nombre_fichero> <tamanio_fichero>```
+
+Por ejemplo :
+
+```qemu-img create -f qcow2 slitaz.qcow2 1G```
+
+
+
 
 
 
