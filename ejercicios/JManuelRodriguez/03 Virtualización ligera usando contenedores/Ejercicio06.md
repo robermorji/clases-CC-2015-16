@@ -1,6 +1,6 @@
 [José M. Rodríguez](https://github.com/Jmrodriguez90)
 
-Virtualización ligera, usando contenedores: Ejercicio 5
+Virtualización ligera, usando contenedores: Ejercicio 6
 ======================================================================
 
 1. Instalar juju.
