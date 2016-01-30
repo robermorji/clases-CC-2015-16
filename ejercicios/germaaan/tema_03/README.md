@@ -1,4 +1,4 @@
-## Tema 3. Virtualización ligera usando contenedores
+## Tema 3. Contenedores
 
 * [Ejercicio 1](ejercicio_01.md)
 * [Ejercicio 2](ejercicio_02.md)
