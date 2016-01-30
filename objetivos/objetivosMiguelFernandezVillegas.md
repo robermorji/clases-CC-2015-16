@@ -125,6 +125,26 @@ Lista de objetivos
 * [X]  Altas en otros servicios que se puedan integrar en un PaaS.
 * [X]  Experimentar con despliegues automáticos.
 
+###  Objetivos de la semana de 30 de noviembre
+
+* [X] Entender los procesos y el concepto de virtualización ligera.
+* [X] Comprender su uso dentro de un proceso de integración y despliegue continuo.
+* [X] Conocer diferentes herramientas para llevar a cabo la virtualización.
+
+
+* [X] Descargar herramientas para trabajar con `lxc` y `docker`.
+* [X] Comprender las herramientas que despliegan a infraestructura virtual.
+
+###  Objetivos de la semana de 7 de diciembre 
+
+* [X] Realizar un ejemplo de virtualización ligera con chroot
+* [X] Entender las diferencias de la virtualización de chroot y otras herramientas de virtualización
+* [X] Entender las ventajas de lxc respecto a otras herramientas de virtualización ligera.
+
+
+- [X] Descargar herramientas para trabajar con lxc y docker.
+- [X] Comprender las herramientas que despliegan la infraestructura virtual.
+
 
 
 
