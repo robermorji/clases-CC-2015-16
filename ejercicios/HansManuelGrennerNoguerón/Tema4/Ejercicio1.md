@@ -5,4 +5,16 @@ Para instalar la herramienta de virtualización QEMU, con sus componentes adicio
 
 ```sudo apt-get install qemu-kvm qemu virt-manager virt-viewer libvirt-bin```
 
+**Bajar una distribución de Linux (p.ej. Debian )**
+
+
+Nos descargamos una imagen iso de cualquier distribución útil. Para hacer pruebas son recomendables distribuciones de muy reducido peso como :
+
+* Damn Small Linux
+* SliTaz
+
+Estos sistemas operativos basados en Linux ocupan cerca de 50 MB.
+
+
+
 
