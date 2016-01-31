@@ -7,7 +7,22 @@ Nos damos de alta en [IBM Bluemix](https://console.ng.bluemix.net/) y una vez cr
 
 **Desplegar una web sencilla**
 
-Desde el panel de control elegimos la opción de "Crear app" y eligimos el lenguaje a usar, en mi caso python. Asignamos el nombre para el proyecto e inmediatamente se despliegua una aplicación con código de ejemplo.
+Desde el panel de control elegimos la opción de "Crear app" y eligimos el lenguaje a usar, en mi caso python. Asignamos el nombre para el proyecto e inmediatamente se despliega una aplicación con código de ejemplo.
 
 ![imagen2](https://i.gyazo.com/4ff60ce1907a6c2b9cf96fd0aa9cddea.png)
 > Figura 2. Creando una aplicación python en IBM Bluemix
+
+Se encuentra desplegada en el siguiente enlace : [aplicación python](http://pyhtoncc.mybluemix.net/)
+
+**Modifica y actualiza la aplicación**
+
+Instalamos el cliente para línea de comandos de Clound Foundry. Y seguimos los pasos indicados desde la web de IBM Bluemix para descargar el código de ejemplo y subir correctamente los cambios que se vayan a aplicar.
+
+![imagen3](https://i.gyazo.com/577365eafab9788bb53a8ab73a75109f.png)
+> Figura 3. Despliegue de la aplicación modificada.
+
+
+
+
+
+ 
