@@ -11,3 +11,11 @@ A continuación descargamos vagrant usando ```apt-get`` dado que no se distribuy
 Instalar ahora el paquete dkms para asegurarnos de que los módulos del kernel de Virtualbox están correctamente actualizados.
 
 ```sudo apt-get install virtualbox-dkms```
+
+**Baja el "box" del ejemplo (precise64.box)**
+
+En la página web de [vagrantbox](http://www.vagrantbox.es/) encontramos todas las máquinas. Al usar virtualbox buscamos la box de precise64 con dicho proveedor.
+
+Descargamos y despleguamos la máquina : 
+
+```vagrant box add ubuntu_precise http://files.vagrantup.com/precise64.box```
