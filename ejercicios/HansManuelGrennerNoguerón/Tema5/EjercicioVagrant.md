@@ -56,3 +56,8 @@ para provisionar la máquina con nginx ( es necesario aádir el parámetro ```-y
 Lanzamos a continuación el comando ```vagrant provision``` para iniciar el proceso.
 
 
+**Comprueba que nginx queda instalado y funcionando**
+
+Comprobamos en localhost el funcionamiento de la página por defecto ( o la IP que le hayamos asignado en el archivo de configuración ) de nginx o nos conectamos por ssh y comprobamos el estado del servicio.
+
+
