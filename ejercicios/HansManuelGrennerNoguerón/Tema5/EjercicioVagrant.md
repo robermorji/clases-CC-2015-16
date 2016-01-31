@@ -12,6 +12,7 @@ Instalar ahora el paquete dkms para asegurarnos de que los módulos del kernel d
 
 ```sudo apt-get install virtualbox-dkms```
 
+
 **Baja el "box" del ejemplo (precise64.box)**
 
 En la página web de [vagrantbox](http://www.vagrantbox.es/) encontramos todas las máquinas. Al usar virtualbox buscamos la box de precise64 con dicho proveedor.
@@ -19,3 +20,26 @@ En la página web de [vagrantbox](http://www.vagrantbox.es/) encontramos todas l
 Descargamos y despleguamos la máquina : 
 
 ```vagrant box add ubuntu_precise http://files.vagrantup.com/precise64.box```
+
+
+**Lanza la máquina virtual y comprueba que puedes acceder a ella por ssh.**
+
+Anzes de lanzar la máquina tenemos que iniciar la configuración del proyecto. Para ello tenemos que crear un directorio raíz de nuestro proyecto y dentro generar el fichero de configuración llamando a ```vagrant init```.
+
+```
+mkdir vagrant_project
+cd vagrant_project
+vagrant init 
+```
+
+Editamos el fichero de configuración de Vagrant sustituyendo la siguiente línea.
+
+```config.vm.box = "ubuntu_precise"```
+
+Ya podemos iniciar el entorno mediante.
+
+```vagrant up```
+
+Para conectarnos a la máquina usamos.
+
+```vagrant ssh```
