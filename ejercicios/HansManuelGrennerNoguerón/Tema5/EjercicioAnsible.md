@@ -13,5 +13,10 @@ Mediante ifconfig podemos obtener las IP's de ambas máquinas. Procedemos a aña
 ```echo "<IP's>" >> ./ansible_hosts
 export ANSIBLE_HOSTS = ./ansible_hosts```
 
+**Usa Ansible para hacer ping a ambas máquinas**
+
+Dado que solo tenemos esas dos máquinas en el fichero de hosts disponibles:
+
+```ansible all -m ping```
 
 
