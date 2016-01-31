@@ -21,3 +21,19 @@ Y creamos la relación entre mysql y mediawiki para indicarle a la wiki la base 
 Y finalmente podemos lanzar el servicio para poder ser usado.
 
 ```juju expose mediawiki```
+
+
+**Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
+
+Para el script necesitamos replicar los comandos anteriores :
+
+```
+#!/bin/bash
+
+sudo juju switch local
+sudo juju bootstrap
+juju deploy mysql
+juju deploy mediawiki
+juju add-relation mediawiki:db mysql
+juju expose mediawiki
+```
