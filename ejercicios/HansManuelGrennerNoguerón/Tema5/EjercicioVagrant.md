@@ -43,3 +43,16 @@ Ya podemos iniciar el entorno mediante.
 Para conectarnos a la máquina usamos.
 
 ```vagrant ssh```
+
+
+**Crea un Vagrantfile para instalar el nginx al arrancar la máquina**
+
+Debajo de la línea, anteriormente modificada del Vagrantfile, añadimos :
+
+```config.vm.provision "shell", inline: "sudo apt-get update && sudo apt-get install -y nginx"```
+
+para provisionar la máquina con nginx ( es necesario aádir el parámetro ```-y``` para que no se realizen preguntas de 'Aceptar' y se instale directamente ).
+
+Lanzamos a continuación el comando ```vagrant provision``` para iniciar el proceso.
+
+
