@@ -148,6 +148,36 @@ Y creamos un enlace a docker.io para poder usar simplemente docker como comando 
 ![imagen descargada](https://i.gyazo.com/bdbc799abe477c99ae3a1d1c4d35dcf6.png)
 
 
+##Ejercicio12
+
+Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.
+
+
+Mediante un contenedor Docker, en un [repositorio propio](https://github.com/JCristobal/ubuntu-periodicointeractivo), crearé dicha imagen.
+
+Para conectarlo a DockerHub, me registro, conecto mi cuenta de GitHub y creo un "Automated Build" enlazado con el anterior repositorio, creando una [contenedor](https://hub.docker.com/r/jcristobal/ubuntu-periodicointeractivo/) disponible para descargar (`docker pull jcristobal/ubuntu-periodicointeractivo`) y desplegar (`docker run -t -i jcristobal/ubuntu-periodicointeractivo`).
+
+El archivo Dockerfile del repositorio contendrá el código:
+
+```
+# ubuntu-periodicointeractivo
+FROM ubuntu
+MAINTAINER J. Cristóbal López <tobas92@gmail.com>  Version: 1.1
+
+# Instalaremos los paquetes y herramientas necesarias para el despliegue de la aplicación
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+RUN echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" | tee -a /etc/apt/sources.list.d/10gen.list
+RUN apt-get update
+RUN apt-get -y install python python-setuptools python-dev mongodb-10gen python-django gcc build-essential git
+RUN easy_install web.py
+RUN easy_install mako
+RUN easy_install pymongo
+RUN easy_install feedparser
+
+# Descargamos la aplicación
+RUN git clone https://github.com/JCristobal/ProjectCC.git /home/PeriodicoInteractivo
+
+```
 
 
 
