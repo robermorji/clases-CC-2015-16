@@ -37,3 +37,29 @@ Y lo ejecutamos :
 ```ansible-playbook apache.yml --ask-sudo-pass```
 
 Es necesario activar la bandera de sudo dado que la instalación requiere de privilegios de root.
+
+**Crea un "playbook" para Ansible con el que instalar PHP. Aplícalo en ambas máquinas.**
+
+Creamos el playbook **php.yml** :
+
+```
+---
+- hosts:all
+  sudo: yes
+  tasks:
+    - name: instalar PHP
+      apt:pkg={{ item }} state=installed update_cache=true
+      with_items:
+        - php5-cli
+        - php5-curl
+        - php5-fpm
+        - php5-intl
+        - php5-json
+        - php5-mcrypt
+        - php5-sqlite
+```
+
+Y lo ejecutamos :
+
+```ansible-playbook php.yml --ask-sudo-pass```
+
