@@ -70,6 +70,93 @@ Para comprobar que el despliegue ciertamente ha sido exitoso, accedemos a la dir
 
 ## Modifica y actualiza tu aplicación.
 
+Modificamos los mensajes de la aplicación por unos típicos **"Hola Mundo"** y volvemos a ejecutar la aplicación para comprobar los cambios.
+
+```
+sed -i 's/Express/Hola Mundo/g' routes/index.js
+sed -i 's/Welcome to #{title}/Aplicación de prueba para Cloud Computing/g' views/index.jade
+DEBUG=prueba:* npm start
+```
+
+![eje03_img01](https://dl.dropboxusercontent.com/s/7l58sc1jpxzd5o1/eje03_img01.png)
+
+La dirección de acceso local, sigue siendo [http://localhost:3000](http://localhost:3000).
+
+![eje03_img02](https://dl.dropboxusercontent.com/s/07eg1j9hqm1gnjw/eje03_img02.png)
+
+Desplegamos los cambios con el comando `push`.
+
+```
+cf push germaaancc
+```
+
+![eje03_img03](https://dl.dropboxusercontent.com/s/37nnen8z7p1jfmj/eje03_img03.png)
+
+![eje03_img04](https://dl.dropboxusercontent.com/s/ytousgvxdd5rpe0/eje03_img04.png)
+
+Y la aplicación modificada ya está desplegada y accesible en [http://germaaancc.eu-gb.mybluemix.net](http://germaaancc.eu-gb.mybluemix.net)
+
+![eje03_img05](https://dl.dropboxusercontent.com/s/d25hho286265uiu/eje03_img05.png)
+
 ## Monitorízala durante el tiempo que está en ejecución.
 
+Para ver las entradas de registro actuales de nuestra aplicación usaremos el comando `logs` con la opción `--recent`.
+
+```
+cf logs germaaancc --recent
+```
+
+![eje04_img01](https://dl.dropboxusercontent.com/s/lw3gp6utup4fdr5/eje04_img01.png)
+
 ## Opcional: crea una máquina virtual, y accede a ella para instalar y configurar un servidor web.
+
+Antes de crear la máquina virtual, si no tenemos creado el par de claves para conexión SSH las creamos; si las tenemos creadas, simplemente las copiamos.
+
+```
+ssh-keygen -t rsa -b 4096 -C "germaaan@gmail.com"
+xclip -sel clip < ~/.ssh/id_rsa.pub
+```
+
+El primer paso en la creación de una máquina virtual es acceder al panel de control de nuestra cuenta de Bluemix y pulsar el botón **"Ejecutar máquinas virtuales"**.
+
+![eje05_img01](https://dl.dropboxusercontent.com/s/fj4zponuhhe1zvx/eje05_img01.png)
+
+Lo siguiente es configurar las características de la máquina virtual, básicamente, el sistema operativo que se le va a instalar, el nombre de la máquina y el tamaño; también será importante añadir el archivo de nuestra clave SSH pública (pulsando el enlace **"Añadir clave"**). Una vez que todo esto esté listo, pulsamos el botón **"Crear"** para iniciar la creación de la máquina.
+
+![eje05_img02](https://dl.dropboxusercontent.com/s/cua8nkgm4ssv71p/eje05_img02.png)
+
+Cuando finalice la creación, nos encontraremos en el dashboard de la máquina virtual que acabamos de crear, donde se muestran su principales propiedades; particularmente nos interesan el nombre de usuario (que por defecto es **ibmcloud**) y la dirección IP pública para poder acceder a él (en este caso la IP es **159.122.255.218**).
+
+![eje05_img03](https://dl.dropboxusercontent.com/s/4zin64691y86xzf/eje05_img03.png)
+
+Ahora nos conectamos por SSH a la máquina virtual.
+
+```
+ssh ibmcloud@159.122.255.218
+```
+
+![eje05_img04](https://dl.dropboxusercontent.com/s/v5xijr1puz9vp2y/eje05_img04.png)
+
+E instalamos el servidor **nginx**.
+
+```
+sudo apt-get install nginx
+```
+
+![eje05_img05](https://dl.dropboxusercontent.com/s/y870bxwsdip4x74/eje05_img05.png)
+
+Como siempre, comprobamos que el servidor está funcionando correctamente.
+
+```
+sudo service nginx status
+```
+
+![eje05_img06](https://dl.dropboxusercontent.com/s/p1oipvw0rtjjkfk/eje05_img06.png)
+
+Si accedemos a la dirección pública de nuestra máquina virtual, veremos como el servidor está funcionando a la perfección.
+
+![eje05_img07](https://dl.dropboxusercontent.com/s/kvoihkfc80rvuoi/eje05_img07.png)
+
+Lo último que deberemos hacer es eliminar la máquina virtual y borrar nuestra tarjeta de crédito de la cuenta de Bluemix para evitar cualquier tipo de recargo.
+
+![eje05_img08](https://dl.dropboxusercontent.com/s/h4m4257xaxnk3xv/eje05_img08.png)
