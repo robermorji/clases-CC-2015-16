@@ -20,7 +20,24 @@ En este caso tengo creado dos interfaces puente, una es lxcbr0 que pertenece a L
 
 ##Ejercicio 3
 
-Creamos con `sudo lxc-create -n debian -t debian -- -r jessie`	
+Creamos con `sudo lxc-create -n debian -t debian -- -r jessie`	y una vez creado para iniciarla usamos `lxc-start -n debian`
+
+##Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
+
+Usamos el script del comentario del issue de Óscar Zafra para Gentoo: nos lo descargamos y lo metememos en `/usr/share/lxc/templates/`:
+
+`sudo wget -P /usr/share/lxc/templates/ https://raw.github.com/globalcitizen/lxc-gentoo/master/lxc-gentoo`
+
+(como ya hay un lxc-gentoo se crea en lxc-gentoo.1)
+
+Le damos permisos `sudo chmod +x /usr/share/lxc/templates/lxc-gentoo.1`
+
+Y creamos el contenedor: `/usr/share/lxc/templates/lxc-gentoo.1 create`
+
+Por consola nos dará a elegir opciones sobre el contenedor.
+
+Una vez creado accedo a el con `lxc-start -f gentoo1.conf -n gentoo1`
+
 
 ##Ejercicio 4
 ###Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
@@ -92,5 +109,15 @@ Y creamos un enlace a docker.io para poder usar simplemente docker como comando 
 ##Ejercicio 11
 
 ###Crear a partir del contenedor anterior una imagen persistente con commit.
+
+Primero realizo el commit ![commit](https://gyazo.com/848d66c0b62419c65bc283abbc382a71.png) 
+
+A continuación realizo el push ![push](https://gyazo.com/949e49f79911c12116a3df35bd9e6634.png)
+
+Por último compruebo que se ha realizado el push con exito
+
+![exito](https://gyazo.com/488ff747aaf9b57491cd01a13d451228.png)
+
+
 
 
