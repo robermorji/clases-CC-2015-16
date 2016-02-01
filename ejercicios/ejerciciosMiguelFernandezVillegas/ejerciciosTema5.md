@@ -105,9 +105,9 @@ Debajo de la línea, anteriormente modificada del Vagrantfile, añadimos :
 
 `config.vm.provision "shell", inline: "sudo apt-get update && sudo apt-get install -y nginx"`
 
-para provisionar la máquina con nginx ( es necesario aádir el parámetro -y para que no se realizen preguntas de 'Aceptar' y se instale directamente ).
+para provisionar la máquina con nginx ( es necesario añadir el parámetro -y para que no se realizen preguntas de 'Aceptar' y se instale directamente ).
 
-Lanzamos a continuación el comando vagrant provision para iniciar el proceso.
+Lanzamos a continuación el comando `vagrant provision` para iniciar el proceso.
 
 ##Comprueba que nginx queda instalado y funcionando
 
