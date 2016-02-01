@@ -42,4 +42,4 @@ E insertamos inventario para Ansible
 
 Lo ejecutamos para que se instale en todas las máquinas
 
-`ansible-playbook ./playbook.yml -u alcasla --ask-passs --ask-sudo-pass
+`ansible-playbook ./playbook.yml -u alcasla --ask-passs --ask-sudo-pass`
