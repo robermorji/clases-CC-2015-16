@@ -45,13 +45,30 @@ Vemos Apache arrancado, con un navegador en el anfitrión de la web servida.
 
 
 ##**Virtualización: [Azure](http://es.slideshare.net/pacvslideshare/cloud-computing-virtualizacin-azure)**
-(pendiente de código de promoción)
+
 ###Crear una máquina virtual Azure
+
+Creo una aplicación web, ya que crear una máquina virtual requería inscripción de pago en mi plan.
+
+http://jcristobal.azurewebsites.net/
+
+![web desplegada](http://i.imgur.com/LqU5bhS.png)
+
 ###Instalar la herramienta para trabajar desde línea de comandos para su dispositivo operativo
+
+Instalo mediante `npm install -g azure-cli` o desde el enlace https://github.com/azure/azure-xplat-cli me descargo el instalador pre-compilado.
+
 ###Obtener la lista de máquinas
+
+Una vez [configurada la herramienta de línea de comandos](https://azure.microsoft.com/es-es/documentation/articles/virtual-machines-command-line-tools/) con nuestros datos ejecutamos para ver la lista de máquinas: `azure vm list`
+
 ###Ejecutar nuestra máquina desde CLI
+
+Para ejecutar una máquina desde la línea de comandos ejecutamos `azure vm start "nombre de la máquina"`
+
 ###Apagar nuestra máquina desde CLI
 
+Y para apagarla ejecutamos  `azure vm shutdown "nombre de la máquina"`
 
 
 ##**Virtualización: [IBM Bluemix](http://es.slideshare.net/pacvslideshare/cloud-computing-virtualizacin-ibm-bluemix)** 
