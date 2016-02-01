@@ -22,12 +22,14 @@ Dado que solo tenemos esas dos máquinas en el fichero de hosts disponibles:
 
 Creamos el playbook `apache.yml` :
 
+```
 ---
 - hosts: all
   sudo: yes
   tasks:
     - name: install apache2
       apt: name=apache2 update_cache=yes state=latest
+```
 Y lo ejecutamos :
 
 `ansible-playbook apache.yml --ask-sudo-pass`
@@ -38,6 +40,7 @@ Es necesario activar la bandera de sudo dado que la instalación requiere de pri
 
 Creamos el playbook `php.yml` :
 
+```
 ---
 - hosts:all
   sudo: yes
@@ -52,6 +55,7 @@ Creamos el playbook `php.yml` :
         - php5-json
         - php5-mcrypt
         - php5-sqlite
+```
 Y lo ejecutamos :
 
 `ansible-playbook php.yml --ask-sudo-pass`
