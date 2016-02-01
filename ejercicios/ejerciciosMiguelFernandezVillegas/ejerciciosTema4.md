@@ -9,37 +9,40 @@ Podemos bajarnos una distribución con wget o una imagen ya descargada como es e
 
 ##Crear un disco virtualizado para QEMU
 
-Para crearlo usamos `qemu-img create -f qcow2 debian-prueba.img 10G`
+Creamos el disco virtual usando `qemu-img create -f qcow prueba.img 1G`
 
-[DiscoCreado](https://gyazo.com/75214e189aa10e1bd7f401ea47e62278.png)
 
 ##Instalar Linux en dicho disco
 
-Para instalar usaremos el siguiente comando `qemu-system-x86_64 debian_Prueba.img -boot d -cdrom ./Descargas/debian-8.3.0-i386-netinst.iso -m 640`
-
-
-![Instalacion](https://gyazo.com/b8fda0218439acdd5e8cc0026b82329a.png)
+Con el sguiente comando instalamos nuestro sistema operativo en la unidad virtual ` qemu-system-x86_64 -hda prueba.img -boot d -cdrom Descargas/dsl-4.11.rc2-syslinux.iso -m 2048`
 
 ##Ejecutar la máquina instalada para interaccionar con ella con su interfaz gráfica
 
-La ejecutamos mediante qemu-system-x86_64 -hda qemu/debian-prueba.img
+Cargamos la imagen conel siguiente comando `qemu-system-x86_64 -hda prueba.img` y observamos como está correctamente instalado
 
-Interfaz gráfica de la máquina
+![Instalado](https://gyazo.com/eeed8008e1b3e6ec737b407926070b29.png)
 
 ##Ejecutar la máquina instalada sin interfaz gráfica, y entrar usando el cliente VNC
 
-La arrancamos con sudo qemu-system-x86_64 -hda qemu/debian-prueba.img -vnc :1 y nos conectamos a ella mediante vncviewer 192.168.122.1:5901
+Instalamos el cliente para VNC vinagre.
 
-Cliente VNC
+`sudo apt-get install vinagre`
+
+Lanzamos nuevamente la máquina virtual indicando la etiqueta vnc y el puerto a usar. Por defecto se usa el puerto 5900.
+
+`qemu-system-x86_64 -hda prueba.img vnc :1`
+
+La opción :1 hace referencia al puerto 5901. Usaremos ahora vinagre para conectarnos a la máquina virtual de forma remota.
+
+`vinagre 192.168.122.1:5901`
 
 ##Instalar apache2 o nginx y probar que sirve páginas web (acceder desde el host a la IP del servidor virtualizado, bien con URL o con su navegador)
 
-Vemos Apache arrancado, con un navegador en el anfitrión de la web servida.
+Estando conectados con la máquina procedemos a instalar nginx.
 
-Apache arrancado
+`sudo apt-get install nginx`
 
-##Microsoft Azure
-
+Nos conectamos a la IP anterior en el sistema anfitrión para comprobar que se puede acceder al servicio web a través del servidor virtualizado.
 
 #IBM Bluemix
 
