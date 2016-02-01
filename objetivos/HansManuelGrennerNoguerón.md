@@ -69,3 +69,12 @@ Lista de objetivos
 * [X] Comentar cuestiones relacionadas con la segunda práctica.
 * [X] Ponerse al día de los ejercicios del segundo tema.
 
+###Clase del 23 de noviembre de 2015
+* [X] Entender la definición de la infraestructura virtual en PaaS.
+* [X] Examinar los componentes que se pueden usar en una aplicación desplegada en un PaaS.
+* [X] Alta en diferentes PaaS y examinar sus parecidos y diferencias.
+* [X] Descargar los toolbelts de los diferentes PaaS y usarlos para despliegue automático.
+* [X] Altas en otros servicios que se puedan integrar en un PaaS.
+* [X] Experimentar con despliegues automáticos.
+
+
