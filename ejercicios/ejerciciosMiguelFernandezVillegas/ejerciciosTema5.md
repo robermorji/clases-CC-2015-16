@@ -12,22 +12,22 @@ Mediante `ifconfig` podemos obtener las IP's de ambas máquinas. Procedemos a a�
 
 `echo "<IP's>" >> ./ansible_hosts export ANSIBLE_HOSTS = ./ansible_hosts`
 
-#Usa Ansible para hacer ping a ambas máquinas
+##Usa Ansible para hacer ping a ambas máquinas
 
 Dado que solo tenemos esas dos máquinas en el fichero de hosts disponibles:
 
 `ansible all -m ping`
 
-#Usa Ansible para instalar Apache en ambas máquinas
+##Usa Ansible para instalar Apache en ambas máquinas
 
 Creamos el playbook `apache.yml` :
 
-`---
+---
 - hosts: all
   sudo: yes
   tasks:
     - name: install apache2
-      apt: name=apache2 update_cache=yes state=latest`
+      apt: name=apache2 update_cache=yes state=latest
 Y lo ejecutamos :
 
 `ansible-playbook apache.yml --ask-sudo-pass`
@@ -38,7 +38,7 @@ Es necesario activar la bandera de sudo dado que la instalación requiere de pri
 
 Creamos el playbook `php.yml` :
 
-`---
+---
 - hosts:all
   sudo: yes
   tasks:
@@ -51,12 +51,12 @@ Creamos el playbook `php.yml` :
         - php5-intl
         - php5-json
         - php5-mcrypt
-        - php5-sqlite`
+        - php5-sqlite
 Y lo ejecutamos :
 
 `ansible-playbook php.yml --ask-sudo-pass`
 
-##Gestión de configuraciones: Vagrant
+#Gestión de configuraciones: Vagrant
 
 ##Instala Vagrant en tu sistema
 
