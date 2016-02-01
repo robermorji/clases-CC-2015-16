@@ -118,6 +118,37 @@ Por último compruebo que se ha realizado el push con exito
 
 ![exito](https://gyazo.com/488ff747aaf9b57491cd01a13d451228.png)
 
+##Ejercicio 12
+
+###Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.
+
+Mediante un contenedor Docker, en un [repositorio propio usado para la entrega del Hito 4](https://github.com/miguelfervi/ubuntu-periodicointeractivo), crearé dicha imagen.
+ 
+ Para conectarlo a DockerHub, me registro, conecto mi cuenta de GitHub y creo un "Automated Build" enlazado con el anterior repositorio, creando una [contenedor](https://hub.docker.com/r/miguelfervi/ubuntu-periodicointeractivo/) disponible para descargar (`docker pull miguelfervi/ubuntu-periodicointeractivo`) y desplegar (`docker run -t -i miguelfervi/ubuntu-periodicointeractivo`).
+ 
+ El archivo Dockerfile del repositorio contendrá el código:
+ 
+ ```
+ # ubuntu-periodicointeractivo
+ FROM ubuntu
+ MAINTAINER Miguel Fernández Villegas <miguelfervi@gmail.com>  Version: 1.1
+ 
+ # Instalaremos los paquetes y herramientas necesarias para el despliegue de la aplicación
+ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+ RUN echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" | tee -a /etc/apt/sources.list.d/10gen.list
+ RUN apt-get update
+ RUN apt-get -y install python python-setuptools python-dev mongodb-10gen python-django gcc build-essential git
+ RUN easy_install web.py
+ RUN easy_install mako
+ RUN easy_install pymongo
+ RUN easy_install feedparser
+ 
+ # Descargamos la aplicación
+ RUN git clone https://github.com/miguelfervi/ProjectCC.git /home/PeriodicoInteractivo
+ 
+ ```
+  
+
 
 
 
